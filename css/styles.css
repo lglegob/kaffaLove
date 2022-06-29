@@ -1,0 +1,355 @@
+/********************
+*** Color Palette ***
+*********************/
+
+/*
+https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
+#BF1E2E Red NCS - rgb(191,30,46)
+#343434 Dark Gray (Almost black)
+#4392F1 Dodger Blue
+#F9E0D9 Misty Rose
+#F9F9F9 Cultured (Almost White)
+*/ 
+
+/********************
+*** Global Styles ***
+*********************/
+
+/* Light Reset  */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Box Model Fix  */
+html {
+	box-sizing: border-box;
+}
+  	*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: #343434; /* Dark Gray (Almost black) */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+a {
+	color: #F9E900;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-size: 150px;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 80px;
+}
+h1, h2 {
+	font-family: 'Updock', cursive;
+	font-weight: 400;
+	margin: 0;
+}
+h3 {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+p {
+	margin: 2em 0;
+}
+
+/* .item-details applies to Events and HowTos Sections */
+.item-details h3 + p {	/* Sibling Combinator - only the element directly after */
+	font-size: italic;	
+}
+.item-details h3 ~ p {	/* Sibling Combinator - any sibling after */
+	margin: 0;
+}
+/* .dash-divider applies to Products and Events Sections */
+.dashed-divider > section {		/* Child Combinator - any direct child after */
+	border-bottom: 1px dashed #343434; /* Dark Gray (Almost black) */
+	padding: 25px 0;
+}
+.dashed-divider > section:last-of-type {	/* to avoid dashed line in the last item */
+	border-bottom: none;
+}
+.content-wrap {
+	max-width: 1100px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 30px 0 5px;
+}
+
+
+/********************
+***    header     ***
+*** & navigation  ***
+*********************/
+
+header {
+	background: #F9F9F9; /* Cultured (Almost White) */
+	background-image: url(../images/KaffaLove-FotoExterior\(3657px-2298px\).jpg);
+	background-size: cover;
+	background-position: top right;
+	color: #BF1E2E; /* Red NCS */
+	text-align: center;
+}
+header img {
+	max-width: 200px;
+	max-height: 200px;
+	padding-top: 10px;
+	margin: 0;
+	align-items: center;
+}
+header img:hover {
+	opacity: 60%;
+}
+.navigation {
+	position: sticky;
+	top: 0;
+}
+.navigation-list {
+	list-style-type: none;
+	padding: 0 0 30px;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.navigation .btn {
+	font-size: 20px;
+	color: #F9F9F9; /* Cultured (Almost White) */
+	background: #BF1E2E; /* Red NCS */
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 4px;
+	margin:5px;
+	width: 170px;
+	display: inline-block;
+
+}
+.navigation .btn:hover {
+	background: rgba(191, 30, 46, 60%); /* Red NCS */
+}
+
+/********************
+***  Kaffa-Motto  ***
+*********************/
+
+.kaffa-motto {
+	background-color: #F9F9F9; /* Cultured (Almost White) */
+	padding-bottom: 20px;
+	text-align:center;
+}
+
+/********************
+***   Products    ***
+*********************/
+
+.products {
+	background: #F9F9F9; /* Cultured (Almost White) */
+	padding-bottom: 60px;
+}
+.products-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* border: 1px solid black; */
+}
+.product-item {
+	/* border: 1px solid pink; */
+	margin: 20px;
+	width: 300px;
+	background-color: white;
+	border-radius: 30px;
+	padding: 20px;
+}
+.product-image {    /* Para ajustar cada card de producto */
+	width: 260px;
+	height: 260px;
+	margin: 10px;
+	align-content: center;
+}
+.products img {
+	max-width: 260px;
+	max-height: 260px;
+}
+.product-item h3 {
+	margin-top: 0;
+}
+.products .btn {
+	color: #F9F9F9; /* Cultured (Almost White) */
+	background: #BF1E2E; /* Red NCS */
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+.products .btn:hover {
+	background: rgba(191, 30, 46, 60%); /* Red NCS */
+}
+
+/********************
+***     Events    ***
+*********************/
+
+.events {
+	color: #343434; /* Dark Gray (Almost black) */
+	background: #F9E0D9; /* Misty Rose */
+	padding-bottom: 50px;
+}
+
+
+/********************
+***    HowTos     ***
+*********************/
+
+.howTos {
+	background-image: url(../images/CoffeeMuralBlurry.jpg);
+	background-size: cover;
+	background-position: top left;
+	padding-bottom: 200px; /* To prevent the coffee cups to hide the text */
+}
+.howTos p {
+	width: 80%;
+}
+
+/********************
+*** Contact Info  ***
+*********************/
+
+footer {
+	background: #BF1E2E; /* Red NCS */
+	color: #F9F9F9; /* Cultured (Almost White) */
+	text-align: center;
+} 
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.contact-list a {
+	padding: 15px;
+	display: inline-block;
+}
+.contact-list a:hover {
+	opacity: 60%;
+}
+
+/********************
+***  Encuesta de  ***
+***  Satisfaccion ***
+*** contacto.html ***
+*********************/
+
+.encuesta {
+	margin-bottom: 30px;
+}
+
+/********************
+***    Leyenda    ***
+*** laLeyendaDeKaffa.html ***
+*********************/
+
+.leyenda {
+	padding-bottom: 90px;
+}
+
+/********************
+*** quienes-somos ***
+**quienesSomos.html**
+*********************/
+
+.quienes-somos {
+	padding-bottom: 90px;
+}
+
+/********************
+***  menu-global  ***
+***   menu.html   ***
+*********************/
+
+.menu-container {
+	padding-bottom: 100px;
+}
+
+.menu-container h3 {
+	font-family: 'Updock', cursive;
+	font-weight: 400;
+	font-size: 120px;
+	margin: 0;
+	padding-left: 40px;
+	color:  #BF1E2E; /* Red NCS */
+}
+
+.menu-container a {
+	text-decoration: none;
+}
+.menu-global-items {
+	width: 90%;
+	height: 200px;
+	background-size: cover;
+	background-position: top right;
+	border-radius: 20px;
+}
+.menu-global-item01 {
+	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores\(opacity50\).jpg);
+}
+
+
+/********************
+***  Responsive   ***
+*********************/
+
+/* @media screen and (min-width:750px){
+	/* header, footer {		/* Borrarlos de arriba
+		text-align: center;
+	}
+	.product-item img {		/* Products Section 
+		float: left;		/* Float item 
+		margin-right: 20px;
+	}
+	.event-item {			/* Events Section 
+		display: grid; 		/* Grid Items 
+		grid-template-columns: 1fr 2fr;
+		column-gap: 20px;
+	}
+	.contact-list {			/* Footer Section (Contact) 
+		display: flex;		/* Flex Items 
+		justify-content: center;
+	}
+	.navigation-list {		/* Header Section (Navigation)
+		display: flex;		/* Flex Items
+		justify-content: center;
+	}
+}*/ 
+
+@media screen and (max-width:749px) {
+	h1 {					/* Global Styles */
+		font-size: 85px;	
+		line-height: 0.9;
+		margin-bottom: 20px;
+	}
+	h2 {					/* Global Styles */
+		font-size: 60px;
+		line-height: 1;
+	}
+	.menu-container h3 {		/* menu-global menu.html*/
+		font-size: 80px;
+		padding-top: 30px;
+		line-height: 1;
+	}
+}
+	/*
+	.contact-list a {		/* Footer Section (Contact) 
+		padding: 5px;
+	}
+	.navigation-list a {	/* Header Section (Navigation) 
+		padding: 5px;
+	}
+} */
