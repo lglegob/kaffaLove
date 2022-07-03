@@ -5,10 +5,10 @@
 /*
 https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #BF1E2E Red NCS - rgb(191,30,46)
-#343434 Dark Gray (Almost black)
-#4392F1 Dodger Blue
-#F9E0D9 Misty Rose
-#F9F9F9 Cultured (Almost White)
+#343434 Dark Gray (Almost black) - rgb(52,52,52)
+#4392F1 Dodger Blue - rgb(67,146,241)
+#F9E0D9 Misty Rose - rgb(249,224,217)
+#F9F9F9 Cultured (Almost White) - rgb(249,249,249)
 */ 
 
 /********************
@@ -68,8 +68,8 @@ p {
 .item-details h3 ~ p {	/* Sibling Combinator - any sibling after */
 	margin: 0;
 }
-/* .dash-divider applies to Products and Events Sections */
-.dashed-divider > section {		/* Child Combinator - any direct child after */
+/* .dash-divider applies to Events Section */
+.dashed-divider > article {		/* Child Combinator - any direct child after */
 	border-bottom: 1px dashed #343434; /* Dark Gray (Almost black) */
 	padding: 25px 0;
 }
@@ -77,16 +77,50 @@ p {
 	border-bottom: none;
 }
 .content-wrap {
-	max-width: 1100px;
+	max-width: 1200px;
 	width: 85%;
 	margin: 0 auto;
-	padding: 30px 0 5px;
+	padding: 10px 0 5px;
 }
 
+/********************
+***    Global     ***
+***     Grid      ***
+*********************/
+
+/* main {
+	display: grid;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"products"
+	"events"
+	"howTos"
+	;
+}
+
+.navigation {
+	grid-area: navigation;
+}
+
+.kaffa-motto {
+	grid-area: kaffa-motto;
+}
+
+.products {
+	grid-area: products;
+}
+
+.events {
+	grid-area: events;
+}
+
+.howTos {
+	grid-area: howTos;
+} */
 
 /********************
 ***    header     ***
-*** & navigation  ***
 *********************/
 
 header {
@@ -98,22 +132,27 @@ header {
 	text-align: center;
 }
 header img {
-	max-width: 200px;
-	max-height: 200px;
-	padding-top: 10px;
+	max-width: 220px;
+	max-height: 220px;
+	padding-top: 20px;
 	margin: 0;
 	align-items: center;
 }
 header img:hover {
 	opacity: 60%;
 }
+
+/********************
+***   navigation  ***
+*********************/
+
 .navigation {
 	position: sticky;
-	top: 0;
+	top: 10px;
 }
 .navigation-list {
 	list-style-type: none;
-	padding: 0 0 30px;
+	padding: 0 0 10px;
 	text-align: center;
 	display: flex;
 	flex-flow: row wrap;
@@ -132,7 +171,7 @@ header img:hover {
 
 }
 .navigation .btn:hover {
-	background: rgba(191, 30, 46, 60%); /* Red NCS */
+	background: rgba(67, 146, 241, 60%); /* Dodger Blue */
 }
 
 /********************
@@ -189,7 +228,7 @@ header img:hover {
 	display: inline-block;
 }
 .products .btn:hover {
-	background: rgba(191, 30, 46, 60%); /* Red NCS */
+	background: rgba(67, 146, 241, 60%); /* Dodger Blue */
 }
 
 /********************
@@ -202,7 +241,6 @@ header img:hover {
 	padding-bottom: 50px;
 }
 
-
 /********************
 ***    HowTos     ***
 *********************/
@@ -213,12 +251,9 @@ header img:hover {
 	background-position: top left;
 	padding-bottom: 200px; /* To prevent the coffee cups to hide the text */
 }
-.howTos p {
-	width: 80%;
-}
 
 /********************
-*** Contact Info  ***
+***    Footer     ***
 *********************/
 
 footer {
@@ -351,5 +386,17 @@ footer {
 	}
 	.navigation-list a {	/* Header Section (Navigation) 
 		padding: 5px;
+	}
+} */
+
+/* @media screen and (min-width:750px) {
+	main {
+		grid-template-areas: 
+		"navigation    navigation"
+		"kaffa-motto   kaffa-motto"
+		"products      products"
+		"events        events"
+		"howTos        howTos"
+		;
 	}
 } */
