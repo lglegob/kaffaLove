@@ -1,5 +1,4 @@
-Cambiar Imagen de background en 3 paginas
-Hacer las fotos del producto de las mismas dimensiones
+
 meterle fotos a leyenda
 Incluir el mapa de google maps (footer?? o seccion adicional?)
 Completar contenido Eventos
@@ -8,8 +7,10 @@ Definir que hacer con la encuesta
 Crear paginas adicionales para la carta
 
 
-
 LISTOS
 
 Incluir acceso a Waze
 Ajustar bien las fotos de Quienes Somos, y crearle al menos una version mas pequena
+Cambiar Imagen de header en 3 paginas
+Hacer las fotos del producto de las mismas dimensiones
+Meter animaciones
