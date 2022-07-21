@@ -324,9 +324,6 @@ footer {
 	max-height: 290px;
 	width: 90%;
 }
-.product-item h3 {
-	margin-top: 0;
-}
 .products .btn {
 	color: #F9F9F9; /* Cultured (Almost White) */
 	background: #BF1E2E; /* Red NCS */
@@ -337,6 +334,12 @@ footer {
 }
 .products .btn:hover {
 	background: rgba(67, 146, 241, 60%); /* Dodger Blue */
+}
+.product-item h3 {
+	margin-top: 0;
+}
+.product-item p {
+	text-align: center;
 }
 
 /***************************************************************************
