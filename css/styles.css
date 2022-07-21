@@ -480,6 +480,13 @@ footer {
 .menu-global-item06 {
 	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas\(opacity50\).jpg);
 }
+.menu-global-article {		/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
+	transition: all 2s;
+}
+.menu-global-article:hover {
+	transform: scale(1.1);
+}
+
 
 /***************************************************************************
 ***                menu-general Nested Grid (menu.html)                  ***
