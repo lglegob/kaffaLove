@@ -310,6 +310,12 @@ footer {
 	border-radius: 30px;
 	padding: 20px;
 }
+.product-item h3 {
+	margin-top: 0;
+}
+.product-item p {
+	text-align: center;
+}
 .product-image {    /* Para ajustar cada card de producto */
 	max-width: 260px;
 	max-height: 290px;
@@ -334,12 +340,6 @@ footer {
 }
 .products .btn:hover {
 	background: rgba(67, 146, 241, 60%); /* Dodger Blue */
-}
-.product-item h3 {
-	margin-top: 0;
-}
-.product-item p {
-	text-align: center;
 }
 
 /***************************************************************************
