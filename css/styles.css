@@ -306,7 +306,7 @@ footer {
 }
 .product-image {    /* Para ajustar cada card de producto */
 	max-width: 260px;
-	max-height: 300px;
+	max-height: 290px;
 	height: 90vw;
 	margin: 10px;
 	display: flex;	/* Para centrar la Imagen, Flex de un solo elemento */
@@ -315,7 +315,7 @@ footer {
 }
 .products img {
 	max-width: 260px;
-	max-height: 300px;
+	max-height: 290px;
 	width: 90%;
 }
 .product-item h3 {
@@ -481,7 +481,7 @@ footer {
 	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas\(opacity50\).jpg);
 }
 .menu-global-article {		/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
-	transition: all 2s;
+	transition: all 2s ease-out;
 }
 .menu-global-article:hover {
 	transform: scale(1.1);
