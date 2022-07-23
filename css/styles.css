@@ -713,7 +713,6 @@ footer {
 	.header-image-background {		/* Para asegurar que la animacion de la foto del header este contenida en esta altura, que es la que originalmente para tamaños mayores de 1024px tomaba el header */
 		/* height: 546.4px; */
 	}
-
 }
 
 @media screen and (min-width:1200px) {
