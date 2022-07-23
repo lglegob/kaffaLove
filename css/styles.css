@@ -200,9 +200,12 @@ header img:hover {
 	background-size: cover;
 	background-position: top right;
 	position: absolute;	
-	width: 100vw;
+	width: 100%;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
 	z-index: -5;	/* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
 }
 .header-index {
@@ -592,8 +595,8 @@ footer {
 				transform-origin: 50% 16%;
 		}
 		100% {
-		-webkit-transform: scale(1.75) translateY(-15px);
-				transform: scale(1.75) translateY(-15px);
+		-webkit-transform: scale(1.25) translateY(-15px);
+				transform: scale(1.25) translateY(-15px);
 		-webkit-transform-origin: top;
 				transform-origin: top;
 		}
@@ -606,8 +609,8 @@ footer {
 				transform-origin: 50% 16%;
 		}
 		100% {
-		-webkit-transform: scale(1.75) translateY(-15px);
-				transform: scale(1.75) translateY(-15px);
+		-webkit-transform: scale(1.25) translateY(-15px);
+				transform: scale(1.25) translateY(-15px);
 		-webkit-transform-origin: top;
 				transform-origin: top;
 		}
