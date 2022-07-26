@@ -29,10 +29,10 @@
           <a class="navbar-brand" href="index.html">
             <img src="./images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" width="50">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="collapse navbar-collapse" id="navbarToggler-kaffaLove">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -183,10 +183,88 @@
         <section class="events">
           <div class="content-wrap item-details dashed-divider">
             <h2>Eventos Kaffa</h2>
-            <p>En Kaffa nos encanta traerte eventos culturales, musicales y de apoyo a nuestros proveedores. Estos son algunos eventos que hemos tenido en Kaffa. Está atento de nuestras redes sociales para futuros eventos.</p>
-            
+            <p>En Kaffa nos encanta traerte eventos culturales, musicales y de apoyo a nuestros proveedores. Estos son algunos eventos que hemos tenido en Kaffa. Está atento de nuestras redes sociales para futuros eventos.</p>      
             <!-- Event 01 -->
-            <article class="event-item">
+            <!-- Carousel creado con Bootstrap 5.1 - Script with Captions tomado de https://getbootstrap.com/docs/5.1/components/carousel/ -->
+            <h5>Evento de Lectura con Maria Trapitos.</h5>
+            <p>Un día de magia y aventuras maravillosas con Maria Trapitos, ¿Qué aventuras nos traerá?. ¿Quién hubiera pensado que con unos trapitos iban a tener tanta diversión?. Definitivamente los peques dejaron volar su imaginación en medio de historias fantásticas.</p>
+            <article id="carousel-evento-mariatrapitos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/Events/20220122-mariaTrapitos01.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 01">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220122-mariaTrapitos02.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 02">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220122-mariaTrapitos03.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 03">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
+
+            <!-- Event 02 -->
+            <!-- Carousel creado con Bootstrap 5.1 - Script with Captions tomado de https://getbootstrap.com/docs/5.1/components/carousel/ -->
+            <h5>Evento de preparaciones deliciosas con Lauracate.</h5>
+            <p>Un día de preparaciones deliciosas con Lauracate, quien con su dulzura y amor hizo que los peques pasaran una mañana genial. Disfrutaron, jugaron, probaron nuevas cosas, y aprendieron una que otra receta. ¡Sencillamente delicioso!.</p>
+            <article id="carousel-evento-lauracate" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/Events/20220423-lauracate01.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 01">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220423-lauracate02.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 02">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220423-lauracate03.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 03">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
+            <p>¡No olvides estar pendiente de nuestras redes, para que no te pierdas nuestro próximo evento!!</p>
+            <!-- <article class="event-item">
               <div class="event-details">
                 <h3>Primer Evento</h3>
                 <p>Nombre Primer Evento</p>
@@ -195,29 +273,7 @@
               <div class="event-summary">
                 <p>Summary First Event.</p>
               </div>
-            </article>
-            <!-- Event 02 -->
-            <article class="event-item">
-              <div class="event-details">
-                <h3>Segundo Evento</h3>
-                <p>Nombre Segundo Evento</p>
-                <p>Colaborador Segundo Evento</p>
-              </div>
-              <div class="event-summary">
-                <p>Summary Second Event.</p>
-              </div>
-            </article>
-            <!-- Event 03 -->
-            <article class="event-item">
-              <div class="event-details">
-                <h3>Tercer Evento</h3>
-                <p>Nombre Tercer Evento</p>
-                <p>Colaborador Tercer Evento</p>
-              </div>
-              <div class="event-summary">
-                <p>Summary Third Event.</p>
-              </div>
-            </article>
+            </article> -->
           </div>
         </section>
 

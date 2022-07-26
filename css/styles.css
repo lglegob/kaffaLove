@@ -338,7 +338,8 @@ footer {
 	max-height: 290px;
 	height: 90vw;
 	margin: 10px;
-	display: flex;	/* Para centrar la Imagen, Flex de un solo elemento */
+	/* Para centrar la Imagen, Flex de un solo elemento */
+	display: flex;	
 	justify-content: center;
 	align-content: center;
 }
@@ -368,6 +369,7 @@ footer {
 	background: #F9E0D9; /* Misty Rose */
 	padding-bottom: 50px;
 }
+
 
 /***************************************************************************
 ***                          HowTos (index.html)                         ***
@@ -713,7 +715,7 @@ footer {
 		padding-bottom: 50px; /* Para compensar un poco mas de alto de la foto de background en anchos amplios */
 	}
 	.index-grid {			/* index.html grid */			
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 60% 40%;
 		grid-template-areas: 
 		"navigation    kaffa-motto"
 		"products      products"
