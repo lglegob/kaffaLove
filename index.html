@@ -5,24 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaffa Love</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+      crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Updock&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <!-- <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
   <body>
 
     <!-- ****************************  HEADER  ***************************** -->
     <header class="header-index">
+      <!-- Navbar creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light text-end">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" width="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler-kaffaLove">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/quienesSomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/laLeyendaDeKaffa.html">La Leyenda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="header-image-background index-header-image-background kenburns-top">
         <!-- div usado para el fondo animado del header en tamaños mayores a 1024px usando animista.net --> 
       </div>
-      <a href="index.html"><img src="images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love"></a>
+      <a href="index.html"><img src="images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" class="logo-central"></a>
       <h1>Kaffa Love</h1>
       <h2>Donde amamos el buen Café</h2>
     </header>
@@ -67,33 +101,73 @@
             <h2>Productos Destacados</h2>
             <p>Encuentra nuestros productos y bebidas destacadas acá. Para el menú completo, lo puedes encontrar aquí --> <a class="btn" href="./sections/menu.html">Menú</a>.</p>
             <div class="products-flex-container">
+
               <!-- Product 01 -->
-              <article class="product-item">
-                <div class="product-image" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada card de producto -->
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card product-item" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="product-image">
+                  <img src="images/Products/cafeRocher(260px-290px).png" class="card-img-top" alt="Café Rocher">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Café Rocher</h5>
+                  <a href="#" class="btn">Ver Producto</a>
+                  <p class="card-text">Una bebida caliente, sencillamente imperdible. Con base un expreso doble, leche, crema de avellanas, maní, un toque de crema chantilly y acompañado por supuesto de un chocolate Ferrer. No te la puedes perder.</p>
+                </div>
+              </article>
+              <!-- Card creada para ajustar cada producto  -->
+              <!-- <article class="product-item">
+                <div class="product-image" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">  
                   <img src="images/Products/cafeRocher(260px-290px).png" alt="Café Rocher">
                 </div>
                 <h3>Café Rocher</h3>
                 <a class="btn" href="#" target="_blank">Ver Producto</a>
                 <p>Una bebida caliente, sencillamente imperdible. Con base un expreso doble, leche, crema de avellanas, maní, un toque de crema chantilly y acompañado por supuesto de un chocolate Ferrer. No te la puedes perder.</p>
-              </article>
+              </article> -->
+
               <!-- Product 02 -->
-              <article class="product-item">
-                <div class="product-image" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada card de producto -->              
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card product-item" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="product-image">
+                  <img src="images/Products/cafeIrlandes(260px-290px).png" class="card-img-top" alt="Café irlandés">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Café irlandés</h5>
+                  <a href="#" class="btn">Ver Producto</a>
+                  <p class="card-text">Para aquellos días que necesitas tu café fuerte, se trata de un expreso doble, con Whiskey y un toque de crema batida.</p>
+                </div>
+              </article>
+              <!-- Card creada para ajustar cada producto  -->
+              <!-- <article class="product-item">
+                <div class="product-image" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="100">            
                   <img src="images/Products/cafeIrlandes(260px-290px).png" alt="Café irlandés">
                 </div>
                 <h3>Café irlandés</h3>
                 <a class="btn" href="#" target="_blank">Ver Producto</a>
                 <p>Para aquellos días que necesitas tu café fuerte, se trata de un expreso doble, con Whiskey y un toque de crema batida.</p>
-              </article>
+              </article> -->
+
               <!-- Product 03 -->
-              <article class="product-item">
-                <div class="product-image" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada card de producto --> 
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card product-item" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="product-image">
+                  <img src="images/Products/cafeKaffa(260px-290px).png" class="card-img-top" alt="Café Kaffa">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Café Kaffa</h5>
+                  <a href="#" class="btn">Ver Producto</a>
+                  <p class="card-text">Y el que si o si debes probar, el café de la casa. Tu café con crema de avellanas, leche, crema de chantillí y el topping a tu elección.</p>
+                </div>
+              </article>
+              <!-- Card creada para ajustar cada producto  -->
+              <!-- <article class="product-item">
+                <div class="product-image" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
                   <img src="images/Products/cafeKaffa(260px-290px).png" alt="Café Kaffa">
                 </div>
                 <h3>Café Kaffa</h3>
                 <a class="btn" href="#" target="_blank">Ver Producto</a>
                 <p>Y el que si o si debes probar, el café de la casa. Tu café con crema de avellanas, leche, crema de chantillí y el topping a tu elección. </p>
-              </article>
+              </article> -->
+
             </div>
           </div>
           <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
@@ -109,10 +183,88 @@
         <section class="events">
           <div class="content-wrap item-details dashed-divider">
             <h2>Eventos Kaffa</h2>
-            <p>En Kaffa nos encanta traerte eventos culturales, musicales y de apoyo a nuestros proveedores. Estos son algunos eventos que hemos tenido en Kaffa. Está atento de nuestras redes sociales para futuros eventos.</p>
-            
+            <p>En Kaffa nos encanta traerte eventos culturales, musicales y de apoyo a nuestros proveedores. Estos son algunos eventos que hemos tenido en Kaffa. Está atento de nuestras redes sociales para futuros eventos.</p>      
             <!-- Event 01 -->
-            <article class="event-item">
+            <!-- Carousel creado con Bootstrap 5.1 - Script with Captions tomado de https://getbootstrap.com/docs/5.1/components/carousel/ -->
+            <h5>Evento de Lectura con Maria Trapitos.</h5>
+            <p>Un día de magia y aventuras maravillosas con Maria Trapitos, ¿Qué aventuras nos traerá?. ¿Quién hubiera pensado que con unos trapitos iban a tener tanta diversión?. Definitivamente los peques dejaron volar su imaginación en medio de historias fantásticas.</p>
+            <article id="carousel-evento-mariatrapitos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/Events/20220122-mariaTrapitos01.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 01">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220122-mariaTrapitos02.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 02">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220122-mariaTrapitos03.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 03">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Lectura con Maria Trapitos.</h5> -->
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-evento-mariatrapitos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
+
+            <!-- Event 02 -->
+            <!-- Carousel creado con Bootstrap 5.1 - Script with Captions tomado de https://getbootstrap.com/docs/5.1/components/carousel/ -->
+            <h5>Evento de preparaciones deliciosas con Lauracate.</h5>
+            <p>Un día de preparaciones deliciosas con Lauracate, quien con su dulzura y amor hizo que los peques pasaran una mañana genial. Disfrutaron, jugaron, probaron nuevas cosas, y aprendieron una que otra receta. ¡Sencillamente delicioso!.</p>
+            <article id="carousel-evento-lauracate" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/Events/20220423-lauracate01.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 01">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220423-lauracate02.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 02">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Events/20220423-lauracate03.jpg" class="d-block w-100" alt="Evento Lectura de Cuentos con Maria Trapitos - Foto 03">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Evento de Preparaciones con Lauracate.</h5> -->
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-evento-lauracate" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
+            <p>¡No olvides estar pendiente de nuestras redes, para que no te pierdas nuestro próximo evento!!</p>
+            <!-- <article class="event-item">
               <div class="event-details">
                 <h3>Primer Evento</h3>
                 <p>Nombre Primer Evento</p>
@@ -121,29 +273,7 @@
               <div class="event-summary">
                 <p>Summary First Event.</p>
               </div>
-            </article>
-            <!-- Event 02 -->
-            <article class="event-item">
-              <div class="event-details">
-                <h3>Segundo Evento</h3>
-                <p>Nombre Segundo Evento</p>
-                <p>Colaborador Segundo Evento</p>
-              </div>
-              <div class="event-summary">
-                <p>Summary Second Event.</p>
-              </div>
-            </article>
-            <!-- Event 03 -->
-            <article class="event-item">
-              <div class="event-details">
-                <h3>Tercer Evento</h3>
-                <p>Nombre Tercer Evento</p>
-                <p>Colaborador Tercer Evento</p>
-              </div>
-              <div class="event-summary">
-                <p>Summary Third Event.</p>
-              </div>
-            </article>
+            </article> -->
           </div>
         </section>
 
