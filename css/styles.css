@@ -600,7 +600,7 @@ footer {
 	}
 	/* Parametros Animacion Animista */
 	/* Eliminando el color de background (Para cuando la imagen no esta disponible) para permitir el background animado de animista.net, cuando tenia el problema que al agregar bootstrap, la imagen de animista se perdia, se soluciono, cambiando el background: inherit a background: none */
-	 header {
+	header {
 		background: none; 
 	}
 	/* Eliminando la imagen de background del header para mobile, para que se pueda ver la animada por animista.net */
