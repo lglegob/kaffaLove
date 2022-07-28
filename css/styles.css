@@ -71,7 +71,6 @@ h3, h5 {
 p {
 	margin: 2em 0;
 }
-
 /* .item-details applies to Events (index.html) and HowTos (index.html) Sections */
 .item-details h3 + p {	/* Sibling Combinator - only the element directly after */
 	font-size: italic;	
@@ -87,7 +86,8 @@ p {
 .dashed-divider > article:last-of-type {	/* to avoid dashed line in the last item */
 	border-bottom: none;
 }
-.curva-SVG {		/* parametros de la curva creada en SVG, en mobile, no se muestra, se habilita en responsive */
+/* parametros de la curva creada en SVG, en mobile, no se muestra, se habilita en responsive */
+.curva-SVG {		
 	display: none;
 	height: 150px;
 	overflow: hidden;
@@ -156,31 +156,41 @@ p {
 	;
 }
 
-.navigation {		/* All Pages */
+/* All Pages */
+.navigation {		
 	grid-area: navigation;
 }
-.kaffa-motto {		/* All Pages */
+.kaffa-motto {		
 	grid-area: kaffa-motto;
 }
-.products {			/* index page */
+
+/* index page */
+.products {			
 	grid-area: products;
 }
-.events {			/* index page */
+.events {			
 	grid-area: events;
 }
-.howTos {			/* index page */
+.howTos {			
 	grid-area: howTos;
 }
-.menu-global {		/* menu page */	
+/* menu page */	
+.menu-global {		
 	grid-area: menu-global;
 }
-.quienes-somos {	/* quienes-somos page */
+
+/* quienes-somos page */
+.quienes-somos {	
 	grid-area: quienes-somos;
 }
-.leyenda {			/* leyenda page */
+
+/* leyenda page */
+.leyenda {			
 	grid-area: leyenda;
 }
-.encuesta {			/* contacto page */
+
+/* contacto page */
+.encuesta {			
 	grid-area: encuesta;
 }
 
@@ -214,6 +224,7 @@ header h2 {
 	display: none;
 }
 
+/* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
 .header-image-background {
 	position: absolute;	
 	width: 100%;
@@ -223,8 +234,8 @@ header h2 {
 	bottom: 0;
 	overflow: hidden;
 	background-size: cover;
-	background-position: top right;
-	z-index: -5;	/* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
+	background-position: top right;	
+	z-index: -5;	
 }
 .header-index {
 	background-image: url(../images/KaffaLove-FotoExterior\(750px-471px\).jpg);
@@ -337,12 +348,12 @@ footer {
 .product-item p {
 	text-align: center;
 }
-.product-image {    /* Para ajustar cada card de producto */
+/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+.product-image {    
 	max-width: 260px;
 	max-height: 290px;
 	height: 90vw;
 	margin: 10px;
-	/* Para centrar la Imagen, Flex de un solo elemento */
 	display: flex;	
 	justify-content: center;
 	align-content: center;
@@ -379,11 +390,12 @@ footer {
 ***                          HowTos (index.html)                         ***
 ***************************************************************************/
 
+/* The padding is added, to prevent the coffee cups to hide the text */
 .howTos {
 	background-image: url(../images/CoffeeMuralBlurry.jpg);
 	background-size: cover;
 	background-position: top left;
-	padding-bottom: 400px; /* To prevent the coffee cups to hide the text */
+	padding-bottom: 400px; 
 }
 
 /***************************************************************************
@@ -412,15 +424,17 @@ footer {
 	/* padding-bottom: 90px; se elimina para permitir la curva en svg*/ 
 	background-color: #F9F9F9; /* Cultured (Almost White) */;
 }
+/* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
 .quienes-somos img {
 	max-width: 100%;
-	max-height: 750px;	/* para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
+	max-height: 750px;	
 }
 .quienes-somos p {
 	text-align: justify;
 }
+/* Para centrar la Imagen, se usa Flex de un solo elemento */
 .quienes-somos-image {
-	display: flex; /* Para centrar la Imagen, Flex de un solo elemento */
+	display: flex; 
 	justify-content: center;
 	align-content: center;
 }
@@ -504,7 +518,8 @@ footer {
 .menu-global-item06 {
 	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas\(opacity50\).jpg);
 }
-.menu-global-article {		/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
+/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
+.menu-global-article {		
 	transition: all 2s ease-out;
 }
 .menu-global-article:hover {
@@ -553,27 +568,31 @@ footer {
 ***************************************************************************/
 
 @media screen and (min-width:576px) {
-	h1 {					/* Global Styles */
+	/* Global Styles */
+	h1 {					
 		font-size: 85px;
 	}
-	h2 {					/* Global Styles */
+	h2 {
 		font-size: 60px;
 	}
-	.navigation .btn { 		/* navigation Styles */
+	/* navigation Styles */
+	.navigation .btn { 		
 		font-size: 20px;
 		width: 170px;
 	}
+	/* Global Styles - Se habilita que se vea la curva en SVG */
 	.curva-SVG {
-		display: inherit;	/* Global Styles - Se habilita que se vea la curva en SVG */
+		display: inherit;	
 	}
 } 
 
 @media screen and (min-width:768px) {
-	h1 {					/* Global Styles */
+	/* Global Styles */
+	h1 {					
 		font-size: 150px;	
 		line-height: 1.2;
 	}
-	h2 {					/* Global Styles */
+	h2 {					
 		font-size: 80px;
 	}
 	h3 {
@@ -584,8 +603,9 @@ footer {
 	 header {
 		background: none; 
 	}
+	/* Eliminando la imagen de background del header para mobile, para que se pueda ver la animada por animista.net */
 	.header-index, .header-leyenda, .header-quienessomos, .header-menu, .header-contacto {
-		background-image: none; /* Eliminando la imagen de background del header para mobile, para que se pueda ver la animada por animista.net */
+		background-image: none; 
 	}
 	/* Height animacion Animista - Para asegurar que la animacion de la foto del header este contenida en esta altura, que es la que originalmente para tamaños mayores de 750px tomaba el header*/
 	.header-image-background {
@@ -658,7 +678,8 @@ footer {
 		}
 	}
 
-	.menu-container h3 {	/* menu-global menu.html*/
+	/* menu-global menu.html*/
+	.menu-container h3 {	
 		font-size: 120px;
 	}
 	/* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
@@ -669,7 +690,8 @@ footer {
 		display: inherit;
 	}
 
-	.index-grid {			/* index.html grid */
+	/* index.html grid */
+	.index-grid {			
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
 		"navigation    kaffa-motto"
@@ -679,7 +701,8 @@ footer {
 		;
 	}
 
-	.menu-grid {			/* menu.html grid */
+	/* menu.html grid */
+	.menu-grid {			
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
 		"navigation		kaffa-motto"
@@ -687,7 +710,8 @@ footer {
 		;
 	}
 
-	.quienessomos-grid {	/* quienesSomos.html grid */
+	/* quienesSomos.html grid */
+	.quienessomos-grid {	
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
 		"navigation		kaffa-motto"
@@ -695,7 +719,8 @@ footer {
 		;
 	}
 
-	.leyenda-grid {			/* laLeyendaDeKaffa.html grid */
+	/* laLeyendaDeKaffa.html grid */
+	.leyenda-grid {			
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
 		"navigation		kaffa-motto"
@@ -703,23 +728,28 @@ footer {
 		;
 	}
 
-	.contacto-grid {		/* contacto.html grid */
+	/* contacto.html grid */
+	.contacto-grid {		
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
 		"navigation		kaffa-motto"
 		"encuesta		encuesta"
 		;
 	}
-	.quienes-somos img {	/* quienesSomos.html */
+
+	/* quienesSomos.html */
+	.quienes-somos img {	
 		padding: 20px;
 	}
 }
 
 @media screen and (min-width:992px) {
+	/* Padding para compensar un poco mas de alto de la foto de background en anchos amplios */
 	header h2 {
-		padding-bottom: 50px; /* Para compensar un poco mas de alto de la foto de background en anchos amplios */
+		padding-bottom: 50px; 
 	}
-	.index-grid {			/* index.html grid */			
+	/* index.html grid */
+	.index-grid {						
 		grid-template-columns: 60% 40%;
 		grid-template-areas: 
 		"navigation    kaffa-motto"
@@ -727,7 +757,8 @@ footer {
 		"events        howTos"
 		;
 	}
-	.quienes-somos-nested-grid {	/* quienesSomos.html Nested Grid */
+	/* quienesSomos.html Nested Grid */
+	.quienes-somos-nested-grid {	
 		grid-template-columns: 50% 50%;
 		grid-template-areas: 
 		"h2-quienes-somos		h2-quienes-somos"
@@ -775,7 +806,8 @@ footer {
 		background-image: url(../images/KaffaLove-FotoInterior\(3657px-2298px\).jpg);
 	} */
 
-	.menu-general-grid {	/* menu.html menu-general grid (nested grid) */
+	/* menu.html menu-general grid (nested grid) */
+	.menu-general-grid {	
 		grid-template-columns: 50% 50%;
 		grid-template-areas: 
 		"menu-general-article01		menu-general-article02"
