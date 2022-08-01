@@ -1,0 +1,25 @@
+/***************************************************************************
+***               quienes-somos (quienesSomos.html)                      ***
+***************************************************************************/
+
+.quienes-somos {
+	/* padding-bottom: 90px; se elimina para permitir la curva en svg*/ 
+	background-color: #F9F9F9; /* Cultured (Almost White) */;
+    /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
+    & img {
+        max-width: 100%;
+        max-height: 750px;
+        @include size-md {
+            padding: 20px;
+        }
+    }
+    & p {
+        text-align: justify;
+    }
+}
+/* Para centrar la Imagen, se usa Flex de un solo elemento */
+.quienes-somos-image {
+	display: flex; 
+	justify-content: center;
+	align-content: center;
+}

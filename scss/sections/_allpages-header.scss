@@ -1,0 +1,64 @@
+/***************************************************************************
+***                         Header (All Pages)                           ***
+***************************************************************************/
+
+header {
+	background: #F9F9F9; /* Cultured (Almost White) */
+	color: #BF1E2E; /* Red NCS */
+	text-align: center;
+	background-size: cover;
+	background-position: top right;
+    & h2 {
+	padding-left: 20px;
+	/* Padding para compensar un poco mas de alto de la foto de background en anchos amplios */
+	@include size-lg {
+		padding-bottom: 50px; 
+	}
+    }
+}
+
+.logo-central {
+	max-width: 220px;
+	max-height: 220px;
+	height: 90vw;
+	padding: 20px 0;
+	margin: 0 auto;
+	align-items: center;
+	opacity: 70%;
+    &:hover {
+        opacity: 40%;
+    }
+}
+
+.navigation {
+	display: none;
+}
+
+/* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
+.header-image-background {
+	position: absolute;	
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-size: cover;
+	background-position: top right;	
+	z-index: -5;	
+}
+.header-index {
+	background-image: url(../images/KaffaLove-FotoExterior-750px-471px.jpg);
+}
+.header-leyenda {
+	background-image: url(../images/KaffaLove-FotoMesasExternas-750px-471px.jpg);
+}
+.header-quienessomos {
+	background-image: url(../images/KaffaLove-FotoInteriornavideno-750px-471px.jpg);
+}
+.header-menu {
+	background-image: url(../images/KaffaLove-FotoCafetera-750px-471px.jpg);
+}
+.header-contacto {
+	background-image: url(../images/KaffaLove-FotoInterior-750px-471px.jpg);
+}

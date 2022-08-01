@@ -1,0 +1,108 @@
+/***************************************************************************
+***                            Color Palette                             ***
+***************************************************************************/
+
+/*
+https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
+#BF1E2E Red NCS 					- rgb(191,30,46)
+#343434 Dark Gray (Almost black) 	- rgb(52,52,52)
+#4392F1 Dodger Blue 				- rgb(67,146,241)
+#F9E0D9 Misty Rose 					- rgb(249,224,217)
+#F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
+*/ 
+
+/***************************************************************************
+***                        Global Styles (All Pages)                     ***
+***************************************************************************/
+
+body {
+	color: #343434; /* Dark Gray (Almost black) */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 100%;
+}
+/* Parametro para solucionar el scroll horizontal, que se deba con la animacion de Animista en el header */
+html, body {  
+	overflow-x: hidden;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-size: 65px;
+	line-height: 0.9;
+	margin-bottom: 30px;
+	@include size-sm {
+		font-size: 85px;
+	}
+	@include size-md {
+		font-size: 150px;	
+		line-height: 1.2;
+	}
+}
+h2 {
+	font-size: 40px;
+	line-height: 1;
+	@include size-sm {
+		font-size: 60px;
+	}
+	@include size-md {
+		font-size: 80px;
+	}
+}
+h1, h2 {
+	font-family: 'Updock', cursive;
+	font-weight: 400;
+	padding-bottom: 10px;
+	margin: 0 20px 0 0;
+}
+h3 {
+	font-size: 18px;
+	@include size-md {
+		font-size: 22px;
+	}
+}
+h5 {
+	font-size: 24px;
+}
+/* se agrega h5 por las cards de producto con bootstrap */
+h3, h5 {
+	margin-bottom: 0;
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+p {
+	margin: 2em 0;
+}
+/* .item-details applies to Events (index.html) and HowTos (index.html) Sections */
+.item-details h3 + p {	/* Sibling Combinator - only the element directly after */
+	font-size: italic;	
+}
+.item-details h3 ~ p {	/* Sibling Combinator - any sibling after */
+	margin: 0;
+}
+/* .dash-divider applies to Events (index.html) and HowTos (index.html) Sections*/
+.dashed-divider > article {		/* Child Combinator - any direct child after */
+	border-bottom: 1px dashed #343434; /* Dark Gray (Almost black) */
+	padding: 25px 0;
+}
+.dashed-divider > article:last-of-type {	/* to avoid dashed line in the last item */
+	border-bottom: none;
+}
+/* parametros de la curva creada en SVG, en mobile, no se muestra, se habilita desde los 576px */
+.curva-SVG {		
+	display: none;
+	height: 150px;
+	overflow: hidden;
+	@include size-sm {
+		display: inherit;
+	}
+}
+.content-wrap {
+	max-width: 1200px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 10px 0 5px;
+}

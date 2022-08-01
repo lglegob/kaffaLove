@@ -1,0 +1,56 @@
+/***************************************************************************
+***                          Products (index.html)                       ***
+***************************************************************************/
+
+.products {
+	background: #F9F9F9; /* Cultured (Almost White) */
+	/* padding-bottom: 60px; se elimina para permitir la curva en svg*/ 
+}
+.products-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.product-item {
+	border: 1px solid #F9E0D9; /* Misty Rose */;
+	margin: 20px;
+	max-width: 300px;
+	width: 90vw;
+	background-color: white;
+	border-radius: 30px;
+	padding: 20px;
+    & h3 {
+        margin-top: 0;
+    }
+    & p {
+        text-align: center;
+    }
+}
+/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+.product-image {    
+	max-width: 260px;
+	max-height: 290px;
+	height: 90vw;
+	margin: 10px;
+	display: flex;	
+	justify-content: center;
+	align-content: center;
+}
+.products {
+    & img {
+        max-width: 260px;
+        max-height: 290px;
+        width: 90%;
+    }
+    & .btn {
+        color: #F9F9F9; /* Cultured (Almost White) */
+        background: #BF1E2E; /* Red NCS */
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 4px;
+        display: inline-block;
+        &:hover {
+            background: rgba(67, 146, 241, 60%); /* Dodger Blue */
+        }
+    }   
+}

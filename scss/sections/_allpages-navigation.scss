@@ -1,0 +1,46 @@
+/***************************************************************************
+***                         Navigation (All Pages)                       ***
+***************************************************************************/
+
+.navigation {
+	top: 10px;
+	background-color: #F9F9F9; /* Cultured (Almost White) */;
+	/* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
+    @include size-md {
+        display: inherit;
+    }
+    & .btn {
+        font-size: 12px;
+        color: #F9F9F9; /* Cultured (Almost White) */
+        background: #BF1E2E; /* Red NCS */
+        text-decoration: none;
+        padding: 4px;
+        border-radius: 4px;
+        margin:5px;
+        width: 120px;
+        display: inline-block;
+        @include size-sm {
+            font-size: 20px;
+            width: 170px;
+        }
+        &:hover {
+            background: rgba(67, 146, 241, 60%); /* Dodger Blue */
+        }
+    }
+    
+}
+
+.navigation-list {
+	list-style-type: none;
+	padding: 0 0 10px;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.navbar {
+    @include size-md {
+        display: none;
+    }
+}

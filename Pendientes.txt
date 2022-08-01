@@ -4,6 +4,7 @@ Incluir el mapa de google maps (footer?? o seccion adicional?)
 Completar contenido HowTos
 Definir que hacer con la encuesta
 Crear paginas adicionales para la carta
+Mejorar la curva SVG roja (Sobrelapo??)
 
 
 LISTOS
