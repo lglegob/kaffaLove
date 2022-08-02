@@ -3,8 +3,8 @@
 ***************************************************************************/
 
 header {
-	background: #F9F9F9; /* Cultured (Almost White) */
-	color: #BF1E2E; /* Red NCS */
+	background: $clr-light-background;
+	color: $clr-main-color;
 	text-align: center;
 	background-size: cover;
 	background-position: top right;

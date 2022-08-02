@@ -4,7 +4,7 @@
 
 .quienes-somos {
 	/* padding-bottom: 90px; se elimina para permitir la curva en svg*/ 
-	background-color: #F9F9F9; /* Cultured (Almost White) */;
+	background-color: $clr-light-background; 
     /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
     & img {
         max-width: 100%;

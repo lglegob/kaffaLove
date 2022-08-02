@@ -3,7 +3,7 @@
 ***************************************************************************/
 
 .index-grid {
-	background: #F9F9F9; /* Cultured (Almost White) */
+	background: $clr-light-background;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-areas: 

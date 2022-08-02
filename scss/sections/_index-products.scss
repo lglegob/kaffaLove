@@ -3,7 +3,7 @@
 ***************************************************************************/
 
 .products {
-	background: #F9F9F9; /* Cultured (Almost White) */
+	background: $clr-light-background;
 	/* padding-bottom: 60px; se elimina para permitir la curva en svg*/ 
 }
 .products-flex-container {
@@ -12,7 +12,7 @@
 	justify-content: center;
 }
 .product-item {
-	border: 1px solid #F9E0D9; /* Misty Rose */;
+	border: 1px solid $clr-main-color-diluted;
 	margin: 20px;
 	max-width: 300px;
 	width: 90vw;
@@ -43,8 +43,8 @@
         width: 90%;
     }
     & .btn {
-        color: #F9F9F9; /* Cultured (Almost White) */
-        background: #BF1E2E; /* Red NCS */
+        color: $clr-light-background;
+        background: $clr-main-color;
         text-decoration: none;
         padding: 8px;
         border-radius: 4px;

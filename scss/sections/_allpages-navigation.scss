@@ -4,15 +4,15 @@
 
 .navigation {
 	top: 10px;
-	background-color: #F9F9F9; /* Cultured (Almost White) */;
+	background-color: $clr-light-background;
 	/* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
     @include size-md {
         display: inherit;
     }
     & .btn {
         font-size: 12px;
-        color: #F9F9F9; /* Cultured (Almost White) */
-        background: #BF1E2E; /* Red NCS */
+        color: $clr-light-background;
+        background: $clr-main-color;
         text-decoration: none;
         padding: 4px;
         border-radius: 4px;

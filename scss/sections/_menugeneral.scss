@@ -3,7 +3,7 @@
 ***************************************************************************/
 
 .menu-global {
-	background-color: #F9F9F9; /* Cultured (Almost White) */;
+	background-color: $clr-light-background;
 }
 .menu-container {
 	padding-bottom: 50px;
@@ -13,7 +13,7 @@
         font-size: 60px;
         padding: 30px 40px 0;
         line-height: 1;
-        color:  #BF1E2E; /* Red NCS */
+        color:  $clr-main-color; 
         @include size-md {
             font-size: 120px;
         }
