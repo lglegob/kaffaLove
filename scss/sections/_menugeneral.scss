@@ -1,0 +1,56 @@
+/***************************************************************************
+***                          menu-global (menu.html)                     ***
+***************************************************************************/
+
+.menu-global {
+	background-color: $clr-light-background;
+}
+.menu-container {
+	padding-bottom: 50px;
+    & h3 {
+        font-family: 'Updock', cursive;
+        font-weight: 400;
+        font-size: 60px;
+        padding: 30px 40px 0;
+        line-height: 1;
+        color:  $clr-main-color; 
+        @include size-md {
+            font-size: 120px;
+        }
+    }  
+    & a {
+        text-decoration: none;
+    }      
+}
+.menu-global-items {
+	width: 90%;
+	height: 200px;
+	background-size: cover;
+	background-position: top right;
+	border-radius: 20px;
+}
+.menu-global-item01 {
+	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+.menu-global-item02 {
+	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+.menu-global-item03 {
+	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+.menu-global-item04 {
+	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+.menu-global-item05 {
+	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+.menu-global-item06 {
+	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
+.menu-global-article {		
+	transition: all 2s ease-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,139 @@
+/***************************************************************************
+***                         Global Grids (All Pages)                     ***
+***************************************************************************/
+
+.index-grid {
+	background: $clr-light-background;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"products"
+	"events"
+	"howTos"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"navigation    kaffa-motto"
+		"products      products"
+		"events        events"
+		"howTos        howTos"
+		;
+	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
+		grid-template-areas: 
+		"navigation    kaffa-motto"
+		"products      products"
+		"events        howTos"
+		;
+	}
+}
+
+.menu-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"menu-global"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"navigation		kaffa-motto"
+		"menu-global	menu-global"
+		;
+	}
+}
+
+.quienessomos-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"quienes-somos"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"navigation		kaffa-motto"
+		"quienes-somos	quienes-somos"
+		;
+	}
+}
+
+.leyenda-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"leyenda"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"navigation		kaffa-motto"
+		"leyenda		leyenda"
+		;
+	}
+}
+
+.contacto-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"encuesta"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"navigation		kaffa-motto"
+		"encuesta		encuesta"
+		;
+	}
+}
+
+/* All Pages */
+.navigation {		
+	grid-area: navigation;
+}
+.kaffa-motto {		
+	grid-area: kaffa-motto;
+}
+
+/* index page */
+.products {			
+	grid-area: products;
+}
+.events {			
+	grid-area: events;
+}
+.howTos {			
+	grid-area: howTos;
+}
+/* menu page */	
+.menu-global {		
+	grid-area: menu-global;
+}
+
+/* quienes-somos page */
+.quienes-somos {	
+	grid-area: quienes-somos;
+}
+
+/* leyenda page */
+.leyenda {			
+	grid-area: leyenda;
+}
+
+/* contacto page */
+.encuesta {			
+	grid-area: encuesta;
+}

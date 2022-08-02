@@ -1,0 +1,24 @@
+/***************************************************************************
+***                        Footer (All Pages)                            ***
+***************************************************************************/
+
+footer {
+	background: $clr-main-color;
+	color: $clr-light-background;
+	text-align: center;
+}
+
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    & a {
+        padding: 15px;
+        display: inline-block;
+        &:hover {
+            opacity: 60%;
+        }
+    }
+}

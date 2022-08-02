@@ -1,0 +1,40 @@
+/***************************************************************************
+***              quienes-somos Nested Grid (quienesSomos.html)           ***
+***************************************************************************/
+
+.quienes-somos-nested-grid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 20px;
+	grid-template-areas: 
+	"h2-quienes-somos"
+	"quienes-somos-photo01"
+	"quienes-somos-texto01"
+	"quienes-somos-photo02"
+	"quienes-somos-texto02"
+	;
+	@include size-lg {
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+		"h2-quienes-somos		h2-quienes-somos"
+		"quienes-somos-texto01	quienes-somos-photo01"
+		"quienes-somos-photo02	quienes-somos-texto02"
+		;
+	}
+}
+
+.h2-quienes-somos {
+	grid-area: h2-quienes-somos;
+}
+.quienes-somos-texto01 {
+	grid-area: quienes-somos-texto01;
+}
+.quienes-somos-texto02 {
+	grid-area: quienes-somos-texto02;
+}
+.quienes-somos-photo01 {
+	grid-area: quienes-somos-photo01;
+}
+.quienes-somos-photo02 {
+	grid-area: quienes-somos-photo02;
+}

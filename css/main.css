@@ -1,0 +1,821 @@
+@charset "UTF-8";
+/***************************************************************************
+***                               Resets                                 ***
+***************************************************************************/
+/* Light Reset  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box Model Fix  */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/***************************************************************************
+***                            Color Palette                             ***
+***************************************************************************/
+/*
+https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
+#BF1E2E Red NCS 					- rgb(191,30,46)
+#343434 Dark Gray (Almost black) 	- rgb(52,52,52)
+#4392F1 Dodger Blue 				- rgb(67,146,241)
+#F9E0D9 Misty Rose 					- rgb(249,224,217)
+#F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
+*/
+/***************************************************************************
+***                        Global Styles (All Pages)                     ***
+***************************************************************************/
+body {
+  color: #343434;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+/* Parametro para solucionar el scroll horizontal, que se deba con la animacion de Animista en el header */
+html, body {
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 0.9;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 85px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 150px;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 576px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 80px;
+  }
+}
+
+h1, h2 {
+  font-family: 'Updock', cursive;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin: 0 20px 0 0;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+}
+
+/* se agrega h5 por las cards de producto con bootstrap */
+h3, h5 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  margin: 2em 0;
+}
+
+/* .item-details applies to Events (index.html) and HowTos (index.html) Sections */
+.item-details h3 + p {
+  /* Sibling Combinator - only the element directly after */
+  font-size: italic;
+}
+
+.item-details h3 ~ p {
+  /* Sibling Combinator - any sibling after */
+  margin: 0;
+}
+
+/* .dash-divider applies to Events (index.html) and HowTos (index.html) Sections*/
+.dashed-divider > article {
+  /* Child Combinator - any direct child after */
+  border-bottom: 1px dashed #343434;
+  /* Dark Gray (Almost black) */
+  padding: 25px 0;
+}
+
+.dashed-divider > article:last-of-type {
+  /* to avoid dashed line in the last item */
+  border-bottom: none;
+}
+
+/* parametros de la curva creada en SVG, en mobile, no se muestra, se habilita desde los 576px */
+.curva-SVG {
+  display: none;
+  height: 150px;
+  overflow: hidden;
+}
+
+.curva-SVG svg {
+  height: 100%;
+  width: 100%;
+}
+
+.curva-SVG svg path {
+  stroke: none;
+  fill: #BF1E2E;
+}
+
+@media screen and (min-width: 576px) {
+  .curva-SVG {
+    display: inherit;
+  }
+}
+
+.content-wrap {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0 5px;
+}
+
+/***************************************************************************
+***                         Header (All Pages)                           ***
+***************************************************************************/
+header {
+  background: #F9F9F9;
+  color: #BF1E2E;
+  text-align: center;
+  background-size: cover;
+  background-position: top right;
+}
+
+header h2 {
+  padding-left: 20px;
+  /* Padding para compensar un poco mas de alto de la foto de background en anchos amplios */
+}
+
+@media screen and (min-width: 992px) {
+  header h2 {
+    padding-bottom: 50px;
+  }
+}
+
+.logo-central {
+  max-width: 220px;
+  max-height: 220px;
+  height: 90vw;
+  padding: 20px 0;
+  margin: 0 auto;
+  align-items: center;
+  opacity: 70%;
+}
+
+.logo-central:hover {
+  opacity: 40%;
+}
+
+.navigation {
+  display: none;
+}
+
+/* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
+.header-image-background {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top right;
+  z-index: -5;
+}
+
+.header-index {
+  background-image: url(../images/KaffaLove-FotoExterior-750px-471px.jpg);
+}
+
+.header-leyenda {
+  background-image: url(../images/KaffaLove-FotoMesasExternas-750px-471px.jpg);
+}
+
+.header-quienessomos {
+  background-image: url(../images/KaffaLove-FotoInteriornavideno-750px-471px.jpg);
+}
+
+.header-menu {
+  background-image: url(../images/KaffaLove-FotoCafetera-750px-471px.jpg);
+}
+
+.header-contacto {
+  background-image: url(../images/KaffaLove-FotoInterior-750px-471px.jpg);
+}
+
+/***************************************************************************
+***                         Global Grids (All Pages)                     ***
+***************************************************************************/
+.index-grid {
+  background: #F9F9F9;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "navigation" "kaffa-motto" "products" "events" "howTos";
+}
+
+@media screen and (min-width: 768px) {
+  .index-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "navigation    kaffa-motto" "products      products" "events        events" "howTos        howTos";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .index-grid {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "navigation    kaffa-motto" "products      products" "events        howTos";
+  }
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "navigation" "kaffa-motto" "menu-global";
+}
+
+@media screen and (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "navigation		kaffa-motto" "menu-global	menu-global";
+  }
+}
+
+.quienessomos-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "navigation" "kaffa-motto" "quienes-somos";
+}
+
+@media screen and (min-width: 768px) {
+  .quienessomos-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "navigation		kaffa-motto" "quienes-somos	quienes-somos";
+  }
+}
+
+.leyenda-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "navigation" "kaffa-motto" "leyenda";
+}
+
+@media screen and (min-width: 768px) {
+  .leyenda-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "navigation		kaffa-motto" "leyenda		leyenda";
+  }
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "navigation" "kaffa-motto" "encuesta";
+}
+
+@media screen and (min-width: 768px) {
+  .contacto-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "navigation		kaffa-motto" "encuesta		encuesta";
+  }
+}
+
+/* All Pages */
+.navigation {
+  grid-area: navigation;
+}
+
+.kaffa-motto {
+  grid-area: kaffa-motto;
+}
+
+/* index page */
+.products {
+  grid-area: products;
+}
+
+.events {
+  grid-area: events;
+}
+
+.howTos {
+  grid-area: howTos;
+}
+
+/* menu page */
+.menu-global {
+  grid-area: menu-global;
+}
+
+/* quienes-somos page */
+.quienes-somos {
+  grid-area: quienes-somos;
+}
+
+/* leyenda page */
+.leyenda {
+  grid-area: leyenda;
+}
+
+/* contacto page */
+.encuesta {
+  grid-area: encuesta;
+}
+
+/***************************************************************************
+***                         Navigation (All Pages)                       ***
+***************************************************************************/
+.navigation {
+  top: 10px;
+  background-color: #F9F9F9;
+  /* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: inherit;
+  }
+}
+
+.navigation .btn {
+  font-size: 12px;
+  color: #F9F9F9;
+  background: #BF1E2E;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 5px;
+  width: 120px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 576px) {
+  .navigation .btn {
+    font-size: 20px;
+    width: 170px;
+  }
+}
+
+.navigation .btn:hover {
+  background: #4392f1;
+  /* Dodger Blue */
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0 0 10px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/***************************************************************************
+***                      Kaffa-Motto (All Pages)                         ***
+***************************************************************************/
+.kaffa-motto {
+  background-color: #F9F9F9;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/***************************************************************************
+***                        Footer (All Pages)                            ***
+***************************************************************************/
+footer {
+  background: #BF1E2E;
+  color: #F9F9F9;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+.contact-list a:hover {
+  opacity: 60%;
+}
+
+/***************************************************************************
+***                          Products (index.html)                       ***
+***************************************************************************/
+.products {
+  background: #F9F9F9;
+  /* padding-bottom: 60px; se elimina para permitir la curva en svg*/
+}
+
+.products-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  border: 1px solid #F9E0D9;
+  margin: 20px;
+  max-width: 300px;
+  width: 90vw;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.product-item h3 {
+  margin-top: 0;
+}
+
+.product-item p {
+  text-align: center;
+}
+
+/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+.product-image {
+  max-width: 260px;
+  max-height: 290px;
+  height: 90vw;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.products img {
+  max-width: 260px;
+  max-height: 290px;
+  width: 90%;
+}
+
+.products .btn {
+  color: #F9F9F9;
+  background: #BF1E2E;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.products .btn:hover {
+  background: #4392f1;
+  /* Dodger Blue */
+}
+
+/***************************************************************************
+***                          HowTos (index.html)                         ***
+***************************************************************************/
+/* The padding is added, to prevent the coffee cups to hide the text */
+.howTos {
+  background-image: url(../images/CoffeeMuralBlurry.jpg);
+  background-size: cover;
+  background-position: top left;
+  padding-bottom: 400px;
+}
+
+/***************************************************************************
+***                         Events (index.html)                          ***
+***************************************************************************/
+.events {
+  background: #F9E0D9;
+  padding-bottom: 50px;
+}
+
+/***************************************************************************
+***              quienes-somos Nested Grid (quienesSomos.html)           ***
+***************************************************************************/
+.quienes-somos-nested-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 20px;
+  grid-template-areas: "h2-quienes-somos" "quienes-somos-photo01" "quienes-somos-texto01" "quienes-somos-photo02" "quienes-somos-texto02";
+}
+
+@media screen and (min-width: 992px) {
+  .quienes-somos-nested-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "h2-quienes-somos		h2-quienes-somos" "quienes-somos-texto01	quienes-somos-photo01" "quienes-somos-photo02	quienes-somos-texto02";
+  }
+}
+
+.h2-quienes-somos {
+  grid-area: h2-quienes-somos;
+}
+
+.quienes-somos-texto01 {
+  grid-area: quienes-somos-texto01;
+}
+
+.quienes-somos-texto02 {
+  grid-area: quienes-somos-texto02;
+}
+
+.quienes-somos-photo01 {
+  grid-area: quienes-somos-photo01;
+}
+
+.quienes-somos-photo02 {
+  grid-area: quienes-somos-photo02;
+}
+
+/***************************************************************************
+***               quienes-somos (quienesSomos.html)                      ***
+***************************************************************************/
+.quienes-somos {
+  /* padding-bottom: 90px; se elimina para permitir la curva en svg*/
+  background-color: #F9F9F9;
+  /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
+}
+
+.quienes-somos img {
+  max-width: 100%;
+  max-height: 750px;
+}
+
+@media screen and (min-width: 768px) {
+  .quienes-somos img {
+    padding: 20px;
+  }
+}
+
+.quienes-somos p {
+  text-align: justify;
+}
+
+/* Para centrar la Imagen, se usa Flex de un solo elemento */
+.quienes-somos-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/***************************************************************************
+***                menu-general Nested Grid (menu.html)                  ***
+***************************************************************************/
+.menu-general-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "menu-general-article01" "menu-general-article02" "menu-general-article03" "menu-general-article04" "menu-general-article05" "menu-general-article06";
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-general-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "menu-general-article01		menu-general-article02" "menu-general-article03		menu-general-article04" "menu-general-article05		menu-general-article06";
+  }
+}
+
+.menu-general-article01 {
+  grid-area: menu-general-article01;
+}
+
+.menu-general-article02 {
+  grid-area: menu-general-article02;
+}
+
+.menu-general-article03 {
+  grid-area: menu-general-article03;
+}
+
+.menu-general-article04 {
+  grid-area: menu-general-article04;
+}
+
+.menu-general-article05 {
+  grid-area: menu-general-article05;
+}
+
+.menu-general-article06 {
+  grid-area: menu-general-article06;
+}
+
+/***************************************************************************
+***                          menu-global (menu.html)                     ***
+***************************************************************************/
+.menu-global {
+  background-color: #F9F9F9;
+}
+
+.menu-container {
+  padding-bottom: 50px;
+}
+
+.menu-container h3 {
+  font-family: 'Updock', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  padding: 30px 40px 0;
+  line-height: 1;
+  color: #BF1E2E;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container h3 {
+    font-size: 120px;
+  }
+}
+
+.menu-container a {
+  text-decoration: none;
+}
+
+.menu-global-items {
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  background-position: top right;
+  border-radius: 20px;
+}
+
+.menu-global-item01 {
+  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+
+.menu-global-item02 {
+  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+
+.menu-global-item03 {
+  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+
+.menu-global-item04 {
+  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+
+.menu-global-item05 {
+  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+}
+
+.menu-global-item06 {
+  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+}
+
+/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
+.menu-global-article {
+  transition: all 2s ease-out;
+}
+
+.menu-global-article:hover {
+  transform: scale(1.1);
+}
+
+/***************************************************************************
+***                  Leyenda (laLeyendaDeKaffa.html)                     ***
+***************************************************************************/
+.leyenda {
+  /* padding-bottom: 90px; se elimina para permitir la curva en svg*/
+  background-color: #F9F9F9;
+}
+
+/***************************************************************************
+***                 Encuesta de Satisfaccion (contacto.html)             ***
+***************************************************************************/
+.encuesta {
+  /* margin-bottom: 30px; se elimina para permitir la curva en svg*/
+  background-color: #F9F9F9;
+}
+
+@media screen and (min-width: 768px) {
+  /* Parametros Animacion Animista */
+  /* Eliminando el color de background (Para cuando la imagen no esta disponible) para permitir el background animado de animista.net, cuando tenia el problema que al agregar bootstrap, la imagen de animista se perdia, se soluciono, cambiando el background: inherit a background: none */
+  header {
+    background: none;
+  }
+  /* Eliminando la imagen de background del header para mobile, para que se pueda ver la animada por animista.net */
+  .header-index, .header-leyenda, .header-quienessomos, .header-menu, .header-contacto {
+    background-image: none;
+  }
+  /* Height animacion Animista - Para asegurar que la animacion de la foto del header este contenida en esta altura, que es la que originalmente para tamaños mayores de 750px tomaba el header*/
+  .header-image-background {
+    height: 506.4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .header-image-background {
+    height: 546.4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .index-header-image-background {
+    background-image: url(../images/KaffaLove-FotoExterior-1200px-754px.jpg);
+  }
+  .leyenda-header-image-background {
+    background-image: url(../images/KaffaLove-FotoMesasExternas-1200px-754px.jpg);
+  }
+  .quienessomos-header-image-background {
+    background-image: url(../images/KaffaLove-FotoInteriornavideno-1200px-754px.jpg);
+  }
+  .menu-header-image-background {
+    background-image: url(../images/KaffaLove-FotoCafetera-1200px-754px.jpg);
+  }
+  .contacto-header-image-background {
+    background-image: url(../images/KaffaLove-FotoInterior-1200px-754px.jpg);
+  }
+  /* Generated by Animista on 2022-7-20 20:54:59 */
+  .kenburns-top {
+    -webkit-animation: kenburns-top 20s ease-out both;
+    animation: kenburns-top 20s ease-out both;
+  }
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.5) translateY(-15px);
+      transform: scale(1.5) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.5) translateY(-15px);
+      transform: scale(1.5) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .index-header-image-background {
+    background-image: url(../images/KaffaLove-FotoExterior-3657px-2298px.jpg);
+  }
+  .leyenda-header-image-background {
+    background-image: url(../images/KaffaLove-FotoMesasExternas-3657px-2298px.jpg);
+  }
+  .quienessomos-header-image-background {
+    background-image: url(../images/KaffaLove-FotoInteriornavideno-3657px-2298px.jpg);
+  }
+  .menu-header-image-background {
+    background-image: url(../images/KaffaLove-FotoCafetera-3657px-2298px.jpg);
+  }
+  .contacto-header-image-background {
+    background-image: url(../images/KaffaLove-FotoInterior-3657px-2298px.jpg);
+  }
+}
