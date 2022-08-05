@@ -36,6 +36,7 @@
 	justify-content: center;
 	align-content: center;
 }
+
 .products {
     & img {
         max-width: 260px;
@@ -50,7 +51,7 @@
         border-radius: 4px;
         display: inline-block;
         &:hover {
-            background: rgba(67, 146, 241, 60%); /* Dodger Blue */
+            background: $clr-secondary-color-rgba; /* Dodger Blue */
         }
     }   
 }

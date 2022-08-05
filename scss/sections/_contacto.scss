@@ -5,4 +5,11 @@
 .encuesta {
 	/* margin-bottom: 30px; se elimina para permitir la curva en svg*/ 
 	background-color: $clr-light-background;
+	form { 
+		padding-bottom: 50px;
+		.input-group {
+			padding: 20px 0;
+		}
+	}
+
 }

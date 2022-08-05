@@ -20,8 +20,8 @@ footer {
         display: inline-block;
 		transition: all 1s ease-out;
         &:hover {
-            opacity: 60%;
-			transform: scale(1.6);
+            opacity: 70%;
+			transform: translateY(-20%) scale(1.6);
         }
     }
 }

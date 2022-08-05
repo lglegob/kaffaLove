@@ -22,15 +22,18 @@
     <header class="header-contacto">
       <!-- Navbar creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid container-hamburger">
+          <input type="checkbox" class="checkbox navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger-icon">
+            <span class="hamburger-line hamburger-topline"></span>
+            <span class="hamburger-line hamburger-middleline"></span>
+            <span class="hamburger-line hamburger-bottomline"></span>
+          </div>
           <a class="navbar-brand" href="../index.html">
             <img src="../images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" width="50">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarToggler-kaffaLove">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
@@ -94,7 +97,59 @@
 
         <!-- *******************  ENCUESTA DE SATISFACCION ******************* -->
         <section class="encuesta">
-          <div class="content-wrap">
+
+          <form class="content-wrap">
+            <h2>Encuesta de Satisfacción</h2>
+            <p>Llena por favor la encuesta de satisfacción, déjanos saber como te parecieron los productos, nuestra atención, que te gusto, y sobre todo en que consideras que podemos mejorar para hacer de tu próxima visita, una experiencia fantástica. Gracias por visitarnos. Somos Kaffa.Love!</p>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text">Nombres y Apellidos</span>
+              <input type="text" aria-label="First name" class="form-control">
+              <input type="text" aria-label="Last name" class="form-control">
+            </div>
+
+            <label for="basic-url" class="form-label">Tu E-mail</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Usuario" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="ejemplo.com" aria-label="Server">
+            </div>
+
+            <label for="basic-url" class="form-label">Como conociste a Kaffa?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="comoconociste" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Recomendacion de un conocido
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="comoconociste" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Por Instagram
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="comoconociste" id="flexRadioDefault3" checked>
+              <label class="form-check-label" for="flexRadioDefault3">
+                Visitando el Mall Plaza77
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="comoconociste" id="flexRadioDefault4" checked>
+              <label class="form-check-label" for="flexRadioDefault4">
+                Por anuncios de Google
+              </label>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">Cuentanos de tu experiencia.</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+          </form>
+          
+          
+          <!-- <div class="content-wrap">
             <h2>Encuesta de Satisfacción</h2>
             <p>Llena por favor la encuesta de satisfacción, déjanos saber como te parecieron los productos, nuestra atención, que te gusto, y sobre todo en que consideras que podemos mejorar para hacer de tu próxima visita, una experiencia fantástica. Gracias por visitarnos. Somos Kaffa.Love!</p>
             <form action="#">
@@ -146,7 +201,7 @@
               <input type="reset" value="Volver a empezar">
               <br>
             </form>
-          </div>
+          </div> -->
           <div class="curva-SVG">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none">
               <path d="M0.00,49.99 C149.21,256.07 281.26,-112.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z">

@@ -29,6 +29,9 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
 */
 /***************************************************************************
+***                           Variables Animista                         ***
+***************************************************************************/
+/***************************************************************************
 ***                        Global Styles (All Pages)                     ***
 ***************************************************************************/
 body {
@@ -39,7 +42,7 @@ body {
   max-width: 100%;
 }
 
-/* Parametro para solucionar el scroll horizontal, que se deba con la animacion de Animista en el header */
+/* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
 html, body {
   overflow-x: hidden;
 }
@@ -167,10 +170,68 @@ p {
 }
 
 .content-wrap {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 85%;
   margin: 0 auto;
   padding: 10px 0 5px;
+}
+
+.container-hamburger .checkbox {
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 4;
+  opacity: 0;
+}
+
+.container-hamburger .hamburger-icon {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-hamburger .hamburger-icon .hamburger-line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 12px;
+  background: #BF1E2E;
+}
+
+.container-hamburger .hamburger-icon .hamburger-topline {
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.container-hamburger .hamburger-icon .hamburger-middleline {
+  transition: transform 0.2s ease-in-out;
+}
+
+.container-hamburger .hamburger-icon .hamburger-bottomline {
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.container-hamburger input[type="checkbox"]:checked ~ .hamburger-icon .hamburger-topline {
+  transform: rotate(45deg);
+}
+
+.container-hamburger input[type="checkbox"]:checked ~ .hamburger-icon .hamburger-middleline {
+  transform: scaleY(0);
+}
+
+.container-hamburger input[type="checkbox"]:checked ~ .hamburger-icon .hamburger-bottomline {
+  transform: rotate(-45deg);
 }
 
 /***************************************************************************
@@ -250,10 +311,13 @@ header h2 {
 /***************************************************************************
 ***                         Global Grids (All Pages)                     ***
 ***************************************************************************/
-.index-grid {
-  background: #F9F9F9;
+.index-grid, .menu-grid, .quienessomos-grid, .leyenda-grid {
   display: grid;
   grid-template-columns: 100%;
+}
+
+.index-grid {
+  background: #F9F9F9;
   grid-template-areas: "navigation" "kaffa-motto" "products" "events" "howTos";
 }
 
@@ -272,8 +336,6 @@ header h2 {
 }
 
 .menu-grid {
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "navigation" "kaffa-motto" "menu-global";
 }
 
@@ -284,9 +346,13 @@ header h2 {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .menu-grid {
+    grid-template-columns: 60% 40%;
+  }
+}
+
 .quienessomos-grid {
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "navigation" "kaffa-motto" "quienes-somos";
 }
 
@@ -297,9 +363,13 @@ header h2 {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .quienessomos-grid {
+    grid-template-columns: 60% 40%;
+  }
+}
+
 .leyenda-grid {
-  display: grid;
-  grid-template-columns: 100%;
   grid-template-areas: "navigation" "kaffa-motto" "leyenda";
 }
 
@@ -307,6 +377,12 @@ header h2 {
   .leyenda-grid {
     grid-template-columns: 40% 60%;
     grid-template-areas: "navigation		kaffa-motto" "leyenda		leyenda";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .leyenda-grid {
+    grid-template-columns: 60% 40%;
   }
 }
 
@@ -320,6 +396,12 @@ header h2 {
   .contacto-grid {
     grid-template-columns: 40% 60%;
     grid-template-areas: "navigation		kaffa-motto" "encuesta		encuesta";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contacto-grid {
+    grid-template-columns: 60% 40%;
   }
 }
 
@@ -454,8 +536,8 @@ footer {
 }
 
 .contact-list a:hover {
-  opacity: 60%;
-  transform: scale(1.6);
+  opacity: 70%;
+  transform: translateY(-20%) scale(1.6);
 }
 
 /***************************************************************************
@@ -735,6 +817,17 @@ footer {
   background-color: #F9F9F9;
 }
 
+.encuesta form {
+  padding-bottom: 50px;
+}
+
+.encuesta form .input-group {
+  padding: 20px 0;
+}
+
+/***************************************************************************
+***                  Animacion Animista Headers                          ***
+***************************************************************************/
 @media screen and (min-width: 768px) {
   /* Parametros Animacion Animista */
   /* Eliminando el color de background (Para cuando la imagen no esta disponible) para permitir el background animado de animista.net, cuando tenia el problema que al agregar bootstrap, la imagen de animista se perdia, se soluciono, cambiando el background: inherit a background: none */

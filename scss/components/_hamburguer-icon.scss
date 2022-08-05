@@ -1,0 +1,51 @@
+.container-hamburger {
+    .checkbox {
+        display: block;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 4;
+        opacity: 0;
+    }
+    .hamburger-icon {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .hamburger-line {
+            display: block;
+            height: 3px;
+            width: 100%;
+            border-radius: 12px;
+            background: $clr-main-color;
+        }
+        .hamburger-topline {
+            transform-origin: 0% 0%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .hamburger-middleline {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hamburger-bottomline {
+            transform-origin: 0% 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    input[type="checkbox"]:checked~.hamburger-icon .hamburger-topline {
+        transform: rotate(45deg);
+    }
+    input[type="checkbox"]:checked~.hamburger-icon .hamburger-middleline {
+        transform: scaleY(0);
+    }
+    input[type="checkbox"]:checked~.hamburger-icon .hamburger-bottomline {
+        transform: rotate(-45deg);
+    }
+}

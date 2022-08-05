@@ -9,7 +9,7 @@ body {
 	line-height: 1.5;
 	max-width: 100%;
 }
-/* Parametro para solucionar el scroll horizontal, que se deba con la animacion de Animista en el header */
+/* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
 html, body {  
 	overflow-x: hidden;
 }
@@ -101,7 +101,7 @@ p {
 	}
 }
 .content-wrap {
-	max-width: 1200px;
+	max-width: 1400px;
 	width: 85%;
 	margin: 0 auto;
 	padding: 10px 0 5px;

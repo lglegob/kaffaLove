@@ -1,3 +1,7 @@
+/***************************************************************************
+***                  Animacion Animista Headers                          ***
+***************************************************************************/
+
 @include size-md {
 
 	/* Parametros Animacion Animista */
@@ -11,9 +15,9 @@
 	}
 	/* Height animacion Animista - Para asegurar que la animacion de la foto del header este contenida en esta altura, que es la que originalmente para tamaños mayores de 750px tomaba el header*/
 	.header-image-background {
-		height: 506.4px;
+		height: $initial-height-image-header;
         @include size-lg {
-            height: 546.4px;
+            height: $initial-height-image-header+40;
         }
 	}
 

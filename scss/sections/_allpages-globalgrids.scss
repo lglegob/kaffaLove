@@ -2,10 +2,15 @@
 ***                         Global Grids (All Pages)                     ***
 ***************************************************************************/
 
-.index-grid {
-	background: $clr-light-background;
+// placeholders para cambiar la distribucion de los grids de todas las paginas con una sola linea, usando @extend //
+%grid-size-sm-placeholder {
 	display: grid;
 	grid-template-columns: 100%;
+}
+
+.index-grid {
+	background: $clr-light-background;
+	@extend %grid-size-sm-placeholder;
 	grid-template-areas: 
 	"navigation"
 	"kaffa-motto"
@@ -33,8 +38,7 @@
 }
 
 .menu-grid {
-	display: grid;
-	grid-template-columns: 100%;
+	@extend %grid-size-sm-placeholder;
 	grid-template-areas: 
 	"navigation"
 	"kaffa-motto"
@@ -47,11 +51,13 @@
 		"menu-global	menu-global"
 		;
 	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
+	}
 }
 
 .quienessomos-grid {
-	display: grid;
-	grid-template-columns: 100%;
+	@extend %grid-size-sm-placeholder;
 	grid-template-areas: 
 	"navigation"
 	"kaffa-motto"
@@ -64,11 +70,13 @@
 		"quienes-somos	quienes-somos"
 		;
 	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
+	}
 }
 
 .leyenda-grid {
-	display: grid;
-	grid-template-columns: 100%;
+	@extend %grid-size-sm-placeholder;
 	grid-template-areas: 
 	"navigation"
 	"kaffa-motto"
@@ -80,6 +88,9 @@
 		"navigation		kaffa-motto"
 		"leyenda		leyenda"
 		;
+	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
 	}
 }
 
@@ -97,6 +108,9 @@
 		"navigation		kaffa-motto"
 		"encuesta		encuesta"
 		;
+	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
 	}
 }
 
