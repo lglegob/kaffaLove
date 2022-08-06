@@ -28,9 +28,7 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #F9E0D9 Misty Rose 					- rgb(249,224,217)
 #F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
 */
-/***************************************************************************
-***                           Variables Animista                         ***
-***************************************************************************/
+@use "sass:color";
 /***************************************************************************
 ***                        Global Styles (All Pages)                     ***
 ***************************************************************************/
@@ -189,7 +187,7 @@ p {
 
 .container-hamburger .hamburger-icon {
   display: block;
-  height: 26px;
+  height: 25px;
   width: 32px;
   position: absolute;
   top: 25px;
@@ -232,6 +230,10 @@ p {
 
 .container-hamburger input[type="checkbox"]:checked ~ .hamburger-icon .hamburger-bottomline {
   transform: rotate(-45deg);
+}
+
+.container-hamburger:hover .hamburger-line {
+  background: #4392F1;
 }
 
 /***************************************************************************
@@ -578,9 +580,6 @@ footer {
   max-height: 290px;
   height: 90vw;
   margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .products img {
@@ -599,7 +598,7 @@ footer {
 }
 
 .products .btn:hover {
-  background: #4392f1;
+  background: rgba(67, 146, 241, 0.6);
   /* Dodger Blue */
 }
 
@@ -618,7 +617,7 @@ footer {
 ***                         Events (index.html)                          ***
 ***************************************************************************/
 .events {
-  background: #F9E0D9;
+  background: rgba(191, 30, 46, 0.2);
   padding-bottom: 50px;
 }
 
@@ -684,7 +683,7 @@ footer {
 }
 
 /* Para centrar la Imagen, se usa Flex de un solo elemento */
-.quienes-somos-image {
+.quienes-somos-image, .product-image {
   display: flex;
   justify-content: center;
   align-content: center;

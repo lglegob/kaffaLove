@@ -32,9 +32,7 @@
 	max-height: 290px;
 	height: 90vw;
 	margin: 10px;
-	display: flex;	
-	justify-content: center;
-	align-content: center;
+    @extend .quienes-somos-image
 }
 
 .products {

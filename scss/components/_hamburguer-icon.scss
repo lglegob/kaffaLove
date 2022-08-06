@@ -11,7 +11,7 @@
     }
     .hamburger-icon {
         display: block;
-        height: 26px;
+        height: 25px;
         width: 32px;
         position: absolute;
         top: 25px;
@@ -47,5 +47,9 @@
     }
     input[type="checkbox"]:checked~.hamburger-icon .hamburger-bottomline {
         transform: rotate(-45deg);
+    }
+    // Afectar otro elemento con el hover, no va a funcionar realmente en mobiles, prueba en desktop //
+    &:hover .hamburger-line {
+        background: $clr-secondary-color;
     }
 }

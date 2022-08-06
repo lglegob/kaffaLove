@@ -11,15 +11,23 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
 */ 
 
+//************************************************************************//
+///                           Variables Colors                           ///
+//************************************************************************//
+
+@use "sass:color";
+
 $clr-main-color: #BF1E2E; // Red NCS //
+$clr-main-color-rgba: #{transparentize($clr-main-color, 0.8)};
 $clr-main-color-diluted: #F9E0D9; // Misty Rose //
 $clr-light-background: #F9F9F9; // Cultured (Almost White) //
 $clr-dark-gray: #343434; // Dark Gray (Almost black) //
 $clr-secondary-color: #4392F1; // Dodger Blue //
-$clr-secondary-color-rgba: rgba(67, 146, 241, 60%); // Dodger Blue rgba //
+$clr-secondary-color-rgba: #{transparentize($clr-secondary-color, 0.4)};
 
-/***************************************************************************
-***                           Variables Animista                         ***
-***************************************************************************/
+
+//************************************************************************//
+///                           Variables Animista                         ///
+//************************************************************************//
 
 $initial-height-image-header: 506.4px;
