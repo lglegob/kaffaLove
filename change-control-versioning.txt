@@ -1,5 +1,9 @@
 Change Control and Versioning
 
+Version 0.7.4 Change Control (12-column Grid Layout)
+    Adicion estructura nested-grid para pagina leyenda.html. Se usa 12-Column Layout
+
+
 Version 0.7.3 Change Control (sass:color, placeholders, @extend and meta fields)
     Adicion de modulo sass:color para obtener colores derivados de la paleta de colores definida con transparencias.
     Adicion de placeholders en la definicion de los grids generales (No Media Queries).

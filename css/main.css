@@ -187,7 +187,7 @@ p {
 
 .container-hamburger .hamburger-icon {
   display: block;
-  height: 25px;
+  height: 26px;
   width: 32px;
   position: absolute;
   top: 25px;
@@ -200,9 +200,9 @@ p {
 
 .container-hamburger .hamburger-icon .hamburger-line {
   display: block;
-  height: 3px;
+  height: 5px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 2px;
   background: #BF1E2E;
 }
 
@@ -682,8 +682,14 @@ footer {
   text-align: justify;
 }
 
+@media screen and (min-width: 992px) {
+  .quienes-somos p {
+    font-size: 1.2rem;
+  }
+}
+
 /* Para centrar la Imagen, se usa Flex de un solo elemento */
-.quienes-somos-image, .product-image {
+.quienes-somos-image, .product-image, .leyenda-image {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -806,6 +812,107 @@ footer {
 .leyenda {
   /* padding-bottom: 90px; se elimina para permitir la curva en svg*/
   background-color: #F9F9F9;
+  /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
+}
+
+.leyenda img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .leyenda img {
+    padding: 20px;
+  }
+}
+
+.leyenda p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+  .leyenda p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Para centrar la Imagen, se usa Flex de un solo elemento */
+/***************************************************************************
+***                leyenda Nested Grid (quienesSomos.html)               ***
+***************************************************************************/
+.leyenda-nested-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.leyenda-nested-grid > * {
+  grid-column: 1 / span 12;
+}
+
+@media screen and (min-width: 992px) {
+  .leyenda-nested-grid img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .leyenda-nested-grid .leyenda-texto01 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+  .leyenda-nested-grid .leyenda-photo01 {
+    grid-column: 5 / span 8;
+    grid-row: 2;
+    justify-content: flex-end;
+  }
+  .leyenda-nested-grid .leyenda-texto02 {
+    grid-column: 9 / span 4;
+    grid-row: 3;
+  }
+  .leyenda-nested-grid .leyenda-photo02 {
+    grid-column: 1 / span 8;
+    grid-row: 3;
+    justify-content: flex-start;
+  }
+  .leyenda-nested-grid .leyenda-texto03 {
+    grid-column: 1 / span 5;
+    grid-row: 4;
+  }
+  .leyenda-nested-grid .leyenda-photo03 {
+    grid-column: 6 / span 7;
+    grid-row: 4;
+    justify-content: flex-end;
+  }
+  .leyenda-nested-grid .leyenda-texto04 {
+    grid-column: 8 / span 5;
+    grid-row: 5;
+  }
+  .leyenda-nested-grid .leyenda-photo04 {
+    grid-column: 1 / span 7;
+    grid-row: 5;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .leyenda-nested-grid .leyenda-texto03 {
+    grid-column: 1 / span 3;
+  }
+  .leyenda-nested-grid .leyenda-photo03 {
+    grid-column: 4 / span 9;
+  }
+  .leyenda-nested-grid .leyenda-texto04 {
+    grid-column: 10 / span 3;
+  }
+  .leyenda-nested-grid .leyenda-photo04 {
+    grid-column: 1 / span 9;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .leyenda-nested-grid > * {
+    grid-column: 1 / span 12 !important;
+    grid-row: auto !important;
+    justify-content: center !important;
+  }
 }
 
 /***************************************************************************

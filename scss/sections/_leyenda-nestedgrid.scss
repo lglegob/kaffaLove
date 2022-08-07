@@ -1,0 +1,79 @@
+/***************************************************************************
+***                leyenda Nested Grid (quienesSomos.html)               ***
+***************************************************************************/
+
+// Testing 12-column layout with grid //
+
+.leyenda-nested-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 20px;
+	& > * {
+		grid-column: 1 / span 12;
+	}
+	// Modificaciones de Columnas al grid definido arriba (12 columns) y al flex definido en leyenda.scss que se usaba aen tamaños pequeños para centrar la imagen//
+	@include size-lg {
+		img {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.leyenda-texto01 {
+			grid-column: 1 / span 4;
+			grid-row: 2;
+		}
+		.leyenda-photo01 {
+			grid-column: 5 / span 8;
+			grid-row: 2;
+			justify-content: flex-end;
+		}
+		.leyenda-texto02 {
+			grid-column: 9 / span 4;
+			grid-row: 3;
+		}
+		.leyenda-photo02 {
+			grid-column: 1 / span 8;
+			grid-row: 3;
+			justify-content: flex-start;
+		}		
+		.leyenda-texto03 {
+			grid-column: 1 / span 5;
+			grid-row: 4;
+		}
+		.leyenda-photo03 {
+			grid-column: 6 / span 7;
+			grid-row: 4;
+			justify-content: flex-end;
+		}		
+		.leyenda-texto04 {
+			grid-column: 8 / span 5;
+			grid-row: 5;
+		}
+		.leyenda-photo04 {
+			grid-column: 1 / span 7;
+			grid-row: 5;
+			justify-content: flex-start;
+		}
+	}
+
+	@include size-xl {	
+		.leyenda-texto03 {
+			grid-column: 1 / span 3;
+		}
+		.leyenda-photo03 {
+			grid-column: 4 / span 9;
+		}		
+		.leyenda-texto04 {
+			grid-column: 10 / span 3;
+		}
+		.leyenda-photo04 {
+			grid-column: 1 / span 9;
+		}
+	}
+	@include size-xxl { // Vuelve a verse mejor una sola columna //
+		& > * {
+			grid-column: 1 / span 12 !important; 
+			grid-row: auto !important;
+			justify-content: center !important; 
+		}
+	}
+}

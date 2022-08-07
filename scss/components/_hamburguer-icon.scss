@@ -11,7 +11,7 @@
     }
     .hamburger-icon {
         display: block;
-        height: 25px;
+        height: 26px;
         width: 32px;
         position: absolute;
         top: 25px;
@@ -22,9 +22,9 @@
         justify-content: space-between;
         .hamburger-line {
             display: block;
-            height: 3px;
+            height: 5px;
             width: 100%;
-            border-radius: 12px;
+            border-radius: 2px;
             background: $clr-main-color;
         }
         .hamburger-topline {
