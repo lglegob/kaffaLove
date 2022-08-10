@@ -19,12 +19,14 @@
         margin:5px;
         width: 120px;
         display: inline-block;
+        transition: all 0.5s;
         @include size-sm {
             font-size: 20px;
             width: 170px;
         }
         &:hover {
-            background: rgba(67, 146, 241, 60%); /* Dodger Blue */
+            background: $clr-secondary-color-rgba; /* Dodger Blue */
+            transform: scale(1.1);
         }
     }
     

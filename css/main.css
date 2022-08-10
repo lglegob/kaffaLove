@@ -147,7 +147,7 @@ p {
   display: none;
   height: 150px;
   overflow: hidden;
-  margin-bottom: -2px;
+  margin-bottom: 0px;
   /* Valor negativo para evitar linea de pixel blanco sobrelapando con el footer */
 }
 
@@ -326,25 +326,29 @@ header h2 {
 @media screen and (min-width: 768px) {
   .index-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "navigation    kaffa-motto" "products      products" "events        events" "howTos        howTos";
+    grid-template-areas: "kaffa-motto   navigation" "products      products" "events        events" "howTos        howTos";
+  }
+  .index-grid .curva-SVG {
+    margin-bottom: 0;
+    /* solo para index al crear las dos columnas, la curva SVG se le eliminan los pixeles negativos de margin, evitar sobrelapo */
   }
 }
 
 @media screen and (min-width: 992px) {
   .index-grid {
     grid-template-columns: 60% 40%;
-    grid-template-areas: "navigation    kaffa-motto" "products      products" "events        howTos";
+    grid-template-areas: "kaffa-motto   navigation" "products      products" "events        howTos";
   }
 }
 
 .menu-grid {
-  grid-template-areas: "navigation" "kaffa-motto" "menu-global";
+  grid-template-areas: "navigation" "kaffa-motto" "menu-general";
 }
 
 @media screen and (min-width: 768px) {
   .menu-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "navigation		kaffa-motto" "menu-global	menu-global";
+    grid-template-areas: "kaffa-motto   navigation" "menu-general	menu-general";
   }
 }
 
@@ -361,7 +365,7 @@ header h2 {
 @media screen and (min-width: 768px) {
   .quienessomos-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "navigation		kaffa-motto" "quienes-somos	quienes-somos";
+    grid-template-areas: "kaffa-motto   navigation" "quienes-somos	quienes-somos";
   }
 }
 
@@ -378,7 +382,7 @@ header h2 {
 @media screen and (min-width: 768px) {
   .leyenda-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "navigation		kaffa-motto" "leyenda		leyenda";
+    grid-template-areas: "kaffa-motto   navigation" "leyenda		leyenda";
   }
 }
 
@@ -397,7 +401,7 @@ header h2 {
 @media screen and (min-width: 768px) {
   .contacto-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "navigation		kaffa-motto" "encuesta		encuesta";
+    grid-template-areas: "kaffa-motto   navigation" "encuesta		encuesta";
   }
 }
 
@@ -430,8 +434,8 @@ header h2 {
 }
 
 /* menu page */
-.menu-global {
-  grid-area: menu-global;
+.menu-general {
+  grid-area: menu-general;
 }
 
 /* quienes-somos page */
@@ -474,6 +478,7 @@ header h2 {
   margin: 5px;
   width: 120px;
   display: inline-block;
+  transition: all 0.5s;
 }
 
 @media screen and (min-width: 576px) {
@@ -484,8 +489,9 @@ header h2 {
 }
 
 .navigation .btn:hover {
-  background: #4392f1;
+  background: rgba(67, 146, 241, 0.6);
   /* Dodger Blue */
+  transform: scale(1.1);
 }
 
 .navigation-list {
@@ -572,6 +578,28 @@ footer {
 
 .product-item p {
   text-align: center;
+}
+
+/* Mostrar la tercera card de producto solo cuando queda en la misma fila */
+.product-item03 {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .product-item03 {
+    display: inherit;
+  }
+}
+
+/* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
+.product-item04 {
+  display: none;
+}
+
+@media screen and (min-width: 1544px) {
+  .product-item04 {
+    display: inherit;
+  }
 }
 
 /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
@@ -662,7 +690,6 @@ footer {
 ***               quienes-somos (quienesSomos.html)                      ***
 ***************************************************************************/
 .quienes-somos {
-  /* padding-bottom: 90px; se elimina para permitir la curva en svg*/
   background-color: #F9F9F9;
   /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
 }
@@ -736,9 +763,9 @@ footer {
 }
 
 /***************************************************************************
-***                          menu-global (menu.html)                     ***
+***                          menu-general (menu.html)                     ***
 ***************************************************************************/
-.menu-global {
+.menu-general {
   background-color: #F9F9F9;
 }
 
@@ -749,7 +776,7 @@ footer {
 .menu-container h3 {
   font-family: 'Updock', cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
   padding: 30px 40px 0;
   line-height: 1;
   color: #BF1E2E;
@@ -757,7 +784,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .menu-container h3 {
-    font-size: 120px;
+    font-size: 80px;
   }
 }
 
@@ -765,44 +792,48 @@ footer {
   text-decoration: none;
 }
 
-.menu-global-items {
+.menu-general-items {
   width: 90%;
   height: 200px;
   background-size: cover;
-  background-position: top right;
+  background-position: top center;
   border-radius: 20px;
 }
 
-.menu-global-item01 {
-  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item01 {
+  background-image: url(../images/menu-general-capuchino-opacity50.jpg);
 }
 
-.menu-global-item02 {
-  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item02 {
+  background-image: url(../images/menu-general-lattechai-opacity50.jpg);
 }
 
-.menu-global-item03 {
-  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item03 {
+  background-image: url(../images/menu-general-cervezas-opacity50.jpg);
 }
 
-.menu-global-item04 {
-  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item04 {
+  background-image: url(../images/menu-general-cocteles-opacity50.jpg);
 }
 
-.menu-global-item05 {
-  background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item05 {
+  background-image: url(../images/menu-general-pasteles-opacity50.jpg);
 }
 
-.menu-global-item06 {
-  background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item06 {
+  background-image: url(../images/menu-general-bananasplit-opacity50.jpg);
+}
+
+.menu-general-item07 {
+  background-image: url(../images/menu-general-alfajores-opacity50.jpg);
 }
 
 /* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
-.menu-global-article {
+.menu-general-article {
   transition: all 2s ease-out;
 }
 
-.menu-global-article:hover {
+.menu-general-article:hover {
   transform: scale(1.1);
 }
 
@@ -810,9 +841,7 @@ footer {
 ***                  Leyenda (laLeyendaDeKaffa.html)                     ***
 ***************************************************************************/
 .leyenda {
-  /* padding-bottom: 90px; se elimina para permitir la curva en svg*/
   background-color: #F9F9F9;
-  /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
 }
 
 .leyenda img {
@@ -842,7 +871,6 @@ footer {
 .leyenda-nested-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
 }
 
 .leyenda-nested-grid > * {
@@ -850,6 +878,9 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  .leyenda-nested-grid {
+    grid-gap: 40px;
+  }
   .leyenda-nested-grid img {
     padding-left: 0;
     padding-right: 0;
@@ -919,7 +950,6 @@ footer {
 ***                 Encuesta de Satisfaccion (contacto.html)             ***
 ***************************************************************************/
 .encuesta {
-  /* margin-bottom: 30px; se elimina para permitir la curva en svg*/
   background-color: #F9F9F9;
 }
 

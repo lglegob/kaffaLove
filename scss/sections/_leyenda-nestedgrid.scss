@@ -7,12 +7,12 @@
 .leyenda-nested-grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-gap: 20px;
 	& > * {
 		grid-column: 1 / span 12;
 	}
 	// Modificaciones de Columnas al grid definido arriba (12 columns) y al flex definido en leyenda.scss que se usaba aen tamaños pequeños para centrar la imagen//
 	@include size-lg {
+			grid-gap: 40px;
 		img {
 			padding-left: 0;
 			padding-right: 0;

@@ -1,14 +1,17 @@
 
-meterle fotos a leyenda
-Incluir el mapa de google maps (footer?? o seccion adicional?)
+Pendientes en pro de proyecto final
+
 Completar contenido HowTos
 Definir que hacer con la encuesta
 Crear paginas adicionales para la carta
-Mejorar la curva SVG roja (Sobrelapo??)
+
 
 
 LISTOS
 
+meterle fotos a leyenda
+Incluir el mapa de google maps (footer?? o seccion adicional?)
+Mejorar la curva SVG roja (Sobrelapo??)
 Incluir acceso a Waze
 Ajustar bien las fotos de Quienes Somos, y crearle al menos una version mas pequena
 Cambiar Imagen de header en 3 paginas

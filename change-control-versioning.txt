@@ -1,5 +1,16 @@
 Change Control and Versioning
 
+
+Version 0.7.5 Change Control
+    Todas las Imagenes quedan en la carpeta Images (Sin subfolders)
+    Se corrigen grid 12 column para mobile (Gap se deja solo para tamanos mayores a lg), antes creaba un mimimum gap que hacia desbordar las imagenes en tamano mobile
+    Se hace uniforme el nombre menu-general en lugar del mix con menu-global
+    Tercera y cuarta card de producto (index.html) se muestran solo desde cierto ancho de viewport
+    Color hover de los botones del menu se asocia a variable
+    Hover sobre los botones de menu hace crecer ligeramente el boton
+    Se invierten en todas las paginas, las posiciones de kaffa-motto y menu, para darle mas relevancia al menu a la derecha.
+    Para curva SVG de index.html, se le elimina el margin negativo cuando se tienen dos columna en el grid (Evitar sobrelapo)
+
 Version 0.7.4 Change Control (12-column Grid Layout)
     Adicion estructura nested-grid para pagina leyenda.html. Se usa 12-Column Layout
 

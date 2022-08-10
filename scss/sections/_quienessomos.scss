@@ -2,8 +2,7 @@
 ***               quienes-somos (quienesSomos.html)                      ***
 ***************************************************************************/
 
-.quienes-somos {
-	/* padding-bottom: 90px; se elimina para permitir la curva en svg*/ 
+.quienes-somos { 
 	background-color: $clr-light-background; 
     /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
     & img {

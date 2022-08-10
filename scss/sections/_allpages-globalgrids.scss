@@ -19,9 +19,12 @@
 	"howTos"
 	;
 	@include size-md {
+		.curva-SVG {
+			margin-bottom: 0; /* solo para index al crear las dos columnas, la curva SVG se le eliminan los pixeles negativos de margin, evitar sobrelapo */
+		}
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"navigation    kaffa-motto"
+		"kaffa-motto   navigation"
 		"products      products"
 		"events        events"
 		"howTos        howTos"
@@ -30,7 +33,7 @@
 	@include size-lg {
 		grid-template-columns: 60% 40%;
 		grid-template-areas: 
-		"navigation    kaffa-motto"
+		"kaffa-motto   navigation"
 		"products      products"
 		"events        howTos"
 		;
@@ -42,13 +45,13 @@
 	grid-template-areas: 
 	"navigation"
 	"kaffa-motto"
-	"menu-global"
+	"menu-general"
 	;
 	@include size-md {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"navigation		kaffa-motto"
-		"menu-global	menu-global"
+		"kaffa-motto   navigation"
+		"menu-general	menu-general"
 		;
 	}
 	@include size-lg {
@@ -66,7 +69,7 @@
 	@include size-md {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"navigation		kaffa-motto"
+		"kaffa-motto   navigation"
 		"quienes-somos	quienes-somos"
 		;
 	}
@@ -85,7 +88,7 @@
 	@include size-md {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"navigation		kaffa-motto"
+		"kaffa-motto   navigation"
 		"leyenda		leyenda"
 		;
 	}
@@ -105,7 +108,7 @@
 	@include size-md {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"navigation		kaffa-motto"
+		"kaffa-motto   navigation"
 		"encuesta		encuesta"
 		;
 	}
@@ -133,8 +136,8 @@
 	grid-area: howTos;
 }
 /* menu page */	
-.menu-global {		
-	grid-area: menu-global;
+.menu-general {		
+	grid-area: menu-general;
 }
 
 /* quienes-somos page */

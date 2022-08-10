@@ -3,13 +3,9 @@
 ***************************************************************************/
 
 .leyenda {
-	/* padding-bottom: 90px; se elimina para permitir la curva en svg*/ 
 	background-color: $clr-light-background;
-	 /* El max-height se usa para evitar que se deforme mucho la estructura, y quede mucho espacio vacio en el texto que las acompaña */
 	& img {
         max-width: 100%;
-        // max-height: 750px;
-		// max-width: 750px;
         @include size-md {
             padding: 20px;
         }

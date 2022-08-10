@@ -1,8 +1,8 @@
 /***************************************************************************
-***                          menu-global (menu.html)                     ***
+***                          menu-general (menu.html)                     ***
 ***************************************************************************/
 
-.menu-global {
+.menu-general {
 	background-color: $clr-light-background;
 }
 .menu-container {
@@ -10,45 +10,48 @@
     & h3 {
         font-family: 'Updock', cursive;
         font-weight: 400;
-        font-size: 60px;
+        font-size: 50px;
         padding: 30px 40px 0;
         line-height: 1;
         color:  $clr-main-color; 
         @include size-md {
-            font-size: 120px;
+            font-size: 80px;
         }
     }  
     & a {
         text-decoration: none;
     }      
 }
-.menu-global-items {
+.menu-general-items {
 	width: 90%;
 	height: 200px;
 	background-size: cover;
-	background-position: top right;
+	background-position: top center;
 	border-radius: 20px;
 }
-.menu-global-item01 {
-	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item01 {
+	background-image: url(../images/menu-general-capuchino-opacity50.jpg);
 }
-.menu-global-item02 {
-	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item02 {
+	background-image: url(../images/menu-general-lattechai-opacity50.jpg);
 }
-.menu-global-item03 {
-	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item03 {
+	background-image: url(../images/menu-general-cervezas-opacity50.jpg);
 }
-.menu-global-item04 {
-	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item04 {
+	background-image: url(../images/menu-general-cocteles-opacity50.jpg);
 }
-.menu-global-item05 {
-	background-image: url(../images/menuBackgroundImages/menu-global-item01-alfajores-opacity50.jpg);
+.menu-general-item05 {
+	background-image: url(../images/menu-general-pasteles-opacity50.jpg);
 }
-.menu-global-item06 {
-	background-image: url(../images/menuBackgroundImages/menu-general-item02-cervezas-opacity50.jpg);
+.menu-general-item06 {
+	background-image: url(../images/menu-general-bananasplit-opacity50.jpg);
+}
+.menu-general-item07 {
+	background-image: url(../images/menu-general-alfajores-opacity50.jpg);
 }
 /* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
-.menu-global-article {		
+.menu-general-article {		
 	transition: all 2s ease-out;
     &:hover {
         transform: scale(1.1);

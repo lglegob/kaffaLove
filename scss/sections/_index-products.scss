@@ -26,6 +26,20 @@
         text-align: center;
     }
 }
+/* Mostrar la tercera card de producto solo cuando queda en la misma fila */
+.product-item03 {
+    display: none;
+    @include size-xxl {
+        display: inherit;
+    }
+}
+/* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
+.product-item04 {
+    display: none;
+    @include size-1544px {
+        display: inherit;
+    }
+}
 /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 .product-image {    
 	max-width: 260px;
