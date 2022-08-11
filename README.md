@@ -6,6 +6,9 @@ Repositorio dedicado a la creacion del sitio web para Kaffa Love, coffee shop ub
 
 ##Change Control and Versioning
 
+###Version 0.7.9 (Reduccion Texto quienes-somos)
+    - Se consolida el texto de la pagina quienes-somos eliminando parte de la historia.
+
 ###Version 0.7.8 (Cambios menores, previo clase final)
     - Se le da sombra con box-shadow a diversos elementos (Photos y cards) en varias paginas
     - Las fotos de leyenda.html y quienes-somos.html se les da una ligera rotacion para que junto con el efecto de sombre generen un efecto de foto instantanea
