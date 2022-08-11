@@ -4,8 +4,10 @@
 
 .quienes-somos-nested-grid {
 	display: grid;
-	grid-template-columns: 100%;
-	grid-gap: 20px;
+	grid-row-gap: 40px; 
+	grid-template-columns: 1fr;
+
+	grid-column-gap: 40px; // Dandole espacio a la rotacion de las photos //
 	grid-template-areas: 
 	"h2-quienes-somos"
 	"quienes-somos-photo01"
@@ -14,7 +16,7 @@
 	"quienes-somos-texto02"
 	;
 	@include size-lg {
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas: 
 		"h2-quienes-somos		h2-quienes-somos"
 		"quienes-somos-texto01	quienes-somos-photo01"

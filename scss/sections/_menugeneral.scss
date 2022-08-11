@@ -28,6 +28,8 @@
 	background-size: cover;
 	background-position: top center;
 	border-radius: 20px;
+    box-shadow: 15px 15px 30px $clr-light-gray,
+    -15px -15px 30px white;	
 }
 .menu-general-item01 {
 	background-image: url(../images/menu-general-capuchino-opacity50.jpg);
@@ -51,7 +53,7 @@
 	background-image: url(../images/menu-general-alfajores-opacity50.jpg);
 }
 /* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
-.menu-general-article {		
+.menu-general-article {	
 	transition: all 2s ease-out;
     &:hover {
         transform: scale(1.1);

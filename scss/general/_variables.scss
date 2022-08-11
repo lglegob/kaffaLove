@@ -19,9 +19,9 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 
 $clr-main-color: #BF1E2E; // Red NCS //
 $clr-main-color-rgba: #{transparentize($clr-main-color, 0.8)};
-$clr-main-color-diluted: #F9E0D9; // Misty Rose //
 $clr-light-background: #F9F9F9; // Cultured (Almost White) //
 $clr-dark-gray: #343434; // Dark Gray (Almost black) //
+$clr-light-gray: #{transparentize($clr-dark-gray, 0.4)};
 $clr-secondary-color: #4392F1; // Dodger Blue //
 $clr-secondary-color-rgba: #{transparentize($clr-secondary-color, 0.4)};
 
@@ -30,4 +30,4 @@ $clr-secondary-color-rgba: #{transparentize($clr-secondary-color, 0.4)};
 ///                           Variables Animista                         ///
 //************************************************************************//
 
-$initial-height-image-header: 506.4px;
+$initial-height-image-header: 526.4px;

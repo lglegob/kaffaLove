@@ -4,10 +4,26 @@
 
 .leyenda {
 	background-color: $clr-light-background;
-	& img {
+	& h2 {
+        padding-bottom: 35px; // Espacio para la rotacion de la primera foto //
+    }
+    & img {
         max-width: 100%;
+        box-shadow: 15px 15px 30px $clr-light-gray,
+        -15px -15px 30px white;
         @include size-md {
-            padding: 20px;
+            // Important para asegurarse que los valores de padding verticales se mantengan a pesar del grid de 12 columnas //
+            padding: 20px !important;
+        }
+    }
+    @include size-sm {
+        & .leyenda-photo01, .leyenda-photo03  {
+            transition: all 1s ease-out;
+            transform: rotate(7deg);
+        }
+        & .leyenda-photo02, .leyenda-photo04 {
+            transition: all 1s ease-out;
+            transform: rotate(-4deg);
         }
     }
     & p {

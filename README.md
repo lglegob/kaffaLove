@@ -6,6 +6,15 @@ Repositorio dedicado a la creacion del sitio web para Kaffa Love, coffee shop ub
 
 ##Change Control and Versioning
 
+###Version 0.7.8 (Cambios menores, previo clase final)
+    - Se le da sombra con box-shadow a diversos elementos (Photos y cards) en varias paginas
+    - Las fotos de leyenda.html y quienes-somos.html se les da una ligera rotacion para que junto con el efecto de sombre generen un efecto de foto instantanea
+
+###Version 0.7.7 (Cambios menores, previo clase final)
+    - Se ajusta hover sobre los items del menu hamburguesa
+    - Se ajusta que margin vertical sea auto para los product-item de la seccion product (index.html) y asi reducir los valores de breakpoint a los cuales entran la tercera y cuarta card
+
+
 ###Version 0.7.6 (Pre-entrega3)
     - Se ajusta la seccion de HowTos en index.html con par de articles
     - Se adiciona juego de diferencias en la pagina de contacto.html

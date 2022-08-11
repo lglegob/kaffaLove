@@ -5,6 +5,7 @@
 .menu-general-grid {
 	display: grid;
 	grid-template-columns: 100%;
+	gap: 20px;
 	grid-template-areas: 
 	"menu-general-article01"
 	"menu-general-article02"

@@ -4,57 +4,13 @@
 
 .products {
 	background: $clr-light-background; 
+    padding-bottom: 30px;
     & a {
         transition: all 1s ease-out;
         &:hover {
             opacity: 60%;
         }
     }
-}
-.products-flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.product-item {
-	border: 1px solid $clr-main-color-diluted;
-	margin: 20px auto;
-	max-width: 300px;
-	width: 90vw;
-	background-color: white;
-	border-radius: 30px;
-	padding: 10px;
-    & h3 {
-        margin-top: 0;
-    }
-    & p {
-        text-align: center;
-    }
-}
-/* Mostrar la tercera card de producto solo cuando queda en la misma fila */
-.product-item03 {
-    display: none;
-    @include size-1050px {
-        display: inherit;
-    }
-}
-/* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
-.product-item04 {
-    display: none;
-    @include size-xxl {
-        display: inherit;
-    }
-}
-/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
-.product-image {    
-	max-width: 260px;
-	max-height: 290px;
-	height: 90vw;
-	margin: 10px;
-    @extend .quienes-somos-image
-}
-
-.products {
     & .product-image img {
         max-width: 260px;
         max-height: 290px;
@@ -71,4 +27,48 @@
             background: $clr-secondary-color-rgba; /* Dodger Blue */
         }
     }   
+}
+.products-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.product-item {
+	border: 1px solid $clr-main-color-rgba;
+	margin: 20px auto;
+	max-width: 300px;
+	width: 90vw;
+	background-color: white;
+	border-radius: 30px;
+	padding: 10px;
+    box-shadow: 15px 15px 30px $clr-light-gray,
+    -15px -15px 30px white;
+    & h3 {
+        margin-top: 0;
+    }
+    & p {
+        text-align: center;
+    }
+}
+/* Mostrar la tercera card de producto solo cuando queda en la misma fila */
+.product-item03 {
+    display: none;
+    @include size-1100px {
+        display: inherit;
+    }
+}
+/* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
+.product-item04 {
+    display: none;
+    @include size-1460px {
+        display: inherit;
+    }
+}
+/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+.product-image {    
+	max-width: 260px;
+	max-height: 290px;
+	height: 90vw;
+	margin: 10px;
+    @extend .quienes-somos-image
 }
