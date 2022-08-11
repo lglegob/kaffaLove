@@ -1,14 +1,13 @@
 
 Pendientes en pro de proyecto final
 
-Completar contenido HowTos
-Definir que hacer con la encuesta
 Crear paginas adicionales para la carta
 
 
 
 LISTOS
 
+Completar contenido HowTos
 meterle fotos a leyenda
 Incluir el mapa de google maps (footer?? o seccion adicional?)
 Mejorar la curva SVG roja (Sobrelapo??)

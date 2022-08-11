@@ -3,7 +3,8 @@
 ***************************************************************************/
 
 .navigation {
-	top: 10px;
+    display: none;
+    top: 10px;
 	background-color: $clr-light-background;
 	/* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
     @include size-md {
@@ -42,7 +43,11 @@
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
     @include size-md {
         display: none;
     }
 }
+

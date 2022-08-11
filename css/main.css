@@ -29,6 +29,17 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
 */
 @use "sass:color";
+.index-grid, .menu-grid, .quienessomos-grid, .leyenda-grid {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.juegodiferencias img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 /***************************************************************************
 ***                        Global Styles (All Pages)                     ***
 ***************************************************************************/
@@ -112,6 +123,7 @@ h3, h5 {
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  padding-bottom: 20px;
 }
 
 p {
@@ -272,10 +284,6 @@ header h2 {
   opacity: 40%;
 }
 
-.navigation {
-  display: none;
-}
-
 /* Se usa Z-Index para asegurar que el background quede por debajo de los otros elementos del header como h1, h2 y el logo de kaffa */
 .header-image-background {
   position: absolute;
@@ -313,11 +321,6 @@ header h2 {
 /***************************************************************************
 ***                         Global Grids (All Pages)                     ***
 ***************************************************************************/
-.index-grid, .menu-grid, .quienessomos-grid, .leyenda-grid {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
 .index-grid {
   background: #F9F9F9;
   grid-template-areas: "navigation" "kaffa-motto" "products" "events" "howTos";
@@ -395,13 +398,13 @@ header h2 {
 .contacto-grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "navigation" "kaffa-motto" "encuesta";
+  grid-template-areas: "navigation" "kaffa-motto" "encuesta" "juegodiferencias";
 }
 
 @media screen and (min-width: 768px) {
   .contacto-grid {
     grid-template-columns: 40% 60%;
-    grid-template-areas: "kaffa-motto   navigation" "encuesta		encuesta";
+    grid-template-areas: "kaffa-motto       navigation" "encuesta		   encuesta" "juegodiferencias  juegodiferencias";
   }
 }
 
@@ -453,10 +456,16 @@ header h2 {
   grid-area: encuesta;
 }
 
+/* contacto page */
+.juegodiferencias {
+  grid-area: juegodiferencias;
+}
+
 /***************************************************************************
 ***                         Navigation (All Pages)                       ***
 ***************************************************************************/
 .navigation {
+  display: none;
   top: 10px;
   background-color: #F9F9F9;
   /* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
@@ -503,6 +512,12 @@ header h2 {
   justify-content: center;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
@@ -525,8 +540,18 @@ footer {
   background: #BF1E2E;
   color: #F9F9F9;
   text-align: center;
-  padding-bottom: 30px;
-  /* espacio adicional para la animacion de los iconos del footer */
+}
+
+.footer-index {
+  background-color: inherit;
+}
+
+.footer-index .curva-SVG {
+  margin-top: -150px;
+}
+
+.footer-index .footer-index-background {
+  background: #BF1E2E;
 }
 
 .contact-list {
@@ -553,7 +578,14 @@ footer {
 ***************************************************************************/
 .products {
   background: #F9F9F9;
-  /* padding-bottom: 60px; se elimina para permitir la curva en svg*/
+}
+
+.products a {
+  transition: all 1s ease-out;
+}
+
+.products a:hover {
+  opacity: 60%;
 }
 
 .products-flex-container {
@@ -610,7 +642,7 @@ footer {
   margin: 10px;
 }
 
-.products img {
+.products .product-image img {
   max-width: 260px;
   max-height: 290px;
   width: 90%;
@@ -646,7 +678,7 @@ footer {
 ***************************************************************************/
 .events {
   background: rgba(191, 30, 46, 0.2);
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 /***************************************************************************
@@ -959,6 +991,15 @@ footer {
 
 .encuesta form .input-group {
   padding: 20px 0;
+}
+
+.juegodiferencias {
+  background-color: #F9F9F9;
+}
+
+.juegodiferencias img {
+  max-width: 100%;
+  padding-bottom: 40px;
 }
 
 /***************************************************************************

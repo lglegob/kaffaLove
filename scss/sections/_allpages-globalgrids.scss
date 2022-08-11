@@ -2,12 +2,6 @@
 ***                         Global Grids (All Pages)                     ***
 ***************************************************************************/
 
-// placeholders para cambiar la distribucion de los grids de todas las paginas con una sola linea, usando @extend //
-%grid-size-sm-placeholder {
-	display: grid;
-	grid-template-columns: 100%;
-}
-
 .index-grid {
 	background: $clr-light-background;
 	@extend %grid-size-sm-placeholder;
@@ -104,12 +98,14 @@
 	"navigation"
 	"kaffa-motto"
 	"encuesta"
+	"juegodiferencias"
 	;
 	@include size-md {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 
-		"kaffa-motto   navigation"
-		"encuesta		encuesta"
+		"kaffa-motto       navigation"
+		"encuesta		   encuesta"
+		"juegodiferencias  juegodiferencias"
 		;
 	}
 	@include size-lg {
@@ -153,4 +149,9 @@
 /* contacto page */
 .encuesta {			
 	grid-area: encuesta;
+}
+
+/* contacto page */
+.juegodiferencias {			
+	grid-area: juegodiferencias;
 }

@@ -6,7 +6,16 @@ footer {
 	background: $clr-main-color;
 	color: $clr-light-background;
 	text-align: center;
-	padding-bottom: 30px;	/* espacio adicional para la animacion de los iconos del footer */
+}
+// Se elimina el background del footer del index y se coloca en un div adicional, para permitir que las secciones arriba del footer queden sobrelapadas  //
+.footer-index {
+	background-color: inherit;
+	& .curva-SVG {
+		margin-top: -150px;
+	}
+	& .footer-index-background {
+		background: $clr-main-color;
+	}
 }
 
 .contact-list {

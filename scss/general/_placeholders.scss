@@ -1,0 +1,12 @@
+// placeholders para cambiar la distribucion de los grids de todas las paginas con una sola linea, usando @extend //
+%grid-size-sm-placeholder {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+// placeholders para centrar imagenes usando flex de un solo elemento //
+%center-using-flex {
+	display: flex; 
+	justify-content: center;
+	align-content: center;
+}

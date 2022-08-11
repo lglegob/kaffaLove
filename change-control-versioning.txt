@@ -1,5 +1,11 @@
 Change Control and Versioning
 
+Version 0.7.6 (Pre-entrega3)
+    Se ajusta la seccion de HowTos en index.html con par de articles
+    Se adiciona juego de diferencias en la pagina de contacto.html
+    Se cambia el icono para ver el menu (carta) en la seccion de productos destacados de index.html
+    Se ajusta la curva SVG para que en index.html quede justo antes de footer y no en la mitad de la pagina
+
 
 Version 0.7.5 Change Control
     Todas las Imagenes quedan en la carpeta Images (Sin subfolders)

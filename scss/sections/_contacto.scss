@@ -10,5 +10,12 @@
 			padding: 20px 0;
 		}
 	}
-
+}
+.juegodiferencias {
+	background-color: $clr-light-background;
+	& img {
+		max-width: 100%;
+		padding-bottom: 40px;
+		@extend %center-using-flex;
+	}
 }

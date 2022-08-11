@@ -3,8 +3,13 @@
 ***************************************************************************/
 
 .products {
-	background: $clr-light-background;
-	/* padding-bottom: 60px; se elimina para permitir la curva en svg*/ 
+	background: $clr-light-background; 
+    & a {
+        transition: all 1s ease-out;
+        &:hover {
+            opacity: 60%;
+        }
+    }
 }
 .products-flex-container {
 	display: flex;
@@ -50,7 +55,7 @@
 }
 
 .products {
-    & img {
+    & .product-image img {
         max-width: 260px;
         max-height: 290px;
         width: 90%;
