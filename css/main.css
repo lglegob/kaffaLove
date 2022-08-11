@@ -518,6 +518,11 @@ header h2 {
   z-index: 20;
 }
 
+.navbar .nav-link:hover {
+  background-color: #BF1E2E;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
@@ -596,12 +601,12 @@ footer {
 
 .product-item {
   border: 1px solid #F9E0D9;
-  margin: 20px;
+  margin: 20px auto;
   max-width: 300px;
   width: 90vw;
   background-color: white;
   border-radius: 30px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .product-item h3 {
@@ -617,7 +622,7 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1050px) {
   .product-item03 {
     display: inherit;
   }
@@ -628,7 +633,7 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 1544px) {
+@media screen and (min-width: 1400px) {
   .product-item04 {
     display: inherit;
   }

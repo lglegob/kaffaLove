@@ -1,5 +1,10 @@
 Change Control and Versioning
 
+
+Version 0.7.7 (Cambios menores, previo clase final)
+    Se ajusta hover sobre los items del menu hamburguesa
+    Se ajusta que margin vertical sea auto para los product-item de la seccion product (index.html) y asi reducir los valores de breakpoint a los cuales entran la tercera y cuarta card
+
 Version 0.7.6 (Pre-entrega3)
     Se ajusta la seccion de HowTos en index.html con par de articles
     Se adiciona juego de diferencias en la pagina de contacto.html
@@ -17,7 +22,7 @@ Version 0.7.5 Change Control
     Se invierten en todas las paginas, las posiciones de kaffa-motto y menu, para darle mas relevancia al menu a la derecha.
     Para curva SVG de index.html, se le elimina el margin negativo cuando se tienen dos columna en el grid (Evitar sobrelapo)
 
-Version 0.7.4 Change Control (12-column Grid Layout)
+Version 0.7.4 Change Control (12-column Gid Layout)
     Adicion estructura nested-grid para pagina leyenda.html. Se usa 12-Column Layout
 
 

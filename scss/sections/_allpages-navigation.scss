@@ -46,6 +46,10 @@
     position: sticky;
     top: 0;
     z-index: 20;
+    & .nav-link:hover {
+        background-color: $clr-main-color;
+        font-size: 20px;
+    }
     @include size-md {
         display: none;
     }

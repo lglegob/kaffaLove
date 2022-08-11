@@ -22,14 +22,15 @@
     }
 }
 
-@mixin size-xxl {
-    @media screen and (min-width:1400px) {
+// Breakpoint para tercera card (Index.html - Products) //
+@mixin size-1050px {
+    @media screen and (min-width:1050px) {
         @content;
     }
 }
-// Breakpoint para cuarta card (Index.html - Products) //
-@mixin size-1544px {
-    @media screen and (min-width:1544px) {
+
+@mixin size-xxl {
+    @media screen and (min-width:1400px) {
         @content;
     }
 }

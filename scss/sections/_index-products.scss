@@ -18,12 +18,12 @@
 }
 .product-item {
 	border: 1px solid $clr-main-color-diluted;
-	margin: 20px;
+	margin: 20px auto;
 	max-width: 300px;
 	width: 90vw;
 	background-color: white;
 	border-radius: 30px;
-	padding: 20px;
+	padding: 10px;
     & h3 {
         margin-top: 0;
     }
@@ -34,14 +34,14 @@
 /* Mostrar la tercera card de producto solo cuando queda en la misma fila */
 .product-item03 {
     display: none;
-    @include size-xxl {
+    @include size-1050px {
         display: inherit;
     }
 }
 /* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
 .product-item04 {
     display: none;
-    @include size-1544px {
+    @include size-xxl {
         display: inherit;
     }
 }
