@@ -1,5 +1,8 @@
 Change Control and Versioning
 
+Version 0.7.10 (Youtube responsive)
+    Se configura el iframe de los videos de Youtube para que sean responsive, con configuracion en nuevo archivo _youtube-video.scss
+
 Version 0.7.9 (Reduccion Texto quienes-somos)
     Se consolida el texto de la pagina quienes-somos eliminando parte de la historia.
 
