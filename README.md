@@ -1,8 +1,8 @@
 # kaffaLove #
 
-Repositorio dedicado a la creacion del sitio web para Kaffa Love, coffee shop ubicado en el municipio de La Estrella, Antioquia, en el mall Plaza77.
+Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffalove.netlify.app/), coffee shop ubicado en el municipio de La Estrella, Antioquia, en el mall Plaza77.
 
-
+[Kaffa Love Logo](/images/logoKaffa(backgroundWhite)300x300.png)
 
 ##Change Control and Versioning
 
