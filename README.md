@@ -64,10 +64,27 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 ### Version 0.7.2 (Fourth product card, favicon, Animista infinite** bucle, Gmaps Link, Hamburger Icon Customization, Bootstrap survey)
 - Adicion de la cuarta card en productos
 - Cambio del max*width para permitir las 4 cards en una sola row
-- Adicion del favicon para el sitio
 - Ajuste de la animacion de Animista para que sea bucle inifinito
 - Adicion del link en el footer a google maps con la ubicacion de Kaffa Love
 - Customizacion del icono de hamburguesa
 - Elaboracion de la encuesta en contacto.html con bootstrap
+
+---
+
+### Version 0.7.1 (Favicon)
+- Se instala favicon para el sitio
+
+---
+
+### Version 0.7.0 (Pull Request #7)
+- Configuracion de parametros para tener Animista infinito (Animacion de la foto de background de los headers) 
+- Adicion de google maps link en el footer
+
+---
+
+### Version 0.6.0 (Pull Request #6)
+- Migracion a Sass completa
+- Se agregan variables para manejar los colores del sitio
+- Se mueven los comentarios de CSS fuera de los {}
 
 ---
