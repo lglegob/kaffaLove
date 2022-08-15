@@ -29,12 +29,12 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 #F9F9F9 Cultured (Almost White) 	- rgb(249,249,249)
 */
 @use "sass:color";
-.index-grid, .menu-grid, .quienessomos-grid, .leyenda-grid {
+.index-grid, .menu-grid, .menu-submenus-grid, .quienessomos-grid, .leyenda-grid {
   display: grid;
   grid-template-columns: 100%;
 }
 
-.juegodiferencias img {
+.products-item .products-image {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -102,6 +102,10 @@ h1, h2 {
   padding-bottom: 10px;
   padding-top: 10px;
   margin: 0 20px 0 0;
+}
+
+main h2 {
+  text-shadow: 5px 5px 5px rgba(52, 52, 52, 0.6);
 }
 
 h3 {
@@ -362,6 +366,23 @@ header h2 {
   }
 }
 
+.menu-submenus-grid {
+  grid-template-areas: "navigation" "kaffa-motto" "products" "menu-general";
+}
+
+@media screen and (min-width: 768px) {
+  .menu-submenus-grid {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "kaffa-motto   	navigation" "products		products" "menu-general	menu-general";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-submenus-grid {
+    grid-template-columns: 60% 40%;
+  }
+}
+
 .quienessomos-grid {
   grid-template-areas: "navigation" "kaffa-motto" "quienes-somos";
 }
@@ -472,13 +493,18 @@ header h2 {
   /* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
 }
 
+.navigation li {
+  position: relative;
+  /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemtno y no toda la barra */
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: inherit;
   }
 }
 
-.navigation .btn {
+.navigation .button-rectangle {
   font-size: 12px;
   color: #F9F9F9;
   background: #BF1E2E;
@@ -492,13 +518,13 @@ header h2 {
 }
 
 @media screen and (min-width: 576px) {
-  .navigation .btn {
+  .navigation .button-rectangle {
     font-size: 20px;
     width: 170px;
   }
 }
 
-.navigation .btn:hover {
+.navigation .button-rectangle:hover {
   background: rgba(67, 146, 241, 0.6);
   /* Dodger Blue */
   transform: scale(1.1);
@@ -587,41 +613,13 @@ footer {
   padding-bottom: 30px;
 }
 
-.products a {
-  transition: all 1s ease-out;
-}
-
-.products a:hover {
-  opacity: 60%;
-}
-
-.products .product-image img {
-  max-width: 260px;
-  max-height: 290px;
-  width: 90%;
-}
-
-.products .btn {
-  color: #F9F9F9;
-  background: #BF1E2E;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.products .btn:hover {
-  background: rgba(67, 146, 241, 0.6);
-  /* Dodger Blue */
-}
-
 .products-flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product-item {
+.products-item {
   border: 1px solid rgba(191, 30, 46, 0.2);
   margin: 20px auto;
   max-width: 300px;
@@ -630,44 +628,91 @@ footer {
   border-radius: 30px;
   padding: 10px;
   box-shadow: 15px 15px 30px rgba(52, 52, 52, 0.6), -15px -15px 30px white;
+  /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 }
 
-.product-item h3 {
-  margin-top: 0;
+.products-item .products-image {
+  max-width: 160px;
+  max-height: 190px;
+  height: 90vw;
+  margin: 10px;
 }
 
-.product-item p {
+@media screen and (min-width: 576px) {
+  .products-item .products-image {
+    max-width: 260px;
+    max-height: 290px;
+  }
+  .products-item .products-image img {
+    max-width: 260px;
+    max-height: 290px;
+    width: 90%;
+  }
+}
+
+.products-item-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-item-body p {
   text-align: center;
+  margin: 0;
 }
 
-/* Mostrar la tercera card de producto solo cuando queda en la misma fila */
-.product-item03 {
+.products-item-body p:first-of-type {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .products-item-body p:first-of-type {
+    display: inherit;
+  }
+}
+
+.products-item-body .button-rectangle {
+  color: #F9F9F9;
+  background: #BF1E2E;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 1s ease-out;
+}
+
+.products-item-body .button-rectangle:hover {
+  background: rgba(67, 146, 241, 0.6);
+  /* Dodger Blue */
+  opacity: 60%;
+}
+
+.products-item-body h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+/* Mostrar la tercera card de producto (index.html) solo cuando queda en la misma fila */
+.products-index .products-item03 {
   display: none;
 }
 
 @media screen and (min-width: 1100px) {
-  .product-item03 {
+  .products-index .products-item03 {
     display: inherit;
   }
 }
 
-/* Mostrar la cuarta card de producto solo cuando queda en la misma fila */
-.product-item04 {
+/* Mostrar la cuarta card de producto (index.html) solo cuando queda en la misma fila */
+.products-index .products-item04 {
   display: none;
 }
 
-@media screen and (min-width: 1460px) {
-  .product-item04 {
+@media screen and (min-width: 1271px) {
+  .products-index .products-item04 {
     display: inherit;
   }
-}
-
-/* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
-.product-image {
-  max-width: 260px;
-  max-height: 290px;
-  height: 90vw;
-  margin: 10px;
 }
 
 /***************************************************************************
@@ -772,13 +817,6 @@ footer {
   }
 }
 
-/* Para centrar la Imagen, se usa Flex de un solo elemento */
-.quienes-somos-image, .product-image, .leyenda-image {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
 /***************************************************************************
 ***                menu-general Nested Grid (menu.html)                  ***
 ***************************************************************************/
@@ -786,13 +824,13 @@ footer {
   display: grid;
   grid-template-columns: 100%;
   gap: 20px;
-  grid-template-areas: "menu-general-article01" "menu-general-article02" "menu-general-article03" "menu-general-article04" "menu-general-article05" "menu-general-article06";
+  grid-template-areas: "menu-general-article01" "menu-general-article02" "menu-general-article03" "menu-general-article04" "menu-general-article05" "menu-general-article06" "menu-general-article07";
 }
 
 @media screen and (min-width: 1200px) {
   .menu-general-grid {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "menu-general-article01		menu-general-article02" "menu-general-article03		menu-general-article04" "menu-general-article05		menu-general-article06";
+    grid-template-areas: "menu-general-article01		menu-general-article02" "menu-general-article03		menu-general-article04" "menu-general-article05		menu-general-article06" "menu-general-article07		.";
   }
 }
 
@@ -818,6 +856,10 @@ footer {
 
 .menu-general-article06 {
   grid-area: menu-general-article06;
+}
+
+.menu-general-article07 {
+  grid-area: menu-general-article07;
 }
 
 /***************************************************************************
@@ -939,7 +981,6 @@ footer {
   }
 }
 
-/* Para centrar la Imagen, se usa Flex de un solo elemento */
 /***************************************************************************
 ***                leyenda Nested Grid (quienesSomos.html)               ***
 ***************************************************************************/
@@ -953,7 +994,7 @@ footer {
   grid-column: 1 / span 12;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .leyenda-nested-grid {
     column-gap: 40px;
   }

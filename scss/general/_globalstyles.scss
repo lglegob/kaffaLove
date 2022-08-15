@@ -45,6 +45,9 @@ h1, h2 {
 	padding-top: 10px;
 	margin: 0 20px 0 0;
 }
+main h2 {
+	text-shadow: 5px 5px 5px $clr-light-gray;
+}
 h3 {
 	font-size: 18px;
 	@include size-md {

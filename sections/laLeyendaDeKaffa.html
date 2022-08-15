@@ -71,19 +71,19 @@
             <nav>
               <ul class="navigation-list">
                 <li>
-                  <a class="btn" href="../index.html">Inicio</a>
+                  <a class="button-rectangle" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                  <a class="btn" href="menu.html">Menú</a>
+                  <a class="button-rectangle" href="menu.html">Menú</a>
                 </li>
                 <li>
-                  <a class="btn" href="quienesSomos.html">Quienes Somos</a>
+                  <a class="button-rectangle" href="quienesSomos.html">Quienes Somos</a>
                 </li>
                 <li>
-                  <a class="btn" href="laLeyendaDeKaffa.html">La Leyenda</a>
+                  <a class="button-rectangle" href="laLeyendaDeKaffa.html">La Leyenda</a>
                 </li>
                 <li>
-                  <a class="btn" href="contacto.html">Contacto</a>
+                  <a class="button-rectangle" href="contacto.html">Contacto</a>
                 </li>
               </ul>
             </nav> 
@@ -101,17 +101,19 @@
         <section class="leyenda">
           <div class="content-wrap leyenda-nested-grid">
             <h2 class="h2-leyenda">La Leyenda de Kaffa</h2>
-            <picture class="leyenda-image leyenda-photo01"> <!-- Para ajustar cada imagen de leyenda -->
+            <picture class="leyenda-image leyenda-photo01" data-aos="fade-up-left" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
               <source media="(min-width: 768px)" srcset="../images/leyenda-foto01-metodosdecafe(1344px-1008px).jpg">
               <img src="../images/leyenda-foto01-metodosdecafe(700px-525px).jpg" alt="Diversos métodos de preparación del café.">
             </picture>
             <div class="leyenda-texto01">
               <p>Cuenta la leyenda que en Kaffa, una antigua provincia del sudoeste de Etiopía, un monje diariamente llevaba a sus ovejas a diferentes sitios a pastar. Un día, se alejaron de su vista las ovejas y subieron a lo alto de una colina. El monje al llegar se sorprendió al verlas muy activas, saltando y brincando de un sitio a otro. No entendía que pasaba, hasta que por fin pudo reunirlas a todas y llevarlas a casa.</p>
             </div>
-            <picture class="leyenda-image leyenda-photo02"> <!-- Para ajustar cada imagen de leyenda -->
-              <source media="(min-width: 768px)" srcset="../images/leyenda-foto02-metodosdecafe(1344px-1008px).jpg">
-              <img src="../images/leyenda-foto02-metodosdecafe(700px-525px).jpg" alt="Niña con curiosidad por las preparaciones de café, desde tiempos inmemoriales hasta hoy.">
-            </picture>
+            <div class="leyenda-image leyenda-photo02" data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
+              <picture> 
+                <source media="(min-width: 768px)" srcset="../images/leyenda-foto02-metodosdecafe(1344px-1008px).jpg">
+                <img src="../images/leyenda-foto02-metodosdecafe(700px-525px).jpg" alt="Niña con curiosidad por las preparaciones de café, desde tiempos inmemoriales hasta hoy.">
+              </picture>
+            </div>
             <div class="leyenda-texto02">
               <p> Al día siguiente paso exactamente lo mismo y así durante varios días. Hasta que un día decidió seguirlas de cerca para entender que pasaba.  Las observaba con atención y se dio cuenta de que sus ovejas estaban comiendo de un fruto que no conocía. Decidió tomar algunos y llevarlos al monasterio.</p>
             </div>
@@ -155,6 +157,12 @@
         </ul>
       </div>
     </footer>
+    <!-- *********************  Scripts Animaciones   ********************** -->
+    <!-- *******  de la pagina https://michalsnik.github.io/aos/  ********** -->  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- **********************  Scripts Bootstrap   *********************** -->
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

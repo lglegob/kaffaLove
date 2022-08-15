@@ -75,19 +75,19 @@
             <nav>
               <ul class="navigation-list">
                 <li>
-                  <a class="btn" href="index.html">Inicio</a>
+                  <a class="button-rectangle" href="index.html">Inicio</a>
                 </li>
                 <li>
-                  <a class="btn" href="./sections/menu.html">Menú</a>
+                  <a class="button-rectangle" href="./sections/menu.html">Menú</a>
                 </li>
                 <li>
-                  <a class="btn" href="./sections/quienesSomos.html">Quienes Somos</a>
+                  <a class="button-rectangle" href="./sections/quienesSomos.html">Quienes Somos</a>
                 </li>
                 <li>
-                  <a class="btn" href="./sections/laLeyendaDeKaffa.html">La Leyenda</a>
+                  <a class="button-rectangle" href="./sections/laLeyendaDeKaffa.html">La Leyenda</a>
                 </li>
                 <li>
-                  <a class="btn" href="./sections/contacto.html">Contacto</a>
+                  <a class="button-rectangle" href="./sections/contacto.html">Contacto</a>
                 </li>
               </ul>
             </nav> 
@@ -102,7 +102,7 @@
         </section>
 
         <!-- ********************  PRODUCTS / PORTFOLIO  ********************* -->
-        <section class="products">
+        <section class="products products-index">
           <div class="content-wrap">
             <h2>Productos Destacados</h2>
             <p>Encuentra nuestros productos y bebidas destacadas en esta sección. Para el menú completo, lo puedes encontrar aquí --> 
@@ -112,53 +112,125 @@
 
               <!-- Product 01 -->
               <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
-              <article class="card product-item product-item01" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
-                <div class="product-image">
+              <!-- <article class="card products-item products-item01" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="products-image">
                   <img src="images/products-caferocher(260px-290px).png" class="card-img-top" alt="Café Rocher">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Café Rocher</h5>
-                  <a href="#" class="btn">Ver Producto</a>
+                  <a href="#" class="button-rectangle stretched-link">Ver Producto</a>  Stretched-link para hacer toda la card clickable
                   <p class="card-text">Una bebida caliente, sencillamente imperdible. Con base un expreso doble, leche, crema de avellanas, maní, un toque de crema chantilly y acompañado por supuesto de un chocolate Ferrer. No te la puedes perder.</p>
+                </div>
+              </article> -->
+
+              <!-- Product 01 -->
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card mb-3 products-item products-item01" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="row g-0">
+                  <div class="products-image col-sm-6 m-auto">
+                    <img src="images/products-caferocher(260px-290px).png" class="img-fluid rounded-start" alt="Copa Brownie Power">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-body products-item-body">
+                      <h5 class="card-title">Café Rocher</h5>
+                      <a href="#" class="button-rectangle stretched-link">Ver Producto</a> <!-- Stretched-link para hacer toda la card clickable -->
+                      <p class="card-text">Una bebida caliente, sencillamente imperdible. Con base un expreso doble, leche, crema de avellanas, maní, un toque de crema chantilly y acompañado por supuesto de un chocolate Ferrer. No te la puedes perder.</p>
+                      <p class="card-text"><small class="text-muted">$20.000</small></p>
+                    </div>
+                  </div>
                 </div>
               </article>
 
               <!-- Product 02 -->
               <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
-              <article class="card product-item product-item02" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
-                <div class="product-image">
+              <!-- <article class="card products-item products-item02" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="products-image">
                   <img src="images/products-cafeirlandes(260px-290px).png" class="card-img-top" alt="Café irlandés">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Café irlandés</h5>
-                  <a href="#" class="btn">Ver Producto</a>
+                  <a href="#" class="button-rectangle stretched-link">Ver Producto</a> Stretched-link para hacer toda la card clickable
                   <p class="card-text">Para aquellos días que necesitas tu café fuerte, se trata de un expreso doble, con Whiskey y un toque de crema batida.</p>
+                </div>
+              </article> -->
+
+              <!-- Product 02 -->
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card mb-3 products-item products-item02" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="row g-0">
+                  <div class="products-image col-sm-6 m-auto">
+                    <img src="images/products-cafeirlandes(260px-290px).png" class="img-fluid rounded-start" alt="Copa Brownie Power">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-body products-item-body">
+                      <h5 class="card-title">Café irlandés</h5>
+                      <a href="#" class="button-rectangle stretched-link">Ver Producto</a> <!-- Stretched-link para hacer toda la card clickable -->
+                      <p class="card-text">Para aquellos días que necesitas tu café fuerte, se trata de un expreso doble, con Whiskey y un toque de crema batida.</p>
+                      <p class="card-text"><small class="text-muted">$20.000</small></p>
+                    </div>
+                  </div>
                 </div>
               </article>
 
               <!-- Product 03 -->
               <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
-              <article class="card product-item product-item03" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
-                <div class="product-image">
+              <!-- <article class="card products-item products-item03" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="products-image">
                   <img src="images/products-cafekaffa(260px-290px).png" class="card-img-top" alt="Café Kaffa">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Café Kaffa</h5>
-                  <a href="#" class="btn">Ver Producto</a>
+                  <a href="#" class="button-rectangle stretched-link">Ver Producto</a>  Stretched-link para hacer toda la card clickable
                   <p class="card-text">Y el que si o si debes probar, el café de la casa. Tu café con crema de avellanas, leche, crema de chantillí y el topping a tu elección.</p>
+                </div>
+              </article> -->
+
+              <!-- Product 03 -->
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card mb-3 products-item products-item03" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="row g-0">
+                  <div class="products-image col-sm-6 m-auto">
+                    <img src="images/products-cafekaffa(260px-290px).png" class="img-fluid rounded-start" alt="Copa Brownie Power">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-body products-item-body">
+                      <h5 class="card-title">Café Kaffa</h5>
+                      <a href="#" class="button-rectangle stretched-link">Ver Producto</a> <!-- Stretched-link para hacer toda la card clickable -->
+                      <p class="card-text">Y el que si o si debes probar, el café de la casa. Tu café con crema de avellanas, leche, crema de chantillí y el topping a tu elección.</p>
+                      <p class="card-text"><small class="text-muted">$20.000</small></p>
+                    </div>
+                  </div>
                 </div>
               </article>
 
               <!-- Product 04 -->
               <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
-              <article class="card product-item product-item04" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
-                <div class="product-image">
+              <!-- <article class="card products-item products-item04" style="width: 18rem;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="products-image">
                   <img src="images/products-browniepower(260px-290px).png" class="card-img-top" alt="Copa Brownie Power">
                 </div>
-                <div class="card-body">
+                <div class="card-body product-verticalcard-data">
                   <h5 class="card-title">Brownie Power</h5>
-                  <a href="#" class="btn">Ver Producto</a>
+                  <a href="#" class="button-rectangle stretched-link">Ver Producto</a> Stretched-link para hacer toda la card clickable
                   <p class="card-text">La copa de poder que necesitas para recargarte, una deliciosa combinación de pedacitos de brownie inmersos en un expreso, cubiertos por chantillí a tu elección y besitos de chocolate.</p>
+                </div>
+              </article> -->
+
+              <!-- Product 04 -->
+              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <article class="card mb-3 products-item products-item04" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
+                <div class="row g-0">
+                  <div class="products-image col-sm-6 m-auto">
+                    <img src="images/products-browniepower(260px-290px).png" class="img-fluid rounded-start" alt="Copa Brownie Power">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card-body products-item-body">
+                      <h5 class="card-title">Brownie Power</h5>
+                      <a href="#" class="button-rectangle stretched-link">Ver Producto</a> <!-- Stretched-link para hacer toda la card clickable -->
+                      <p class="card-text">La copa de poder que necesitas para recargarte, una deliciosa combinación de pedacitos de brownie inmersos en un expreso, cubiertos por chantillí a tu elección y besitos de chocolate.</p>
+                      <p class="card-text"><small class="text-muted">$20.000</small></p>
+                    </div>
+                  </div>
                 </div>
               </article>
 

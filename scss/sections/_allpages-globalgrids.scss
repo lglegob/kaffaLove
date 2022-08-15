@@ -53,6 +53,27 @@
 	}
 }
 
+.menu-submenus-grid {
+	@extend %grid-size-sm-placeholder;
+	grid-template-areas: 
+	"navigation"
+	"kaffa-motto"
+	"products"
+	"menu-general"
+	;
+	@include size-md {
+		grid-template-columns: 40% 60%;
+		grid-template-areas: 
+		"kaffa-motto   	navigation"
+		"products		products"
+		"menu-general	menu-general"
+		;
+	}
+	@include size-lg {
+		grid-template-columns: 60% 40%;
+	}
+}
+
 .quienessomos-grid {
 	@extend %grid-size-sm-placeholder;
 	grid-template-areas: 

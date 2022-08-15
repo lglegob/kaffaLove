@@ -6,11 +6,14 @@
     display: none;
     top: 10px;
 	background-color: $clr-light-background;
-	/* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
+	& li {
+        position: relative; /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemtno y no toda la barra */
+    }
+    /* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
     @include size-md {
         display: inherit;
     }
-    & .btn {
+    & .button-rectangle {
         font-size: 12px;
         color: $clr-light-background;
         background: $clr-main-color;
@@ -30,7 +33,6 @@
             transform: scale(1.1);
         }
     }
-    
 }
 
 .navigation-list {

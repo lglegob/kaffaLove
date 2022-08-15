@@ -13,6 +13,7 @@
 	"menu-general-article04"
 	"menu-general-article05"
 	"menu-general-article06"
+	"menu-general-article07"
 	;
 	@include size-xl {
 		grid-template-columns: 50% 50%;
@@ -20,6 +21,7 @@
 		"menu-general-article01		menu-general-article02"
 		"menu-general-article03		menu-general-article04"
 		"menu-general-article05		menu-general-article06"
+		"menu-general-article07		."
 		;
 	}
 }
@@ -41,4 +43,7 @@
 }
 .menu-general-article06 {
 	grid-area: menu-general-article06;
+}
+.menu-general-article07 {
+	grid-area: menu-general-article07;
 }
