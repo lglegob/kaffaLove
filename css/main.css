@@ -606,6 +606,25 @@ footer {
 }
 
 /***************************************************************************
+***                          HowTos (index.html)                         ***
+***************************************************************************/
+/* The padding is added, to prevent the coffee cups to hide the text */
+.howTos {
+  background-image: url(../images/CoffeeMuralBlurry.jpg);
+  background-size: cover;
+  background-position: top left;
+  padding-bottom: 500px;
+}
+
+/***************************************************************************
+***                         Events (index.html)                          ***
+***************************************************************************/
+.events {
+  background: rgba(191, 30, 46, 0.2);
+  padding-bottom: 70px;
+}
+
+/***************************************************************************
 ***                          Products (index.html)                       ***
 ***************************************************************************/
 .products {
@@ -676,6 +695,7 @@ footer {
   background: #BF1E2E;
   text-decoration: none;
   padding: 8px;
+  margin-bottom: 8px;
   border-radius: 4px;
   display: inline-block;
   transition: all 1s ease-out;
@@ -713,25 +733,6 @@ footer {
   .products-index .products-item04 {
     display: inherit;
   }
-}
-
-/***************************************************************************
-***                          HowTos (index.html)                         ***
-***************************************************************************/
-/* The padding is added, to prevent the coffee cups to hide the text */
-.howTos {
-  background-image: url(../images/CoffeeMuralBlurry.jpg);
-  background-size: cover;
-  background-position: top left;
-  padding-bottom: 500px;
-}
-
-/***************************************************************************
-***                         Events (index.html)                          ***
-***************************************************************************/
-.events {
-  background: rgba(191, 30, 46, 0.2);
-  padding-bottom: 70px;
 }
 
 /***************************************************************************
@@ -863,79 +864,92 @@ footer {
 }
 
 /***************************************************************************
-***                          menu-general (menu.html)                     ***
+***           menu-general (menu.html & menu-"submenus".html)            ***
 ***************************************************************************/
 .menu-general {
   background-color: #F9F9F9;
 }
 
-.menu-container {
+.menu-general-container {
   padding-bottom: 50px;
 }
 
-.menu-container h3 {
+.menu-general-container h3 {
   font-family: 'Updock', cursive;
   font-weight: 400;
   font-size: 50px;
   padding: 30px 40px 0;
   line-height: 1;
   color: #BF1E2E;
+  opacity: 100%;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container h3 {
+  .menu-general-container h3 {
     font-size: 80px;
   }
 }
 
-.menu-container a {
+.menu-general-container a {
   text-decoration: none;
 }
 
-.menu-general-items {
+.menu-general-item {
+  position: relative;
   width: 90%;
   height: 200px;
-  background-size: cover;
-  background-position: top center;
-  border-radius: 20px;
-  box-shadow: 15px 15px 30px rgba(52, 52, 52, 0.6), -15px -15px 30px white;
-}
-
-.menu-general-item01 {
-  background-image: url(../images/menu-general-capuchino-opacity50.jpg);
-}
-
-.menu-general-item02 {
-  background-image: url(../images/menu-general-lattechai-opacity50.jpg);
-}
-
-.menu-general-item03 {
-  background-image: url(../images/menu-general-cervezas-opacity50.jpg);
-}
-
-.menu-general-item04 {
-  background-image: url(../images/menu-general-cocteles-opacity50.jpg);
-}
-
-.menu-general-item05 {
-  background-image: url(../images/menu-general-pasteles-opacity50.jpg);
-}
-
-.menu-general-item06 {
-  background-image: url(../images/menu-general-bananasplit-opacity50.jpg);
-}
-
-.menu-general-item07 {
-  background-image: url(../images/menu-general-alfajores-opacity50.jpg);
-}
-
-/* Transicion suave ampliando la foto de la seccion del menu sobre la que se hace hover */
-.menu-general-article {
   transition: all 2s ease-out;
 }
 
-.menu-general-article:hover {
+.menu-general-item::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 20px;
+  background-position: top center;
+  box-shadow: 15px 15px 20px rgba(52, 52, 52, 0.6), -15px -15px 20px white;
+  opacity: 20%;
+}
+
+.menu-general-item:hover {
   transform: scale(1.1);
+}
+
+.menu-general-item:hover::before {
+  opacity: 50%;
+}
+
+.menu-general-item01::before {
+  background-image: url(../images/menu-general-capuchino.jpg);
+}
+
+.menu-general-item02::before {
+  background-image: url(../images/menu-general-lattechai.jpg);
+}
+
+.menu-general-item03::before {
+  background-image: url(../images/menu-general-cervezas.jpg);
+}
+
+.menu-general-item04::before {
+  background-image: url(../images/menu-general-cocteles.jpg);
+}
+
+.menu-general-item05::before {
+  background-image: url(../images/menu-general-pasteles.jpg);
+}
+
+.menu-general-item06::before {
+  background-image: url(../images/menu-general-bananasplit.jpg);
+}
+
+.menu-general-item07::before {
+  background-image: url(../images/menu-general-alfajores.jpg);
 }
 
 /***************************************************************************

@@ -6,6 +6,15 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Branch Crear-paginas-para-submenus - Version 0.8.0 (Pull Request #8 - Nuevas paginas Sub-Menus) In Progress
+
+- Creacion de 6 nuevas paginas para los submenus (Carta de alimentos)
+- Imagenes de background de los menus (carta Alimentos) se cargan al 100% de opacity, y esta se modifica con CSS
+- Se aplica solucion dada en https://coder-coder.com/background-image-opacity/ para manipular el opacity de background si alterar el opacity de elementos hijos, esto usando ::before
+- Se configuran los links desde el menu general y las paginas de sub menus, directo a la parte de productos, usando ID en los h2 de cada submenu, de manera que el usuario no vea la parte de header si no desea, sino directamente los productos (Navegabilidad de la carta)
+
+---
+
 ### Version 0.7.11 (Submenus Page, Cards Horizaontales) 2022-08-14
 
 - En la pagina leyenda.html se reduce la medida desde la cual el grid se vuelve de dos columnas
