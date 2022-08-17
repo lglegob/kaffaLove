@@ -1,0 +1,4 @@
+Centrar Fotos quienes-somos.html (o cambiar a esquema 12 columns)
+Crear submenus en el menu hamburguesa
+Mirar la mejor forma de hacer la barra de navegacion accesible (Sticky)
+Le quiero cambiar las fotos de animista a las paginas de sub-menu??

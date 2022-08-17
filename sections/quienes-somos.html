@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ubicados en La Estrella, encontrarás el lugar perfecto de Co-working, con deliciosos productos derivados de café, ven a conocer la leyenda.">
-    <meta name="keywords" content="Café, Co-working, La Estrella, Historia del café, leyenda kaffa, historia">
-    <title>La Leyenda de Kaffa</title>
+    <meta name="description" content="Ubicados en La Estrella, Kaffa Love nace del emprendimiento de dos mamas, aquí su historia..">
+    <meta name="keywords" content="Café, Co-working, La Estrella, socias, amigas, emprendimiento">
+    <title>Kaffa - Quienes Somos?</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
@@ -16,13 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Updock&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">		
   </head>
   <body>
 
     <!-- ***************************  HEADER  **************************** -->
-    <header class="header-leyenda">
-      <!-- Navbar creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <header class="header-quienessomos">
+      <!-- Navbar creada con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid container-hamburger">
           <input type="checkbox" class="checkbox navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,10 @@
                 <a class="nav-link" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                <a class="nav-link active" aria-current="page" href="quienes-somos.html">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="laLeyendaDeKaffa.html">La Leyenda</a>
+                <a class="nav-link" href="leyenda-kaffa.html">La Leyenda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </nav>
-      <div class="header-image-background leyenda-header-image-background kenburns-top">
+      <div class="header-image-background quienessomos-header-image-background kenburns-top">
         <!-- div usado para el fondo animado del header en tamaños mayores a 1024px usando animista.net --> 
       </div>
       <a href="../index.html"><img src="../images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" class="logo-central"></a>
@@ -64,7 +64,7 @@
     </header>
 
     <main>
-      <div class="leyenda-grid">
+      <div class="quienessomos-grid">
         <!-- *************************  NAVIGATION  ************************** -->
         <section class="navigation">
           <div class="content-wrap">
@@ -74,13 +74,30 @@
                   <a class="button-rectangle" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="menu.html">Menú</a>
+                  <!-- Dropdown Split Menu creado con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/dropdowns/ -->
+                  <div class="btn-group">
+                    <a href="menu.html" class="btn button-rectangle button-rectangle-ddfixed">Menú</a>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split button-rectangle button-rectangle-ddsplit" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="menu-calientes.html#products-menu-calientes">Preparaciones Calientes</a></li>
+                      <li><a class="dropdown-item" href="menu-frias.html#products-menu-frias">Preparaciones Frías</a></li>
+                      <li><a class="dropdown-item" href="menu-cervezas.html#products-menu-cervezas">Cervezas</a></li>
+                      <li><a class="dropdown-item" href="menu-cocteles.html#products-menu-cocteles">Cocteles</a></li>
+                      <li><a class="dropdown-item" href="menu-panaderia.html#products-menu-panaderia">Panadería y Pastelería</a></li>
+                      <li><a class="dropdown-item" href="menu-heladeria.html#products-menu-heladeria">Heladería</a></li>
+                      <li><a class="dropdown-item" href="menu-antojos.html#products-menu-antojos">Antojos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="menu.html">Menú Completo</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="quienesSomos.html">Quienes Somos</a>
+                  <a class="button-rectangle" href="quienes-somos.html">Quienes Somos</a>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="laLeyendaDeKaffa.html">La Leyenda</a>
+                  <a class="button-rectangle" href="leyenda-kaffa.html">La Leyenda</a>
                 </li>
                 <li>
                   <a class="button-rectangle" href="contacto.html">Contacto</a>
@@ -97,39 +114,25 @@
           </div>
         </section>
 
-        <!-- **************************  LEYENDA  **************************** -->
-        <section class="leyenda">
-          <div class="content-wrap leyenda-nested-grid">
-            <h2 class="h2-leyenda">La Leyenda de Kaffa</h2>
-            <picture class="leyenda-image leyenda-photo01" data-aos="fade-up-left" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
-              <source media="(min-width: 768px)" srcset="../images/leyenda-foto01-metodosdecafe(1344px-1008px).jpg">
-              <img src="../images/leyenda-foto01-metodosdecafe(700px-525px).jpg" alt="Diversos métodos de preparación del café.">
+        <!-- ************************  QUIENES SOMOS  ************************ -->
+        <section class="quienes-somos">
+          <div class="content-wrap quienes-somos-nested-grid">
+            <h2 class="h2-quienes-somos">Quienes Somos?</h2>
+            <picture class="quienes-somos-image quienes-somos-photo01"> <!-- Para ajustar cada imagen de quienes somos -->
+              <source media="(min-width: 480px)" srcset="../images/quienessomos-foto01-sociasKaffa-IsabelandKelly(486px-750px).jpg">
+              <img src="../images/quienessomos-foto01-sociasKaffa-IsabelandKelly(324px-500px).jpg" alt="Isabel y Kelly, amigas y socias">
             </picture>
-            <div class="leyenda-texto01">
-              <p>Cuenta la leyenda que en Kaffa, una antigua provincia del sudoeste de Etiopía, un monje diariamente llevaba a sus ovejas a diferentes sitios a pastar. Un día, se alejaron de su vista las ovejas y subieron a lo alto de una colina. El monje al llegar se sorprendió al verlas muy activas, saltando y brincando de un sitio a otro. No entendía que pasaba, hasta que por fin pudo reunirlas a todas y llevarlas a casa.</p>
+            <div class="quienes-somos-texto01">
+              <p>Kaffa Love nace del sueño de dos mamas, Isabel y Kelly, que ingresaron por cuestiones del destino a sus hijos al grado pre-kínder al mismo colegio, ubicado este en La Estrella y conocido por su empuje y enfoque de enseñanza empresarial y formación de emprendedores.</p>
+              <p>Pasados los meses, y después de muchas visitas acolitándole los juegos a los peques, así como muchos cafés, Kelly e Isabel, se dan cuenta que tienen un sueño en común, que es tener un espacio diferente, de buena atención y calidad, donde se pueda servir las mejores preparaciones de café de la zona.</p>
             </div>
-            <div class="leyenda-image leyenda-photo02" data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
-              <picture> 
-                <source media="(min-width: 768px)" srcset="../images/leyenda-foto02-metodosdecafe(1344px-1008px).jpg">
-                <img src="../images/leyenda-foto02-metodosdecafe(700px-525px).jpg" alt="Niña con curiosidad por las preparaciones de café, desde tiempos inmemoriales hasta hoy.">
-              </picture>
-            </div>
-            <div class="leyenda-texto02">
-              <p> Al día siguiente paso exactamente lo mismo y así durante varios días. Hasta que un día decidió seguirlas de cerca para entender que pasaba.  Las observaba con atención y se dio cuenta de que sus ovejas estaban comiendo de un fruto que no conocía. Decidió tomar algunos y llevarlos al monasterio.</p>
-            </div>
-            <picture class="leyenda-image leyenda-photo03"> <!-- Para ajustar cada imagen de leyenda -->
-              <source media="(min-width: 768px)" srcset="../images/leyenda-foto03-marcasdecafe(1008px-1344px).jpg">
-              <img src="../images/leyenda-foto03-marcasdecafe(525px-700px).jpg" alt="Nuestras marcas de café.">
+            <picture class="quienes-somos-image quienes-somos-photo02"> <!-- Para ajustar cada imagen de quienes somos -->
+              <source media="(min-width: 480px)" srcset="../images/quienessomos-foto02-kaffaTeam(486px-750px).jpg">
+              <img src="../images/quienessomos-foto02-kaffaTeam(324px-500px).jpg" alt="Equipo Kaffa">
             </picture>
-            <div class="leyenda-texto03">
-              <p> Allí preparo una bebida que le supo horrible y por lo tanto lanzó los frutos sobrantes al fuego decepcionado.  Pero no es sino unos momentos después, que empieza a sentir un gran aroma que lo cautivo, y se decidió a preparar el fruto de otras formas, creyendo acertadamente que si un fruto con el fuego podía crear esos deliciosos aromas, podría encontrar la manera de crear con ese mismo fruto deliciosos sabores.</p> 
-            </div>
-            <picture class="leyenda-image leyenda-photo04"> <!-- Para ajustar cada imagen de leyenda -->
-              <source media="(min-width: 768px)" srcset="../images/leyenda-foto04-20220514-equipodetrabajo(1008px-1344px).jpg">
-              <img src="../images/leyenda-foto04-20220514-equipodetrabajo(525px-700px).jpg" alt="Lo mejor de Kaffa! nuestro maravilloso equipo de trabajo.">
-            </picture>
-            <div class="leyenda-texto04">
-              <p>A partir de ese momento iniciaron las primeras preparaciones de lo que hoy llamamos café, y que ha llegado a conocerse a nivel mundial; y convertirse en la bebida que es hoy en día, con múltiples preparaciones y posibilidades. Muchas de ellas las encontraras precisamente acá en Kaffa Love, donde amamos el buen café!!</p>
+            <div class="quienes-somos-texto02">
+              <p> Y ni cortas ni perezosas y aprovechando con esto aquello de no hay mejor forma de enseñar que con el ejemplo se deciden en seguir el camino emprendedor y abrir las puertas de este delicioso lugar que ahora se conoce como Kaffa Love.</p>
+              <p>El camino aún empieza, y ya son muchos los aprendizajes que este par de mamas, ahora amigas y socias, han adquirido con este bello emprendimiento. Aún son muchas las ideas, y sueños por ejecutar, Kaffa Love se establecerá como el sitio de referencia en La Estrella para el buen café, así como el punto de acogida de la cultura del café en Antioquia.</p>
             </div>
           </div>
           <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
@@ -157,17 +160,11 @@
         </ul>
       </div>
     </footer>
-    <!-- *********************  Scripts Animaciones   ********************** -->
-    <!-- *******  de la pagina https://michalsnik.github.io/aos/  ********** -->  
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <!-- **********************  Scripts Bootstrap   *********************** -->
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous">
-  </script>
+    </script>
   </body> 
 </html>

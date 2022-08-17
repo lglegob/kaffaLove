@@ -22,7 +22,7 @@
 
       <!-- ***************************  HEADER  **************************** -->
     <header class="header-menu">
-      <!-- Navbar creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
+      <!-- Navbar creada con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid container-hamburger">
           <input type="checkbox" class="checkbox navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler-kaffaLove" aria-controls="navbarToggler-kaffaLove" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,10 @@
                 <a class="nav-link active" aria-current="page" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="laLeyendaDeKaffa.html">La Leyenda</a>
+                <a class="nav-link" href="leyenda-kaffa.html">La Leyenda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -74,13 +74,30 @@
                   <a class="button-rectangle" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="menu.html">Menú</a>
+                  <!-- Dropdown Split Menu creado con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/dropdowns/ -->
+                  <div class="btn-group">
+                    <a href="menu.html" class="btn button-rectangle button-rectangle-ddfixed">Menú</a>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split button-rectangle button-rectangle-ddsplit" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="menu-calientes.html#products-menu-calientes">Preparaciones Calientes</a></li>
+                      <li><a class="dropdown-item" href="menu-frias.html#products-menu-frias">Preparaciones Frías</a></li>
+                      <li><a class="dropdown-item" href="menu-cervezas.html#products-menu-cervezas">Cervezas</a></li>
+                      <li><a class="dropdown-item" href="menu-cocteles.html#products-menu-cocteles">Cocteles</a></li>
+                      <li><a class="dropdown-item" href="menu-panaderia.html#products-menu-panaderia">Panadería y Pastelería</a></li>
+                      <li><a class="dropdown-item" href="menu-heladeria.html#products-menu-heladeria">Heladería</a></li>
+                      <li><a class="dropdown-item" href="menu-antojos.html#products-menu-antojos">Antojos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="menu.html">Menú Completo</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="quienesSomos.html">Quienes Somos</a>
+                  <a class="button-rectangle" href="quienes-somos.html">Quienes Somos</a>
                 </li>
                 <li>
-                  <a class="button-rectangle" href="laLeyendaDeKaffa.html">La Leyenda</a>
+                  <a class="button-rectangle" href="leyenda-kaffa.html">La Leyenda</a>
                 </li>
                 <li>
                   <a class="button-rectangle" href="contacto.html">Contacto</a>
@@ -108,7 +125,7 @@
             <div class="products-flex-container">
 
               <!-- Product 01 -->
-              <!-- Card creada con Bootstrap 5.1 - Script tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
+              <!-- Card creada con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
               <article class="card mb-3 products-item products-item01" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
                 <div class="row g-0">
                   <div class="products-image col-sm-6 m-auto">
