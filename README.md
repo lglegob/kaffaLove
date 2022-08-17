@@ -6,6 +6,11 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.8.1 (Links submenus hacia Main) 2022-08-17
+
+- Hyperlinks de las paginas de submenus se apuntan hacia main (Con el ID) en lugar del H2, para que se tenga visualizacion de los botones de navegacion
+- Se corrige foto02 de quienes-somos.
+
 ### Version 0.8.0-S1 Branch Crear-paginas-para-submenus (Menus desplegables) 2022-08-17
 
 - Se agrega menu desplegable al boton de Menu, para que se muestren todos los enlaces a las paginas de sub-menus
