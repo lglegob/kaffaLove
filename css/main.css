@@ -34,7 +34,7 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
   grid-template-columns: 100%;
 }
 
-.products-item .products-image {
+.products-item .products-image, .quienes-somos-image {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -495,7 +495,7 @@ header h2 {
 
 .navigation li {
   position: relative;
-  /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemtno y no toda la barra */
+  /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemento y no toda la barra */
 }
 
 @media screen and (min-width: 768px) {
@@ -528,6 +528,36 @@ header h2 {
   background: rgba(67, 146, 241, 0.6);
   /* Dodger Blue */
   transform: scale(1.1);
+}
+
+.navigation .button-rectangle-ddfixed {
+  width: 100px;
+  margin-right: 1px;
+}
+
+@media screen and (min-width: 576px) {
+  .navigation .button-rectangle-ddfixed {
+    width: 130px;
+  }
+}
+
+.navigation .button-rectangle-ddfixed:hover {
+  transform: none;
+}
+
+.navigation .button-rectangle-ddsplit {
+  width: 20px;
+  margin-left: 1px;
+}
+
+@media screen and (min-width: 576px) {
+  .navigation .button-rectangle-ddsplit {
+    width: 40px;
+  }
+}
+
+.navigation .button-rectangle-ddsplit:hover {
+  transform: none;
 }
 
 .navigation-list {
@@ -625,7 +655,7 @@ footer {
 }
 
 /***************************************************************************
-***                          Products (index.html)                       ***
+***   Products (index.html menu.html y todas las menu-"submenu".html)    ***
 ***************************************************************************/
 .products {
   background: #F9F9F9;
@@ -736,7 +766,7 @@ footer {
 }
 
 /***************************************************************************
-***              quienes-somos Nested Grid (quienesSomos.html)           ***
+***              quienes-somos Nested Grid (quienes-somos.html)           ***
 ***************************************************************************/
 .quienes-somos-nested-grid {
   display: grid;
@@ -774,7 +804,7 @@ footer {
 }
 
 /***************************************************************************
-***               quienes-somos (quienesSomos.html)                      ***
+***               quienes-somos (quienes-somos.html)                      ***
 ***************************************************************************/
 .quienes-somos {
   background-color: #F9F9F9;
@@ -953,7 +983,7 @@ footer {
 }
 
 /***************************************************************************
-***                  Leyenda (laLeyendaDeKaffa.html)                     ***
+***                  Leyenda (leyenda-kaffa.html)                     ***
 ***************************************************************************/
 .leyenda {
   background-color: #F9F9F9;
@@ -996,7 +1026,7 @@ footer {
 }
 
 /***************************************************************************
-***                leyenda Nested Grid (quienesSomos.html)               ***
+***                leyenda Nested Grid (leyenda-kaffa.html)               ***
 ***************************************************************************/
 .leyenda-nested-grid {
   display: grid;

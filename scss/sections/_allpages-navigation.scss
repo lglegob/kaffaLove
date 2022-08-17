@@ -7,7 +7,7 @@
     top: 10px;
 	background-color: $clr-light-background;
 	& li {
-        position: relative; /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemtno y no toda la barra */
+        position: relative; /* para poder colocar la class de bootstrap .stretched-link y cada li mantenga el clickable de su elemento y no toda la barra */
     }
     /* Navbar (bootstrap) y navigation bar (manual) intercambian lugares a partir de 768px */
     @include size-md {
@@ -32,18 +32,36 @@
             background: $clr-secondary-color-rgba; /* Dodger Blue */
             transform: scale(1.1);
         }
+        &-ddfixed {
+            width: 100px;
+            margin-right: 1px;
+            @include size-sm {
+                width: 130px;
+            }
+            &:hover {
+                transform: none;
+            }
+        }
+        &-ddsplit {
+            width: 20px;
+            margin-left: 1px;
+            @include size-sm {
+                width: 40px;    
+            }
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+    &-list {
+        list-style-type: none;
+        padding: 0 0 10px;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
 }
-
-.navigation-list {
-	list-style-type: none;
-	padding: 0 0 10px;
-	text-align: center;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
 .navbar {
     position: sticky;
     top: 0;

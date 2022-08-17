@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deliciosos productos de  cafetería, panadería, pastelería y heladería, cocteles, cervezas importadas. Espacio externo, mesas comodas y el Internet mas veloz.">
-    <meta name="keywords" content="Café, Co-working, La Estrella, Parque Infantil, Helados, Bubble Waffle, Capuchino, Cervezas, Cocteles, Pasteles">
-    <title>Menu Kaffa - Cervezas.</title>
+    <meta name="description" content="Ubicados en La Estrella, encontrarás el lugar perfecto de Co-working, con deliciosos productos derivados de café, ven a conocer la leyenda.">
+    <meta name="keywords" content="Café, Co-working, La Estrella, Historia del café, leyenda kaffa, historia">
+    <title>La Leyenda de Kaffa</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
@@ -20,8 +20,8 @@
   </head>
   <body>
 
-      <!-- ***************************  HEADER  **************************** -->
-    <header class="header-menu">
+    <!-- ***************************  HEADER  **************************** -->
+    <header class="header-leyenda">
       <!-- Navbar creada con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/navbar/ -->
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid container-hamburger">
@@ -40,13 +40,13 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="menu.html">Menú</a>
+                <a class="nav-link" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="leyenda-kaffa.html">La Leyenda</a>
+                <a class="nav-link active" aria-current="page" href="leyenda-kaffa.html">La Leyenda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </nav>
-      <div class="header-image-background menu-header-image-background kenburns-top">
+      <div class="header-image-background leyenda-header-image-background kenburns-top">
         <!-- div usado para el fondo animado del header en tamaños mayores a 1024px usando animista.net --> 
       </div>
       <a href="../index.html"><img src="../images/logoKaffa(backgroundWhite)300x300.png" alt="Logo Kaffa Love" class="logo-central"></a>
@@ -64,7 +64,7 @@
     </header>
 
     <main>
-      <div class="menu-submenus-grid">
+      <div class="leyenda-grid">
         <!-- *************************  NAVIGATION  ************************** -->
         <section class="navigation">
           <div class="content-wrap">
@@ -73,6 +73,9 @@
                 <li>
                   <a class="button-rectangle" href="../index.html">Inicio</a>
                 </li>
+                <!-- <li>
+                  <a class="button-rectangle" href="menu.html">Menú</a>
+                </li> -->
                 <li>
                   <!-- Dropdown Split Menu creado con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/dropdowns/ -->
                   <div class="btn-group">
@@ -102,6 +105,7 @@
                 <li>
                   <a class="button-rectangle" href="contacto.html">Contacto</a>
                 </li>
+
               </ul>
             </nav> 
           </div>
@@ -113,103 +117,43 @@
             <h3>El lugar perfecto de Co-Working en La Estrella. Con deliciosos productos de panadería y pastelería, así como preparaciones a base de café. ¡Ven y visítanos en el mall plaza77 en La Estrella! Te esperamos.</h3>
           </div>
         </section>
-        
 
-        <!-- ********************  PRODUCTS / PORTFOLIO  ********************* -->
-        <section class="products products-menu-cervezas">
-          <div class="content-wrap">
-            <h2 id="products-menu-cervezas">Cervezas</h2>
-            <p>Encuentra nuestras Cervezas disponibles, tanto nacionales como importadas, en esta sección. Para el menú completo, lo puedes encontrar aquí --> 
-              <a href="menu.html"><img src="../images/icons8-cafe-100.png" alt="Nuestra Carta de productos" width="100px"></a>
-            </p>
-            <div class="products-flex-container">
-
-              <!-- Product 01 -->
-              <!-- Card creada con Bootstrap 5.1 - Script original tomado de https://getbootstrap.com/docs/5.1/components/card/ -->
-              <article class="card mb-3 products-item products-item01" style="max-width: 540px;" data-aos="flip-right" data-aos-duration="1500" data-aos-offset="100">
-                <div class="row g-0">
-                  <div class="products-image col-sm-6 m-auto">
-                    <img src="../images/products-cervezasbbc(260px-290px).png" class="img-fluid rounded-start" alt="Cervezas BBC">
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card-body products-item-body">
-                      <h5 class="card-title">Cervezas BBC</h5>
-                      <a href="#" class="button-rectangle stretched-link">Ver mas</a> <!-- Stretched-link para hacer toda la card clickable -->
-                      <p class="card-text">Las tradicionales Cervezas BBC llegan a Kaffa, bien frías, para aquellos días de sol o de futbol.</p>
-                      <p class="card-text"><small class="text-muted">$20.000</small></p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
+        <!-- **************************  LEYENDA  **************************** -->
+        <section class="leyenda">
+          <div class="content-wrap leyenda-nested-grid">
+            <h2 class="h2-leyenda">La Leyenda de Kaffa</h2>
+            <picture class="leyenda-image leyenda-photo01" data-aos="fade-up-left" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
+              <source media="(min-width: 768px)" srcset="../images/leyenda-foto01-metodosdecafe(1344px-1008px).jpg">
+              <img src="../images/leyenda-foto01-metodosdecafe(700px-525px).jpg" alt="Diversos métodos de preparación del café.">
+            </picture>
+            <div class="leyenda-texto01">
+              <p>Cuenta la leyenda que en Kaffa, una antigua provincia del sudoeste de Etiopía, un monje diariamente llevaba a sus ovejas a diferentes sitios a pastar. Un día, se alejaron de su vista las ovejas y subieron a lo alto de una colina. El monje al llegar se sorprendió al verlas muy activas, saltando y brincando de un sitio a otro. No entendía que pasaba, hasta que por fin pudo reunirlas a todas y llevarlas a casa.</p>
+            </div>
+            <div class="leyenda-image leyenda-photo02" data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="100"> <!-- Para ajustar cada imagen de leyenda -->
+              <picture> 
+                <source media="(min-width: 768px)" srcset="../images/leyenda-foto02-metodosdecafe(1344px-1008px).jpg">
+                <img src="../images/leyenda-foto02-metodosdecafe(700px-525px).jpg" alt="Niña con curiosidad por las preparaciones de café, desde tiempos inmemoriales hasta hoy.">
+              </picture>
+            </div>
+            <div class="leyenda-texto02">
+              <p> Al día siguiente paso exactamente lo mismo y así durante varios días. Hasta que un día decidió seguirlas de cerca para entender que pasaba.  Las observaba con atención y se dio cuenta de que sus ovejas estaban comiendo de un fruto que no conocía. Decidió tomar algunos y llevarlos al monasterio.</p>
+            </div>
+            <picture class="leyenda-image leyenda-photo03"> <!-- Para ajustar cada imagen de leyenda -->
+              <source media="(min-width: 768px)" srcset="../images/leyenda-foto03-marcasdecafe(1008px-1344px).jpg">
+              <img src="../images/leyenda-foto03-marcasdecafe(525px-700px).jpg" alt="Nuestras marcas de café.">
+            </picture>
+            <div class="leyenda-texto03">
+              <p> Allí preparo una bebida que le supo horrible y por lo tanto lanzó los frutos sobrantes al fuego decepcionado.  Pero no es sino unos momentos después, que empieza a sentir un gran aroma que lo cautivo, y se decidió a preparar el fruto de otras formas, creyendo acertadamente que si un fruto con el fuego podía crear esos deliciosos aromas, podría encontrar la manera de crear con ese mismo fruto deliciosos sabores.</p> 
+            </div>
+            <picture class="leyenda-image leyenda-photo04"> <!-- Para ajustar cada imagen de leyenda -->
+              <source media="(min-width: 768px)" srcset="../images/leyenda-foto04-20220514-equipodetrabajo(1008px-1344px).jpg">
+              <img src="../images/leyenda-foto04-20220514-equipodetrabajo(525px-700px).jpg" alt="Lo mejor de Kaffa! nuestro maravilloso equipo de trabajo.">
+            </picture>
+            <div class="leyenda-texto04">
+              <p>A partir de ese momento iniciaron las primeras preparaciones de lo que hoy llamamos café, y que ha llegado a conocerse a nivel mundial; y convertirse en la bebida que es hoy en día, con múltiples preparaciones y posibilidades. Muchas de ellas las encontraras precisamente acá en Kaffa Love, donde amamos el buen café!!</p>
             </div>
           </div>
-        </section>
-
-        <!-- ************************  MENU GENERAL  ************************** -->
-        <section class="menu-general">
-          <div class="content-wrap">
-            <h2>Menú</h2>
-            <p>Encuentra aqui las secciones de nuestro Menú.</p>
-            <div class="menu-general-container menu-general-grid">
-              <!-- Menu 01 -->
-              <article class="menu-general-article menu-general-article01">
-                <a href="menu-calientes.html#products-menu-calientes">
-                  <div class="menu-general-item menu-general-item01">
-                    <h3>Preparaciones Calientes</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 02 -->
-              <article class="menu-general-article menu-general-article02">
-                <a href="menu-frias.html#products-menu-frias">
-                  <div class="menu-general-item menu-general-item02">
-                    <h3>Preparaciones Frías</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 03 -->
-              <article class="menu-general-article menu-general-article03">
-                <a href="menu-cervezas.html#products-menu-cervezas">
-                  <div class="menu-general-item menu-general-item03">
-                    <h3>Cervezas</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 04 -->
-              <article class="menu-general-article menu-general-article04">
-                <a href="menu-cocteles.html#products-menu-cocteles">
-                  <div class="menu-general-item menu-general-item04">
-                    <h3>Cocteles</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 05 -->
-              <article class="menu-general-article menu-general-article05">
-                <a href="menu-panaderia.html#products-menu-panaderia">
-                  <div class="menu-general-item menu-general-item05">
-                    <h3>Panadería y Pastelería</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 06 -->
-              <article class="menu-general-article menu-general-article06">
-                <a href="menu-heladeria.html#products-menu-heladeria">
-                  <div class="menu-general-item menu-general-item06">
-                    <h3>Heladería</h3>
-                  </div>
-                </a>
-              </article>
-              <!-- Menu 07 -->
-              <article class="menu-general-article menu-general-article07">
-                <a href="menu-antojos.html#products-menu-antojos">
-                  <div class="menu-general-item menu-general-item07">
-                    <h3>Antojos</h3>
-                  </div>
-                </a>
-              </article>
-            </div>
-          </div>
+          <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
           <div class="curva-SVG">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none">
               <path d="M0.00,49.99 C149.21,256.07 281.26,-112.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z">
@@ -220,7 +164,7 @@
       </div>
     </main>
 
-    <!-- ******************  CONTACT INFO / SOCIAL MEDIA  ****************** -->
+    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
       <div class="content-wrap">
         <h2>Contactanos!</h2>
@@ -234,11 +178,17 @@
         </ul>
       </div>
     </footer>
+    <!-- *********************  Scripts Animaciones   ********************** -->
+    <!-- *******  de la pagina https://michalsnik.github.io/aos/  ********** -->  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- **********************  Scripts Bootstrap   *********************** -->
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous">
-    </script>
+  </script>
   </body> 
 </html>

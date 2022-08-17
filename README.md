@@ -6,12 +6,22 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
-### Branch Crear-paginas-para-submenus - Version 0.8.0 (Pull Request #8 - Nuevas paginas Sub-Menus) In Progress
+### Version 0.8.0-S1 Branch Crear-paginas-para-submenus (Menus desplegables) 2022-08-17
+
+- Se agrega menu desplegable al boton de Menu, para que se muestren todos los enlaces a las paginas de sub-menus
+- Se le retorna la configuracion de flex para una sola imagen eliminado en v0.7.11, se usa para centrar a quienes-somos-image. Si la necesitaba alli.
+
+### Version 0.8.0 (Pull Request #8 Creacion de las paginas para sub-menus) 2022-08-14
+
+- Merge del branch Crear-paginas-para-submenus en version 0.7.11-S1
+
+### Version 0.7.11-S1 Branch Crear-paginas-para-submenus (Nuevas paginas Sub-Menus) 2022-08-16
 
 - Creacion de 6 nuevas paginas para los submenus (Carta de alimentos)
 - Imagenes de background de los menus (carta Alimentos) se cargan al 100% de opacity, y esta se modifica con CSS
 - Se aplica solucion dada en https://coder-coder.com/background-image-opacity/ para manipular el opacity de background si alterar el opacity de elementos hijos, esto usando ::before
 - Se configuran los links desde el menu general y las paginas de sub menus, directo a la parte de productos, usando ID en los h2 de cada submenu, de manera que el usuario no vea la parte de header si no desea, sino directamente los productos (Navegabilidad de la carta)
+- Se organiza de mejor forma la jerarquia de scss para menugeneral (\_menugeneral.scss)
 
 ---
 
@@ -85,7 +95,7 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 - Adicion de modulo sass:color para obtener colores derivados de la paleta de colores definida con transparencias.
 - Adicion de placeholders en la definicion de los grids generales (No Media Queries).
-- Adicion de @extend de la clase .quienes*somos*image (quienessomos.html) hacia .product\*image (index.html).
+- Adicion de @extend de la clase .quienes*somos*image (quienes-somos.html) hacia .product\*image (index.html).
 - Adicion de los meta keywords y meta description en todas las paginas.
 
 ---
