@@ -9,6 +9,14 @@
 		& .input-group {
 			padding: 20px 0;
 		}
+		& .button-rectangle {
+			@extend %button-rectangle;
+			width: 120px;
+			padding: 4px;
+			@include size-sm {
+				width: 170px;
+			}
+		}
 	}
 }
 .juegodiferencias {

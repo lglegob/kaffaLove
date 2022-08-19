@@ -13,14 +13,18 @@
     &-item {
         border: 1px solid $clr-main-color-rgba;
         margin: 20px auto;
-        max-width: 300px;
         width: 90vw;
         background-color: white;
         border-radius: 30px;
         padding: 10px;
         box-shadow: 15px 15px 30px $clr-light-gray,
         -15px -15px 30px white;
-    
+        @include size-xs {
+            max-width: calc(50% - 1em);
+        }
+        @include size-sm {
+            max-width: 440px; //Para permite mayor espacio cuando se permite el texto descriptivo del producto //
+        }
         /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
         & .products-image {    
         max-width: 160px;
@@ -55,18 +59,9 @@
                 }
             }
             & .button-rectangle {
-                color: $clr-light-background;
-                background: $clr-main-color;
-                text-decoration: none;
+                @extend %button-rectangle;
                 padding: 8px;
                 margin-bottom: 8px;
-                border-radius: 4px;
-                display: inline-block;
-                transition: all 1s ease-out;
-                &:hover {
-                    background: $clr-secondary-color-rgba; /* Dodger Blue */
-                    opacity: 60%;
-                }
             }  
             & h5 {
                 margin-top: 0;

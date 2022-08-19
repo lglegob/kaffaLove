@@ -9,10 +9,6 @@ body {
 	line-height: 1.5;
 	max-width: 100%;
 }
-/* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
-html, body {  
-	overflow-x: hidden;
-}
 a:hover {
 	text-decoration: none;
 }

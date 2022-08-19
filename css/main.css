@@ -40,6 +40,28 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
   align-content: center;
 }
 
+.navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle {
+  font-size: 12px;
+  color: #F9F9F9;
+  background: #BF1E2E;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px;
+  display: inline-block;
+  transition: all 1s ease-out;
+}
+
+@media screen and (min-width: 576px) {
+  .navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle {
+    font-size: 20px;
+  }
+}
+
+.navigation .button-rectangle:hover, .products-item-body .button-rectangle:hover, .encuesta form .button-rectangle:hover {
+  background: rgba(67, 146, 241, 0.6);
+  /* Dodger Blue */
+}
+
 /***************************************************************************
 ***                        Global Styles (All Pages)                     ***
 ***************************************************************************/
@@ -49,11 +71,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   max-width: 100%;
-}
-
-/* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
-html, body {
-  overflow-x: hidden;
 }
 
 a:hover {
@@ -297,7 +314,6 @@ header h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
   background-size: cover;
   background-position: top right;
   z-index: -5;
@@ -505,28 +521,17 @@ header h2 {
 }
 
 .navigation .button-rectangle {
-  font-size: 12px;
-  color: #F9F9F9;
-  background: #BF1E2E;
-  text-decoration: none;
-  padding: 4px;
-  border-radius: 4px;
-  margin: 5px;
   width: 120px;
-  display: inline-block;
-  transition: all 0.5s;
+  padding: 4px;
 }
 
 @media screen and (min-width: 576px) {
   .navigation .button-rectangle {
-    font-size: 20px;
     width: 170px;
   }
 }
 
 .navigation .button-rectangle:hover {
-  background: rgba(67, 146, 241, 0.6);
-  /* Dodger Blue */
   transform: scale(1.1);
 }
 
@@ -671,13 +676,24 @@ footer {
 .products-item {
   border: 1px solid rgba(191, 30, 46, 0.2);
   margin: 20px auto;
-  max-width: 300px;
   width: 90vw;
   background-color: white;
   border-radius: 30px;
   padding: 10px;
   box-shadow: 15px 15px 30px rgba(52, 52, 52, 0.6), -15px -15px 30px white;
   /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+}
+
+@media screen and (min-width: 440px) {
+  .products-item {
+    max-width: calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .products-item {
+    max-width: 440px;
+  }
 }
 
 .products-item .products-image {
@@ -721,20 +737,8 @@ footer {
 }
 
 .products-item-body .button-rectangle {
-  color: #F9F9F9;
-  background: #BF1E2E;
-  text-decoration: none;
   padding: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  transition: all 1s ease-out;
-}
-
-.products-item-body .button-rectangle:hover {
-  background: rgba(67, 146, 241, 0.6);
-  /* Dodger Blue */
-  opacity: 60%;
 }
 
 .products-item-body h5 {
@@ -1122,6 +1126,17 @@ footer {
   padding: 20px 0;
 }
 
+.encuesta form .button-rectangle {
+  width: 120px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 576px) {
+  .encuesta form .button-rectangle {
+    width: 170px;
+  }
+}
+
 .juegodiferencias {
   background-color: #F9F9F9;
 }
@@ -1134,7 +1149,11 @@ footer {
 /***************************************************************************
 ***                  Animacion Animista Headers                          ***
 ***************************************************************************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  /* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
+  body {
+    overflow-x: hidden;
+  }
   /* Parametros Animacion Animista */
   /* Eliminando el color de background (Para cuando la imagen no esta disponible) para permitir el background animado de animista.net, cuando tenia el problema que al agregar bootstrap, la imagen de animista se perdia, se soluciono, cambiando el background: inherit a background: none */
   header {
@@ -1150,13 +1169,13 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 992px) {
+@media screen and (min-width: 992px) and (min-width: 992px) {
   .header-image-background {
     height: 566.4px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .index-header-image-background {
     background-image: url(../images/KaffaLove-FotoExterior-1200px-754px.jpg);
   }

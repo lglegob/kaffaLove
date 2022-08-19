@@ -1,24 +1,48 @@
 # kaffaLove
 
-Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffalove.netlify.app/), coffee shop ubicado en el municipio de La Estrella, Antioquia, en el mall Plaza77.
+Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa.love/), coffee shop ubicado en el municipio de La Estrella, Antioquia, en el mall Plaza77.
 
 ![Kaffa Love Logo](</images/logoKaffa(backgroundWhite)300x300.png>)
 
 ## Change Control and Versioning
 
-### Version 0.8.1 (Links submenus hacia Main) 2022-08-17
+### Version 0.9.2 (dominio kaffa.love y varios cambios menores) 2022-08-18
+
+- Se configura el redireccionamiento de DNSs al dominio oficial kaffa.love
+- Se agrega propiedad form-floating en la hoja de contacto.html a algunos campos
+- Se le da mejor forma a la encuesta y se egraga maquetacion de boton de envio de encuesta.
+- Se incrementa el tamaño desde el cual inicia la animacion de animista (Evitar mobiles en landscape mode)
+- Se hace que el parametro overflow-x en body y html, no quede permanente sino con media query cuando empieza animista y solo en el body.
+- Se lleva la configuracion de button-rectangle a \_placeholders ya que estaba repetida en varias partes y se optimiza
+- Se elimina el max-width para las cards que traia bootstrap al html y se coloca en los css, haciendo variaciones de tamaño y media queries.
+
+---
+
+### Version 0.9.1 (Links submenus hacia Main) 2022-08-17
 
 - Hyperlinks de las paginas de submenus se apuntan hacia main (Con el ID) en lugar del H2, para que se tenga visualizacion de los botones de navegacion
 - Se corrige foto02 de quienes-somos.
+
+---
+
+### Version 0.9.0 (Pull Request #9 Creacion menu desplegable) 2022-08-14
+
+- Merge del branch Crear-paginas-para-submenus en version 0.8.0-S1
+
+---
 
 ### Version 0.8.0-S1 Branch Crear-paginas-para-submenus (Menus desplegables) 2022-08-17
 
 - Se agrega menu desplegable al boton de Menu, para que se muestren todos los enlaces a las paginas de sub-menus
 - Se le retorna la configuracion de flex para una sola imagen eliminado en v0.7.11, se usa para centrar a quienes-somos-image. Si la necesitaba alli.
 
+---
+
 ### Version 0.8.0 (Pull Request #8 Creacion de las paginas para sub-menus) 2022-08-14
 
 - Merge del branch Crear-paginas-para-submenus en version 0.7.11-S1
+
+---
 
 ### Version 0.7.11-S1 Branch Crear-paginas-para-submenus (Nuevas paginas Sub-Menus) 2022-08-16
 

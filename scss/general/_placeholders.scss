@@ -10,3 +10,21 @@
 	justify-content: center;
 	align-content: center;
 }
+
+// placeholder de configuracion base de botones //
+%button-rectangle {
+	font-size: 12px;
+	color: $clr-light-background;
+	background: $clr-main-color;
+	text-decoration: none;
+	border-radius: 4px;
+	margin:5px;
+	display: inline-block;
+	transition: all 1s ease-out;
+	@include size-sm {
+		font-size: 20px;
+	}
+	&:hover {
+		background: $clr-secondary-color-rgba; /* Dodger Blue */
+	}
+}

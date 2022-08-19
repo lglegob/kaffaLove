@@ -2,8 +2,11 @@
 ***                  Animacion Animista Headers                          ***
 ***************************************************************************/
 
-@include size-md {
-
+@include size-lg {
+	/* Parametro usado exclusivamente para evitar el scroll horizontal, que se dio por la animacion de Animista en el header (Crecimiento foto de fondo), de resto la pagina NO requiere el clapping que da el overflow-x */
+	body {
+		overflow-x: hidden;
+	}
 	/* Parametros Animacion Animista */
 	/* Eliminando el color de background (Para cuando la imagen no esta disponible) para permitir el background animado de animista.net, cuando tenia el problema que al agregar bootstrap, la imagen de animista se perdia, se soluciono, cambiando el background: inherit a background: none */
 	header {

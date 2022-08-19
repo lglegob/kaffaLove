@@ -14,22 +14,13 @@
         display: inherit;
     }
     & .button-rectangle {
-        font-size: 12px;
-        color: $clr-light-background;
-        background: $clr-main-color;
-        text-decoration: none;
-        padding: 4px;
-        border-radius: 4px;
-        margin:5px;
+        @extend %button-rectangle;
         width: 120px;
-        display: inline-block;
-        transition: all 0.5s;
+        padding: 4px;
         @include size-sm {
-            font-size: 20px;
             width: 170px;
         }
         &:hover {
-            background: $clr-secondary-color-rgba; /* Dodger Blue */
             transform: scale(1.1);
         }
         &-ddfixed {
