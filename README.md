@@ -6,6 +6,14 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.3 (Cambios menores) 2022-08-22
+
+- Tercer y cuarto breakpoint para Cards de products (index.html) se unifican en uno solo
+- se agrega form-switch (bootstrap) en la hoja de contacto a algunos items
+- Se agrega .gitignore
+
+---
+
 ### Version 0.9.2 (dominio kaffa.love y varios cambios menores) 2022-08-18
 
 - Se configura el redireccionamiento de DNSs al dominio oficial kaffa.love

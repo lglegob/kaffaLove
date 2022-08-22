@@ -40,10 +40,3 @@
         @content;
     }
 }
-
-// Breakpoint para Cuarta card (Index.html - Products) //
-@mixin size-1271px {
-    @media screen and (min-width:1271px) {
-        @content;
-    }
-}

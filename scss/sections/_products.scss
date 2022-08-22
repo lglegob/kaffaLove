@@ -25,27 +25,11 @@
         @include size-sm {
             max-width: 440px; //Para permite mayor espacio cuando se permite el texto descriptivo del producto //
         }
-        /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
-        & .products-image {    
-        max-width: 160px;
-        max-height: 190px;
-        height: 90vw;
-        margin: 10px;
-        @extend %center-using-flex;
-            @include size-sm {
-                max-width: 260px;
-                max-height: 290px;    
-                & img {
-                    max-width: 260px;
-                    max-height: 290px;
-                    width: 90%;
-                }
-            }
-        }
         &-body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0 1rem;
             & p {
                 text-align: center;
                 margin: 0;
@@ -66,24 +50,35 @@
             & h5 {
                 margin-top: 0;
                 margin-bottom: 0;
-                padding-bottom: 10px;
+                padding-bottom: 5px;
+                text-align: center;
             }
-        }    
+        }  
+    }
+    /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
+    &-image {    
+        max-width: 160px;
+        max-height: 160px;
+        height: 90vw;
+        margin: 5px;
+        @extend %center-using-flex;
+        @include size-sm {
+            max-width: 260px;
+            max-height: 290px;    
+            & img {
+                max-width: 260px;
+                max-height: 290px;
+                width: 90%;
+            }
+        }
     }
 }
 
 
-/* Mostrar la tercera card de producto (index.html) solo cuando queda en la misma fila */
-.products-index .products-item03 {
+/* Mostrar la tercera y cuarta card de producto (index.html) */
+.products-index .products-item03, .products-index .products-item04 {
     display: none;
     @include size-1100px {
-        display: inherit;
-    }
-}
-/* Mostrar la cuarta card de producto (index.html) solo cuando queda en la misma fila */
-.products-index .products-item04 {
-    display: none;
-    @include size-1271px {
         display: inherit;
     }
 }

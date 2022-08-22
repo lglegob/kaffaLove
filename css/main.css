@@ -34,7 +34,7 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
   grid-template-columns: 100%;
 }
 
-.products-item .products-image, .quienes-somos-image {
+.products-image, .quienes-somos-image {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -665,6 +665,7 @@ footer {
 .products {
   background: #F9F9F9;
   padding-bottom: 30px;
+  /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 }
 
 .products-flex-container {
@@ -681,7 +682,6 @@ footer {
   border-radius: 30px;
   padding: 10px;
   box-shadow: 15px 15px 30px rgba(52, 52, 52, 0.6), -15px -15px 30px white;
-  /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 }
 
 @media screen and (min-width: 440px) {
@@ -696,29 +696,11 @@ footer {
   }
 }
 
-.products-item .products-image {
-  max-width: 160px;
-  max-height: 190px;
-  height: 90vw;
-  margin: 10px;
-}
-
-@media screen and (min-width: 576px) {
-  .products-item .products-image {
-    max-width: 260px;
-    max-height: 290px;
-  }
-  .products-item .products-image img {
-    max-width: 260px;
-    max-height: 290px;
-    width: 90%;
-  }
-}
-
 .products-item-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .products-item-body p {
@@ -744,27 +726,36 @@ footer {
 .products-item-body h5 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
-/* Mostrar la tercera card de producto (index.html) solo cuando queda en la misma fila */
-.products-index .products-item03 {
+.products-image {
+  max-width: 160px;
+  max-height: 160px;
+  height: 90vw;
+  margin: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .products-image {
+    max-width: 260px;
+    max-height: 290px;
+  }
+  .products-image img {
+    max-width: 260px;
+    max-height: 290px;
+    width: 90%;
+  }
+}
+
+/* Mostrar la tercera y cuarta card de producto (index.html) */
+.products-index .products-item03, .products-index .products-item04 {
   display: none;
 }
 
 @media screen and (min-width: 1100px) {
-  .products-index .products-item03 {
-    display: inherit;
-  }
-}
-
-/* Mostrar la cuarta card de producto (index.html) solo cuando queda en la misma fila */
-.products-index .products-item04 {
-  display: none;
-}
-
-@media screen and (min-width: 1271px) {
-  .products-index .products-item04 {
+  .products-index .products-item03, .products-index .products-item04 {
     display: inherit;
   }
 }

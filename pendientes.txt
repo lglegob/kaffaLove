@@ -2,6 +2,10 @@ Centrar Fotos quienes-somos.html (o cambiar a esquema 12 columns)
 Crear submenus en el menu hamburguesa
 Mirar la mejor forma de hacer la barra de navegacion accesible (Sticky)
 Le quiero cambiar las fotos de animista a las paginas de sub-menu??
-Centrar titulos de las cards de producto
-redefinir breakpoints para crads de index
 Mirar menu de inicio de https://creativedesign-ignacio.netlify.app/index.html
+
+
+
+LISTOS
+Centrar titulos de las cards de producto
+redefinir breakpoints para cards de index
