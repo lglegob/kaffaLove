@@ -34,7 +34,7 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
   grid-template-columns: 100%;
 }
 
-.products-image, .quienes-somos-image {
+.products-item-image, .quienes-somos-image {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -665,7 +665,6 @@ footer {
 .products {
   background: #F9F9F9;
   padding-bottom: 30px;
-  /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 }
 
 .products-flex-container {
@@ -682,6 +681,8 @@ footer {
   border-radius: 30px;
   padding: 10px;
   box-shadow: 15px 15px 30px rgba(52, 52, 52, 0.6), -15px -15px 30px white;
+  flex-direction: row;
+  /* Para ajustar cada card de producto. Para centrar la Imagen, se usa Flex de un solo elemento */
 }
 
 @media screen and (min-width: 440px) {
@@ -730,22 +731,23 @@ footer {
   text-align: center;
 }
 
-.products-image {
+.products-item-image {
   max-width: 160px;
   max-height: 160px;
   height: 90vw;
   margin: 5px;
 }
 
+.products-item-image img {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 576px) {
-  .products-image {
+  .products-item-image {
     max-width: 260px;
     max-height: 290px;
-  }
-  .products-image img {
-    max-width: 260px;
-    max-height: 290px;
-    width: 90%;
   }
 }
 

@@ -6,6 +6,12 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.5 (Fotos de producto en JPG) 2022-08-22
+
+- Se cambian las fotos de producto de PNG a JPG
+
+---
+
 ### Version 0.9.4 (Segunda Card Producto menu-cervezas.html) 2022-08-22
 
 - Se agrega segunda card de producto en menu-cervezas.html para poder revisar issue de ancho de las fotos de producto a mas detalle
