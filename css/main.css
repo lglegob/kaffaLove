@@ -1322,8 +1322,13 @@ footer {
   bottom: 0;
   right: 0;
   transform: rotateY(0.5turn);
-  background-color: rgba(191, 30, 46, 0.2);
   border-radius: 30px;
+}
+
+@media (hover: hover) {
+  .card3d-body-back {
+    background-color: rgba(191, 30, 46, 0.2);
+  }
 }
 
 .card3d-body-back-description {

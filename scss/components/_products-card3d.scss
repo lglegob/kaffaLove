@@ -57,8 +57,10 @@
             bottom: 0;
             right: 0;
             transform: rotateY(0.5turn);
-            background-color: $clr-main-color-rgba;
             border-radius: 30px; 
+            @media (hover: hover ) {
+                background-color: $clr-main-color-rgba;
+            }
 
             &-description {
                 transform: translateZ(6rem);

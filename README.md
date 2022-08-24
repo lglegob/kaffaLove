@@ -6,6 +6,12 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.6.1 (Testing @media (hover: hover )) 2022-08-23
+
+- Se prueba el media query @media (hover: hover) para ver si en mobile sigue apareciendo color de background de las card3d (El cual aparece roto en dispositivos moviles)
+
+---
+
 ### Version 0.9.6 (Reconstruccion Cards Producto) 2022-08-23
 
 - Se elimina Bootstrap de las cards de producto
