@@ -52,6 +52,9 @@
         flex-flow: row wrap;
         justify-content: center;
     }
+    .dropdown-item:hover {
+        background-color: $clr-main-color-rgba;
+    }
 }
 .navbar {
     position: sticky;
@@ -68,5 +71,8 @@
 .dropdown-menu {
     justify-content: center;
     text-align: center;
+    & .active {
+        background-color: $clr-secondary-color-rgba;
+    }
 }
 

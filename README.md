@@ -6,6 +6,13 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.10 (Submenus Hamburger) 2022-08-24
+
+- Se agregan estandariza el submenu hamburger con iconos en todas las paginas
+- Se consolida el estatus "active" en cada pagina de manera correcta
+
+---
+
 ### Version 0.9.9 (Submenus Hamburger) 2022-08-24
 
 - Se agregan los submenus de las paginas de carta en el menu Hamburguesa

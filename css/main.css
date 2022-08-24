@@ -577,6 +577,10 @@ header h2 {
   justify-content: center;
 }
 
+.navigation .dropdown-item:hover {
+  background-color: rgba(191, 30, 46, 0.2);
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -597,6 +601,10 @@ header h2 {
 .dropdown-menu {
   justify-content: center;
   text-align: center;
+}
+
+.dropdown-menu .active {
+  background-color: rgba(67, 146, 241, 0.6);
 }
 
 /***************************************************************************
