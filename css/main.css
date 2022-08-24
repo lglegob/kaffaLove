@@ -40,7 +40,7 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
   align-content: center;
 }
 
-.navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle {
+.navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle, .card3d-body-front .button-rectangle {
   font-size: 12px;
   color: #F9F9F9;
   background: #BF1E2E;
@@ -52,12 +52,12 @@ https://coolors.co/bf1e2e-343434-4392f1-f9e0d9-f9f9f9
 }
 
 @media screen and (min-width: 576px) {
-  .navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle {
+  .navigation .button-rectangle, .products-item-body .button-rectangle, .encuesta form .button-rectangle, .card3d-body-front .button-rectangle {
     font-size: 20px;
   }
 }
 
-.navigation .button-rectangle:hover, .products-item-body .button-rectangle:hover, .encuesta form .button-rectangle:hover {
+.navigation .button-rectangle:hover, .products-item-body .button-rectangle:hover, .encuesta form .button-rectangle:hover, .card3d-body-front .button-rectangle:hover {
   background: rgba(67, 146, 241, 0.6);
   /* Dodger Blue */
 }
@@ -1315,6 +1315,18 @@ footer {
   border-bottom: 3px solid #BF1E2E;
 }
 
+.card3d-body-front .button-rectangle {
+  display: none;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+@media (hover: none) {
+  .card3d-body-front .button-rectangle {
+    display: inherit;
+  }
+}
+
 .card3d-body-back {
   position: absolute;
   top: 0;
@@ -1340,4 +1352,14 @@ footer {
   transform: translateZ(4rem);
   margin: 5px;
   padding: 5px;
+}
+
+.card3d-body-back-salir {
+  display: none;
+}
+
+@media (hover: none) {
+  .card3d-body-back-salir {
+    display: inherit;
+  }
 }

@@ -6,6 +6,13 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.6.4 (Prueba de Boton card3d) 2022-08-23
+
+- Se coloca boton para devices sin hover, que el usuario de click en la card y vea el efecto 3D y la descripcion de producto.
+- Se prueba con mensaje de salida solo pata devices sin hover
+
+---
+
 ### Version 0.9.6.1 (Testing @media (hover: hover )) 2022-08-23
 
 - Se prueba el media query @media (hover: hover) para ver si en mobile sigue apareciendo color de background de las card3d (El cual aparece roto en dispositivos moviles)

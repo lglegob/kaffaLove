@@ -49,6 +49,15 @@
                 font-size: 2rem;
                 border-bottom: 3px solid $clr-main-color;
             }
+            & .button-rectangle {
+                display: none;
+                @extend %button-rectangle;
+                padding: 8px;
+                margin-bottom: 8px;
+                @media (hover: none) {
+                    display: inherit;
+                }
+            }
         }
         &-back {
             position: absolute;
@@ -70,6 +79,12 @@
                 transform: translateZ(4rem);
                 margin: 5px;
                 padding: 5px;
+            }
+            &-salir {
+                display: none;
+                @media (hover: none) {
+                    display: inherit;
+                }
             }
         }
     }
