@@ -6,6 +6,10 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.6.2 (Testing @media (hover: none )) 2022-08-23
+
+- Se prueba el media query @media (hover: none) para ver si en mobile se logra colocar una x fuera de la card3d y hacerla desaparecer
+
 ### Version 0.9.6.1 (Testing @media (hover: hover )) 2022-08-23
 
 - Se prueba el media query @media (hover: hover) para ver si en mobile sigue apareciendo color de background de las card3d (El cual aparece roto en dispositivos moviles)
