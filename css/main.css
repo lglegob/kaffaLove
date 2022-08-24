@@ -603,7 +603,7 @@ header h2 {
   text-align: center;
 }
 
-.dropdown-menu .active {
+.nav-item .active, .dropdown-menu .active {
   background-color: rgba(67, 146, 241, 0.6);
 }
 

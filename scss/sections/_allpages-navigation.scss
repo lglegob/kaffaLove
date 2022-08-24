@@ -68,9 +68,13 @@
         display: none;
     }
 }
+
 .dropdown-menu {
     justify-content: center;
     text-align: center;
+}
+
+.nav-item, .dropdown-menu {
     & .active {
         background-color: $clr-secondary-color-rgba;
     }

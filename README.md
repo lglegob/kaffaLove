@@ -6,6 +6,12 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.12 (Active Page Highlighted) 2022-08-24
+
+- Se corrige que el highlighted de la pagina activa funcione para todas las paginas
+
+---
+
 ### Version 0.9.11 (Icono Menu Completo) 2022-08-24
 
 - Se estandariza el icono usado para Menu Completo
