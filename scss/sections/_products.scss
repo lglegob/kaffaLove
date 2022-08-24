@@ -75,11 +75,3 @@
     }
 }
 
-/* Mostrar la tercera y cuarta card de producto (index.html) */
-.products-index .products-item03, .products-index .products-item04 {
-    display: none;
-    @include size-1100px {
-        display: inherit;
-    }
-}
-

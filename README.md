@@ -6,9 +6,18 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.6 (Reconstruccion Cards Producto) 2022-08-23
+
+- Se elimina Bootstrap de las cards de producto
+- Se construye Card en 3D con base en script de https://uiverse.io/detail/JoseIsra/white-pug-89, inicialmente para index.html.
+- Eliminacion de breakpoint para tercera y cuarta card en index.html, se muestran las 4 siempre.
+
+---
+
 ### Version 0.9.5 (Fotos de producto en JPG) 2022-08-22
 
-- Se cambian las fotos de producto de PNG a JPG
+- Se configura object-fit: scale-down en las imagenes de producto, para mantener el ratio y no se distorsionen.
+- Se cambian las fotos de producto de PNG a JPG.
 
 ---
 
