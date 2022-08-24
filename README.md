@@ -6,9 +6,17 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.7 (Estandarizando cards) 2022-08-23
+
+- Se estandariza el modelo de card 3D a todas las hojas de sub-menus
+
+---
+
 ### Version 0.9.6.5 (Estandarizando button) 2022-08-23
 
 - Se amplia el boton a todas las cards
+
+---
 
 ### Version 0.9.6.4 (Prueba de Boton card3d) 2022-08-23
 
