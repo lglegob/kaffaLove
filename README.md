@@ -6,6 +6,12 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.8 (Elimina configuracion Products) 2022-08-24
+
+- Se Elimina toda la configuracion ya no usada para estilos de products-item, al ya estar usando las card3d
+
+---
+
 ### Version 0.9.7 (Estandarizando cards) 2022-08-23
 
 - Se estandariza el modelo de card 3D a todas las hojas de sub-menus
