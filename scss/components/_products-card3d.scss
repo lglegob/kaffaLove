@@ -46,8 +46,8 @@
             }
             &-title {
                 transform: translateZ(8rem);
-                font-size: 2rem;
                 border-bottom: 3px solid $clr-main-color;
+                font-size: calc(min(7vw, 2rem));
             }
             & .button-rectangle {
                 display: none;
@@ -55,7 +55,7 @@
                 padding: 8px;
                 margin-bottom: 8px;
                 @media (hover: none) {
-                    display: inherit;
+                    display: inline-block;
                 }
             }
         }

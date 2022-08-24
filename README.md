@@ -6,6 +6,10 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.6.5 (Estandarizando button) 2022-08-23
+
+- Se amplia el boton a todas las cards
+
 ### Version 0.9.6.4 (Prueba de Boton card3d) 2022-08-23
 
 - Se coloca boton para devices sin hover, que el usuario de click en la card y vea el efecto 3D y la descripcion de producto.
