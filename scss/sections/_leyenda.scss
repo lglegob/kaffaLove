@@ -26,10 +26,20 @@
             transform: rotate(-4deg);
         }
     }
-    & p {
-        text-align: justify;
-		@include size-lg {
-			font-size: 1.3rem;
-		}
+    & .leyenda-texto01, .leyenda-texto03 {
+        & p {
+        text-align:left;
+        @include size-lg {
+            font-size: 1.3rem;
+        }
+        }
+    }
+    & .leyenda-texto02, .leyenda-texto04 {
+        & p {
+        text-align:right;
+        @include size-lg {
+            font-size: 1.3rem;
+        }
+        }
     }
 }

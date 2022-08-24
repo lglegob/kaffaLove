@@ -6,6 +6,17 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.14 (recomendaciones - opacity & justify) 2022-08-24
+
+- La imagen de background de HowTos (index.html) se le baja la opacidad
+- Los textos de leyenda se les quita el justify y se llevan a derecha e izquierda (recomendacion diseno grafico)
+
+### Version 0.9.13 (Link a Menu General local) 2022-08-24
+
+- Los links hacia el Menu General se configuran que apunte al menu en la misma pagina.
+
+---
+
 ### Version 0.9.12 (Active Page Highlighted) 2022-08-24
 
 - Se corrige que el highlighted de la pagina activa funcione para todas las paginas
