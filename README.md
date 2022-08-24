@@ -6,6 +6,12 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.11 (Icono Menu Completo) 2022-08-24
+
+- Se estandariza el icono usado para Menu Completo
+
+---
+
 ### Version 0.9.10 (Submenus Hamburger) 2022-08-24
 
 - Se agregan estandariza el submenu hamburger con iconos en todas las paginas
