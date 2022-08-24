@@ -583,7 +583,7 @@ header h2 {
   z-index: 20;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover, .navbar .dropdown-item:hover {
   background-color: rgba(191, 30, 46, 0.2);
   font-size: 20px;
 }
@@ -592,6 +592,11 @@ header h2 {
   .navbar {
     display: none;
   }
+}
+
+.dropdown-menu {
+  justify-content: center;
+  text-align: center;
 }
 
 /***************************************************************************
@@ -612,6 +617,29 @@ footer {
   text-align: center;
 }
 
+footer .contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer .contact-list a {
+  padding: 15px;
+  display: inline-block;
+  transition: all 1s ease-out;
+}
+
+footer .contact-list a:hover {
+  opacity: 70%;
+  transform: translateY(-20%) scale(1.6);
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
 .footer-index {
   background-color: inherit;
 }
@@ -622,25 +650,6 @@ footer {
 
 .footer-index .footer-index-background {
   background: #BF1E2E;
-}
-
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
-  transition: all 1s ease-out;
-}
-
-.contact-list a:hover {
-  opacity: 70%;
-  transform: translateY(-20%) scale(1.6);
 }
 
 /***************************************************************************

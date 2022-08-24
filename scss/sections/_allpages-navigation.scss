@@ -57,12 +57,16 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    & .nav-link:hover {
+    & .nav-link:hover, .dropdown-item:hover {
         background-color: $clr-main-color-rgba;
         font-size: 20px;
     }
     @include size-md {
         display: none;
     }
+}
+.dropdown-menu {
+    justify-content: center;
+    text-align: center;
 }
 

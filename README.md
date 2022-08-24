@@ -6,6 +6,14 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.9 (Submenus Hamburger) 2022-08-24
+
+- Se agregan los submenus de las paginas de carta en el menu Hamburguesa
+- Se agregan iconos a dichos submenus
+- Se agrega credito "by LeGo" en la parte inferior del footer
+
+---
+
 ### Version 0.9.8 (Elimina configuracion Products) 2022-08-24
 
 - Se Elimina toda la configuracion ya no usada para estilos de products-item, al ya estar usando las card3d
