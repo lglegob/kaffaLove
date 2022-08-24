@@ -71,17 +71,6 @@
                 margin: 5px;
                 padding: 5px;
             }
-            &-x {
-                display: none;
-                font-size: 2rem; 
-                color: $clr-main-color;
-                position: absolute;
-                top: -50px;
-                right: -50px;
-                @media (hover: none) {
-                    display: inherit;
-                }
-            }
         }
     }
 }
