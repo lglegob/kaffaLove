@@ -6,6 +6,10 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.15 (recomendaciones - Quitar acceso footer a la pagina) 2022-08-24
+
+- Se elimina el acceso del footer a la misma pagina, redundante.
+
 ### Version 0.9.14 (recomendaciones - opacity & justify) 2022-08-24
 
 - La imagen de background de HowTos (index.html) se le baja la opacidad
