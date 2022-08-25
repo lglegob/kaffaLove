@@ -26,7 +26,7 @@
             transform: rotate(-4deg);
         }
     }
-    & .leyenda-texto01, .leyenda-texto03 {
+    &-texto01, &-texto03 {
         & p {
         text-align:left;
         @include size-lg {
@@ -34,7 +34,7 @@
         }
         }
     }
-    & .leyenda-texto02, .leyenda-texto04 {
+    &-texto02, &-texto04 {
         & p {
         text-align:right;
         @include size-lg {

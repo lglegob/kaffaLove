@@ -20,12 +20,23 @@
             padding: 20px;
         }
     }
-    & p {
-        text-align: justify;
+    &-texto01 {
+        & p {
+        text-align:left;
         @include size-lg {
             font-size: 1.2rem;
         }
+        }
     }
+    &-texto02 {
+        & p {
+        text-align:right;
+        @include size-lg {
+            font-size: 1.2rem;
+        }
+        }
+    }
+    
     @include size-sm {
         & .quienes-somos-photo01 {
             transition: all 1s ease-out;

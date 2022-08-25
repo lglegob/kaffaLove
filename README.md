@@ -6,6 +6,10 @@ Repositorio dedicado a la creacion del sitio web para [Kaffa Love](https://kaffa
 
 ## Change Control and Versioning
 
+### Version 0.9.16 (recomendaciones - Justify quienes-somos) 2022-08-24
+
+- Los textos de quienes-somos se les quita el justify y se llevan a derecha e izquierda (recomendacion diseno grafico)
+
 ### Version 0.9.15 (recomendaciones - Quitar acceso footer a la pagina) 2022-08-24
 
 - Se elimina el acceso del footer a la misma pagina, redundante.

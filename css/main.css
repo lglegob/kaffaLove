@@ -755,12 +755,22 @@ footer p {
   }
 }
 
-.quienes-somos p {
-  text-align: justify;
+.quienes-somos-texto01 p {
+  text-align: left;
 }
 
 @media screen and (min-width: 992px) {
-  .quienes-somos p {
+  .quienes-somos-texto01 p {
+    font-size: 1.2rem;
+  }
+}
+
+.quienes-somos-texto02 p {
+  text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+  .quienes-somos-texto02 p {
     font-size: 1.2rem;
   }
 }
@@ -943,22 +953,22 @@ footer p {
   }
 }
 
-.leyenda .leyenda-texto01 p, .leyenda .leyenda-texto03 p {
+.leyenda-texto01 p, .leyenda-texto03 p {
   text-align: left;
 }
 
 @media screen and (min-width: 992px) {
-  .leyenda .leyenda-texto01 p, .leyenda .leyenda-texto03 p {
+  .leyenda-texto01 p, .leyenda-texto03 p {
     font-size: 1.3rem;
   }
 }
 
-.leyenda .leyenda-texto02 p, .leyenda .leyenda-texto04 p {
+.leyenda-texto02 p, .leyenda-texto04 p {
   text-align: right;
 }
 
 @media screen and (min-width: 992px) {
-  .leyenda .leyenda-texto02 p, .leyenda .leyenda-texto04 p {
+  .leyenda-texto02 p, .leyenda-texto04 p {
     font-size: 1.3rem;
   }
 }
